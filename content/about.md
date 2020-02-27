@@ -11,4 +11,6 @@ math = "true"
 
 My name is Lewin and I am a mechanical engineer student. I'm interested in GNU/Linux and minimal software.
 
+This is a test
+
 Got a question? Don't hesitate to email me!
