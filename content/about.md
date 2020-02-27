@@ -11,6 +11,6 @@ math = "true"
 
 My name is Lewin and I am a mechanical engineer student. I'm interested in GNU/Linux and minimal software.
 
-$$ \int_0^x xdx $$
+$$\int x^3 dx$$
 
 Got a question? Don't hesitate to email me!
