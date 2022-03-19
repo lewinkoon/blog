@@ -1,0 +1,13 @@
+.foot-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1320px;
+    padding-top: 4rem;
+    margin: 0 auto;
+
+    a {
+        color: var(--light);
+        margin: 0em 1em;
+    }
+}

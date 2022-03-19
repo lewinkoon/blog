@@ -1,0 +1,47 @@
+{{ define "main" }}
+
+<section class="intro">
+    <div class="intro-text">
+        <h1>Hey, I'm <span>Lewin.</span>👨🏿‍🚀</h1>
+        <p>I'm a software engineer in Chicago. I love building open-source projects and
+            writing about what I learn. This website is my digital garden—a compendium of
+            the things I've learned and created over the years.</p>
+    </div>
+    <div class="intro-links">
+        <a href="/">
+            Get Started
+        </a>
+    </div>
+</section>
+
+{{ $pages := .Paginate (where .Site.RegularPages "Section" "articles") }}
+{{ $projects := where .Site.RegularPages "Section" "projects" }}
+{{ $archivesPage := first 1 (where .Site.RegularPages "Layout" "eq" "archives") }}
+
+<section class="articles">
+    <h2>
+        Latest articles
+    </h2>
+    <div class="posts">
+        {{ range $pages.Pages }}
+        <a href="{{ .RelPermalink }}">
+            <time>{{ .Date.Format "Jan 02" }}</time>
+            <div class="post-title">{{ .Title }}</div>
+            {{ range .Params.tags }}
+            <span>{{ . }}</span>
+            {{ end }}
+        </a>
+        {{ end }}
+    </div>
+</section>
+
+<!-- <section class="projects">
+    <h2>
+        Projects
+    </h2>
+    <div class="cards">
+
+    </div>
+</section> -->
+
+{{ end }}

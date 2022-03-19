@@ -1,0 +1,18 @@
+{{ define "main" }}
+
+<section>
+    <div class="section-title">
+        <h1>📈 {{ .Title }}</h1>
+        <p>{{ .Params.subtitle }}.</p>
+    </div>
+</section>
+
+<section class="dashboard">
+    <div class="chart"><canvas id="myChart"></canvas></div>
+    <div class="caption"></div>
+</section>
+
+{{ $search := resources.Get "ts/chart.js" | js.Build (dict "minify" true ) | fingerprint }}
+<script async src="{{ $search.RelPermalink }}"></script>
+
+{{ end }}

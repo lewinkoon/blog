@@ -1,0 +1,42 @@
+{{ define "main" }}
+
+<section>
+    <div class="section-title">
+        <h1>📚 Articles</h1>
+        <p>Tutorials, technical articles, snippets, reference materials, and all development-related resources I've written.</p>
+    </div>
+
+    {{ $pages := where .Site.RegularPages "Section" "articles" }}
+
+    <div class="list-filter">
+        {{ $maxCategoryToShow := $.Site.Params.maxCategoryToShow | default 5 }}
+        {{ range .Site.Taxonomies.categories.TaxonomyArray | first $maxCategoryToShow }}
+        <div class="filter-item" data-value="{{ .Page.Title }}" data-type="categories">
+            {{ .Page.Title }}<sup>{{ .Count }}</sup>
+        </div>
+        {{ end }}
+    </div>
+
+    <input id="search-query" type="search" placeholder="Busca cualquier cosa...">
+</section>
+
+<section id="search-results"></section>
+
+<section class="section-list" id="section-list">
+    {{ range $pages.GroupByDate "2006" }}
+    <div class="list-item">
+        <h2>{{ .Key }}</h2>
+        {{ range .Pages }}
+            <a href="{{ .RelPermalink }}">
+                <time>{{ .Date.Format "02 Jan" }}</time>
+                {{ .Title }}
+            </a>
+        {{ end }}
+    </div>
+    {{ end }}
+</section>
+
+{{ $search := resources.Get "ts/search.ts" | js.Build (dict "minify" false ) | fingerprint }}
+<script async src="{{ $search.RelPermalink }}"></script>
+
+{{ end }}

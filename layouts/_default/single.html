@@ -1,0 +1,56 @@
+{{ define "main" }}
+
+<section>
+    <div class="article-header">
+        <h1>{{ .Title }}</h1>
+        <div class="post-meta">
+            <div class="metadata">
+                {{ $author := .Params.author }}
+                {{ if eq $author nil }}
+                {{ $author = .Site.Params.author }}
+                {{ end }}
+                {{ $author }} · <time>{{ .Date.Format "Jan 02" }}</time>
+                · {{ .ReadingTime }} minutos
+            </div>
+            <div class="tags">
+                {{ range (.GetTerms "tags") }}
+                <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+
+    <div class="article-post">
+        {{ .Content }}
+    </div>
+
+</section>
+
+<section>
+    {{ if .Section }}
+    <nav class="suggested">
+        {{ with .PrevInSection }}
+        <a rel="prev" href="{{ .RelPermalink }}" title="Previous post (older)">
+            <span>Anterior</span>
+            {{ .Title }}
+        </a>
+        {{ end }}
+
+        {{ with .NextInSection }}
+        <a rel="next" href="{{ .RelPermalink }}" title="Next post (newer)">
+            <span>Siguiente</span>
+            {{ .Title }}
+        </a>
+        {{ end }}
+    </nav>
+    {{ end }}
+</section>
+
+
+{{ if .Site.Params.comments }}
+<section>
+    {{ partial "comments" . }}
+</section>
+{{ end }}
+
+{{ end }}

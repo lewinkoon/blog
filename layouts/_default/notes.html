@@ -1,0 +1,35 @@
+{{ define "main" }}
+
+<section class="section-title">
+    <h1>📝 {{ .Title }}</h1>
+    <p>{{ .Params.subtitle }}.</p>
+</section>
+
+{{ range .Pages.GroupByParam "course" "desc"}}
+<section class="notes">
+    <h2>{{ .Key }}</h2>
+    <div class="note-list">
+
+        {{ range .Pages }}
+        <div class="note-item">
+            <div class="header">
+                <h3>{{ .Title }}</h2>
+                <p class="subtitle">{{ .Params.semester }} · {{ .Params.year }} · {{ .Params.ects }} ECTS</p>
+            </div>
+
+            <div class="description">
+                {{ range .Resources.ByType "application" }}
+                <a href="{{ .RelPermalink }}" target="_blank">
+                    <h4>{{ .Title }}</h4>
+                    <p>{{ .Params.description }}</p>
+                </a>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+
+    </div>
+</section>
+{{ end }}
+
+{{ end }}

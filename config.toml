@@ -1,0 +1,41 @@
+baseURL = 'http://lewin.io/'
+languageCode = 'es'
+title = 'Lewin.io'
+paginate = 5
+
+[params]
+comments = false
+id = "99734fce-4de1-4c17-b0e7-b96d859d379b"
+
+[menu]
+[[menu.main]]
+  name = "Articles"
+  url = "/articles/"
+  weight = 10
+[[menu.main]]
+  name = "Notes"
+  url = "/notes/"
+  weight = 20
+[[menu.main]]
+  name = "Dashboard"
+  url = "/dashboard/"
+  weight = 40
+[[menu.main]]
+  name = "Resume"
+  url = "/resume/"
+  weight = 50
+
+[markup]
+  [markup.highlight]
+  noClasses = false
+  lineNos = true
+  [markup.goldmark.renderer]
+  unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[build]
+  noJSConfigInAssets = true
+  useResourceCacheWhen = 'fallback'
+  writeStats = false
