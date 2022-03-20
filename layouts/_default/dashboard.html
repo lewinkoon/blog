@@ -12,7 +12,7 @@
     <div class="caption"></div>
 </section>
 
-{{ $search := resources.Get "ts/chart.js" | js.Build (dict "minify" true ) | fingerprint }}
+{{ $search := resources.Get "ts/draw-chart.js" | js.Build (dict "minify" true ) | fingerprint }}
 <script async src="{{ $search.RelPermalink }}"></script>
 
 {{ end }}

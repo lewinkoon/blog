@@ -21,9 +21,13 @@ id = "99734fce-4de1-4c17-b0e7-b96d859d379b"
   url = "/dashboard/"
   weight = 40
 [[menu.main]]
+  name = "Models"
+  url = "/models/"
+  weight = 50
+[[menu.main]]
   name = "Resume"
   url = "/resume/"
-  weight = 50
+  weight = 60
 
 [markup]
   [markup.highlight]

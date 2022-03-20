@@ -110,3 +110,12 @@ tr:hover {
     color: var(--medium);
     font-family: "Jost";
 }
+
+model-viewer {
+    display: block;
+    width: 100vw;
+    height: 100vw;
+    max-width: 600px;
+    max-height: 600px;
+    --poster-color: transparent;
+}
