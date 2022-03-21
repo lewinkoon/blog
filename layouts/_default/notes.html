@@ -13,8 +13,11 @@
         {{ range .Pages }}
         <div class="note-item">
             <div class="header">
-                <h3>{{ .Title }}</h2>
-                <p class="subtitle">{{ .Params.semester }} · {{ .Params.year }} · {{ .Params.ects }} ECTS</p>
+                <div class="header-icon">{{ .Params.icon }}</div>
+                <div class="header-text">
+                    <h3>{{ .Title }}</h2>
+                    <p class="subtitle">{{ .Params.semester }} · {{ .Params.year }} · {{ .Params.ects }} ECTS</p>
+                </div>
             </div>
 
             <div class="description">

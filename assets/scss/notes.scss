@@ -12,21 +12,31 @@
         gap: 1.5rem;
 
         .note-item {
-            border-radius: 10px;
+            border-radius: 5px;
             background-color: var(--darker);
-            border: 4px solid var(--accent);
+            border: 4px solid var(--dark);
 
             .header {
-                background-color: var(--accent);
+                display: flex;
+                align-items: center;
+                background-color: var(--dark);
+                // border-bottom: 4px solid var(--accent);  
                 padding: 0.5rem 1rem;
+
+                .header-icon {
+                    margin-right: 1rem;
+                    font-size: 1.8rem;
+                }
 
                 h3 {
                     font-size: 1.4rem;
+                    font-weight: bold;
                     margin: 0;
+                    color: var(--accent);
                 }
 
                 .subtitle {
-                    font-size: 0.8rem;
+                    font-size: 0.9rem;
                     margin: 0;
                 }
             }
@@ -37,8 +47,11 @@
 
                 a {
                     padding: 0.5rem 1rem;
+                    border-top: 1px solid var(--dark);
+
                     h4 {
                         font-size: 1.2rem;
+                        font-weight: bold;
                         margin: 0;
                     }
 
@@ -48,7 +61,7 @@
                     }
 
                     &:hover {
-                        background-color: var(--dark);
+                        color: var(--accent);
                     }
                 }
             }

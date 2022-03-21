@@ -1,21 +1,21 @@
 ---
 title: "Tecnología Electrónica"
 description: "Alternativas modernas en la implantación de sistemas digitales"
-icon: 🔋
+icon: 💾
 course: Msc. Industrial Engineering
 semester: "M2"
 year: "21-22"
 ects: 6
 link: "https://github.com/lewinkoon/aoc-2021"
 resources:
-- src: notes.pdf
-  title: Apuntes
+- src: lec1.pdf
+  title: Diseño electrónico
   params:
-    description: This is another description
-- src: slices.pdf
-  title: Trabajo
+    description: Circuitos integrados, lenguajes de descripción y dispositivos FPGA.
+- src: lec2.pdf
+  title: Instrumentación electrónica
   params:
-    description: This is another description
+    description: Transductores, acondicionadores de señal y SADs.
 - src: '**.pdf'
   name: pdf-file-:counter
 ---
