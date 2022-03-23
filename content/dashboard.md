@@ -1,5 +1,5 @@
 ---
-title: Dashboard
-subtitle: Real time chart for the ESP32 based on Firebase
+title: Interfaz
+subtitle: Gráfica de datos en tiempo real de sensores en un microcontrolador
 layout: "dashboard"
 ---

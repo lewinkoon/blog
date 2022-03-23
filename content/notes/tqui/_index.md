@@ -2,7 +2,7 @@
 title: "Tecnología Química"
 description: "Procesos químicos industriales desde una perspectiva global"
 icon: 🧪
-course: Msc. Industrial Engineering
+course: Máster en Ingeniería Industrial
 semester: "M1"
 year: "21-22"
 ects: 6

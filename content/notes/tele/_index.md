@@ -2,7 +2,7 @@
 title: "Tecnología Electrónica"
 description: "Alternativas modernas en la implantación de sistemas digitales"
 icon: 💾
-course: Msc. Industrial Engineering
+course: Máster en Ingeniería Industrial
 semester: "M2"
 year: "21-22"
 ects: 6

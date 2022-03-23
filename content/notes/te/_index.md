@@ -2,7 +2,7 @@
 title: "Tecnología de Eléctrica"
 description: "Técnicas de programación de sistemas de control en la industria"
 icon: ⚡
-course: Msc. Industrial Engineering
+course: Máster en Ingeniería Industrial
 semester: "M1"
 year: "21-22"
 ects: 6

@@ -8,8 +8,10 @@
 </section>
 
 <section class="dashboard">
-    <div class="chart"><canvas id="myChart"></canvas></div>
-    <div class="caption"></div>
+    <div class="lineChart">
+        <div class="dash-header">Sensor Hall</div>
+        <canvas id="lineChart"></canvas>
+    </div>
 </section>
 
 {{ $search := resources.Get "ts/draw-chart.js" | js.Build (dict "minify" true ) | fingerprint }}

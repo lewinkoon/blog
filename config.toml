@@ -1,6 +1,6 @@
-baseURL = 'http://lewin.io/'
+baseURL = 'http://benito.io/'
 languageCode = 'es'
-title = 'Lewin.io'
+title = 'Benito.xyz'
 paginate = 5
 
 [params]
@@ -9,25 +9,21 @@ id = "99734fce-4de1-4c17-b0e7-b96d859d379b"
 
 [menu]
 [[menu.main]]
-  name = "Articles"
+  name = "Artículos"
   url = "/articles/"
   weight = 10
 [[menu.main]]
-  name = "Notes"
+  name = "Notas"
   url = "/notes/"
   weight = 20
 [[menu.main]]
-  name = "Dashboard"
+  name = "Proyectos"
+  url = "/projects/"
+  weight = 30
+[[menu.main]]
+  name = "Interfaz"
   url = "/dashboard/"
   weight = 40
-[[menu.main]]
-  name = "Models"
-  url = "/models/"
-  weight = 50
-[[menu.main]]
-  name = "Resume"
-  url = "/resume/"
-  weight = 60
 
 [markup]
   [markup.highlight]
