@@ -23,23 +23,40 @@
 }
 
 .intro-links {
-    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
 
     a {
-        padding: 0.5rem 1rem;
-        background-color: var(--accent);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.4rem 0.8rem;
+        background-color: var(--tr-dark);
         border-radius: 5px;
         font-size: 1.2rem;
-    }
 
+        &:hover {
+            background-color: var(--accent);
+
+            svg {
+                stroke: var(--light);
+            }
+        }
+
+        svg {
+            width: 1.6rem;
+            height: 1.6rem;
+            stroke: var(--accent);
+        }
+    }
 }
 
 .articles {
 
     h2 {
         font-size: 2rem;
-        margin: 0.25em 0;
-        // border-bottom: 1px solid grey;
+        margin: 0.5rem 0;
     }
 
     .posts {

@@ -8,8 +8,17 @@
             las cosas que he aprendido y creado a lo largo de los años.</p>
     </div>
     <div class="intro-links">
-        <a href="/">
-            Blog
+        <a href="/" class="icon">
+            {{ partial "svg/mail.svg" . }}
+            Email
+        </a>
+        <a href="/" class="icon">
+            {{ partial "svg/github.svg" . }}
+            Github
+        </a>
+        <a href="/" class="icon">
+            {{ partial "svg/rss.svg" . }}
+            Rss
         </a>
     </div>
 </section>
@@ -34,14 +43,5 @@
         {{ end }}
     </div>
 </section>
-
-<!-- <section class="projects">
-    <h2>
-        Projects
-    </h2>
-    <div class="cards">
-
-    </div>
-</section> -->
 
 {{ end }}

@@ -12,7 +12,8 @@
         {{ $maxCategoryToShow := $.Site.Params.maxCategoryToShow | default 5 }}
         {{ range .Site.Taxonomies.categories.TaxonomyArray | first $maxCategoryToShow }}
         <div class="filter-item" data-value="{{ .Page.Title }}" data-type="categories">
-            {{ .Page.Title }}<sup>{{ .Count }}</sup>
+            {{ partial "svg/hash.svg" . }}
+            {{ .Page.Title }}
         </div>
         {{ end }}
     </div>

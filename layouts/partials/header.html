@@ -2,13 +2,12 @@
     <div class="nav-links">
         <a href="/" class="logo">{{ .Site.Title }}</a>
         {{ range .Site.Menus.main }}
-        <a href="{{ .URL | relURL }}" class="menu" {{ if eq .URL $.RelPermalink }} aria-current="page"{{ end }}>{{ .Pre }}{{ .Name }}{{ .Post }}</a>
+        <a href="{{ .URL | relURL }}" class="menu {{ if eq .URL $.RelPermalink }}current{{ end }}" >{{ .Pre }}{{ .Name }}{{ .Post }}</a>
         {{ end }}
     </div>
     <div class="icons">
         <a href="/" class="icon">
-            {{ partial "svg/github.svg" . }}
-            Github
+            {{ partial "svg/moon.svg" . }} Noche
         </a>
     </div>
 </nav>

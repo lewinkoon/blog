@@ -1,6 +1,6 @@
 baseURL = 'http://benito.io/'
 languageCode = 'es'
-title = 'Benito.xyz'
+title = 'Benito.io'
 paginate = 5
 
 [params]
@@ -17,13 +17,13 @@ id = "99734fce-4de1-4c17-b0e7-b96d859d379b"
   url = "/notes/"
   weight = 20
 [[menu.main]]
-  name = "Proyectos"
-  url = "/projects/"
+  name = "Diseños"
+  url = "/designs/"
   weight = 30
-[[menu.main]]
-  name = "Interfaz"
-  url = "/dashboard/"
-  weight = 40
+# [[menu.main]]
+#   name = "Datos"
+#   url = "/dashboard/"
+#   weight = 40
 
 [markup]
   [markup.highlight]

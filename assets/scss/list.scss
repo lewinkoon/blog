@@ -20,24 +20,39 @@
     margin: 1.5rem 0;
 
     .filter-item {
-        font-size: 0.8rem;
-        padding: 0.4rem 0.8rem;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 1rem;
+        padding: 0.3rem 0.7rem;
+        border: 2px solid var(--dark);
         background: var(--dark);
         border-radius: 5px;
         cursor: pointer;
 
         &.active {
+            border-color: var(--accent);
             background-color: var(--accent);
+
+            svg {
+                stroke: var(--light);
+            }
         }
 
         &:hover {
-            background-color: var(--accent);
+            border-color: var(--accent);
+        }
+
+        svg {
+            width: 1.4rem;
+            height: 1.4rem;
+            stroke: var(--accent);
         }
     }
 }
 
 #search-query {
-    padding: .8rem 1rem;
+    padding: 0.5rem 1rem;
     background: var(--dark);
     border: 2px solid var(--dark);
     border-radius: 10px;
