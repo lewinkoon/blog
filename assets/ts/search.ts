@@ -121,9 +121,9 @@ class Search {
         }
         this.searchFilter.forEach((v: string, k: string) => {
             let object = {};
-            if (v == "categories") {
+            if (v == "tags") {
                 object = {
-                    categories: k
+                    tags: k
                 }
             }
             filter.push(object);

@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+{{ $pages := .Pages }}
+
+<section class="section-title">
+    <h1>🏷️ {{ .Title }}</h1>
+    <p><span>{{ len .Pages }}</span> artículos encontrados.</p>
+</section>
+
+<section class="section-list" id="section-list">
+    {{ range $pages.GroupByDate "2006" }}
+    <div class="list-item">
+        <h2>{{ .Key }}</h2>
+        {{ range .Pages }}
+            <a href="{{ .RelPermalink }}">
+                <time>{{ .Date.Format "02 Jan" }}</time>
+                {{ .Title }}
+            </a>
+        {{ end }}
+    </div>
+    {{ end }}
+</section>
+
+{{ end }}

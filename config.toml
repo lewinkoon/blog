@@ -8,6 +8,7 @@ comments = false
 id = "99734fce-4de1-4c17-b0e7-b96d859d379b"
 
 [menu]
+### NAVIGATION BAR ###
 [[menu.main]]
   name = "Artículos"
   url = "/articles/"
@@ -24,6 +25,20 @@ id = "99734fce-4de1-4c17-b0e7-b96d859d379b"
 #   name = "Datos"
 #   url = "/dashboard/"
 #   weight = 40
+
+### SOCIAL LINKS ###
+[[menu.social]]
+  name = "Email"
+  url = "mailto:lewinkoon@gmail.com"
+  pre = "svg/mail.svg"
+[[menu.social]]
+  name = "Github"
+  url = "https://github.com/lewinkoon"
+  pre = "svg/github.svg"
+[[menu.social]]
+  name = "Rss"
+  url = "/index.xml"
+  pre = "svg/rss.svg"
 
 [markup]
   [markup.highlight]

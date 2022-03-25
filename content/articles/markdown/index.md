@@ -31,7 +31,7 @@ opcionalmente con una cita que debe estar dentro de un elemento `footer` o
 `cite`, y opcionalmente con cambios en línea como anotaciones y abreviaturas.
 
 > Un amigo es uno que lo sabe todo de ti y a pesar de ello te quiere.<br>
-> — <cite>Elbert Hubbard</cite>
+> <cite>— Elbert Hubbard</cite>
 
 ## Tablas
 

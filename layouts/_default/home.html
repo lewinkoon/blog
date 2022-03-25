@@ -3,23 +3,15 @@
 <section class="intro">
     <div class="intro-text">
         <h1>Hola, soy <span>Benito.</span>👨🏿‍🚀</h1>
-        <p> Me encanta construir proyectos de código abierto y
-            escribir sobre lo que aprendo. Esta página es mi jardín digital, un compendio de
-            las cosas que he aprendido y creado a lo largo de los años.</p>
+        <p> {{ .Params.Subtitle }}</p>
     </div>
     <div class="intro-links">
-        <a href="/" class="icon">
-            {{ partial "svg/mail.svg" . }}
-            Email
+        {{ range .Site.Menus.social }}
+        <a href="{{ .URL }}" class="icon">
+            {{ partialCached (print .Pre) . }}
+            {{ .Name }}
         </a>
-        <a href="/" class="icon">
-            {{ partial "svg/github.svg" . }}
-            Github
-        </a>
-        <a href="/" class="icon">
-            {{ partial "svg/rss.svg" . }}
-            Rss
-        </a>
+        {{ end }}
     </div>
 </section>
 
