@@ -29,7 +29,10 @@
             <time>{{ .Date.Format "Jan 02" }}</time>
             <div class="post-title">{{ .Title }}</div>
             {{ range .Params.tags }}
-            <span>{{ . }}</span>
+            <span>
+                {{ partial "svg/hash.svg" . }}
+                {{ . }}
+            </span>
             {{ end }}
         </a>
         {{ end }}

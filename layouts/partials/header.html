@@ -1,6 +1,7 @@
 <nav class="navbar">
     <div class="nav-links">
         <a href="/" class="logo">{{ .Site.Title }}</a>
+        {{ $currentPage := . }}
         {{ range .Site.Menus.main }}
         <a href="{{ .URL | relURL }}" class="menu {{ if eq .URL $.RelPermalink }}current{{ end }}" >{{ .Pre }}{{ .Name }}{{ .Post }}</a>
         {{ end }}

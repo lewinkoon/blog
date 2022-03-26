@@ -28,10 +28,16 @@
     <div class="list-item">
         <h2>{{ .Key }}</h2>
         {{ range .Pages }}
-            <a href="{{ .RelPermalink }}">
-                <time>{{ .Date.Format "02 Jan" }}</time>
-                {{ .Title }}
-            </a>
+        <a href="{{ .RelPermalink }}">
+            <time>{{ .Date.Format "02 Jan" }}</time>
+            <div class="post-title">{{ .Title }}</div>
+            {{ range .Params.tags }}
+            <span>
+                {{ partial "svg/hash.svg" . }}
+                {{ . }}
+            </span>
+            {{ end }}
+        </a>
         {{ end }}
     </div>
     {{ end }}

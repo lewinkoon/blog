@@ -2,8 +2,6 @@
 author: "Lewin"
 title: "Mostrar portapapeles con Dunst y Xclip"
 date: 2022-02-12
-categories:
-- Coding
 tags:
 - script
 - dunst

@@ -5,6 +5,7 @@ interface searchItem {
         categorise: Array<string>,
         contents: string,
         date: string,
+        year: string,
         permalink: string,
         tags: Array<string>,
         title: string

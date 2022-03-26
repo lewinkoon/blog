@@ -1,12 +1,10 @@
 ---
-draft: false
+draft: true
 author: "Anónimo"
 title: "Formato Markdown.  Prontuario "
 date: "2021-12-19"
 description: "Artículo de ejemplo que muestra la sintaxis básica de Markdown y
 el formato de los elementos HTML."
-categories:
-- Test
 tags:
 - markdown
 - charts.js
