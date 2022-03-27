@@ -1,6 +1,6 @@
-baseURL = 'http://benito.io/'
+baseURL = 'http://lewin.netlify.app/'
 languageCode = 'es'
-title = 'Benito.io'
+title = 'Lewin.app'
 paginate = 5
 
 [params]
