@@ -12,10 +12,18 @@
   {{- $permalink = $image.RelPermalink -}}
 {{- end -}}
 
-<img loading="lazy" 
-src="{{ $permalink }}" 
-alt="{{ .Text }}" 
-width={{ $image.Width }} 
-height="{{ $image.Height }}"/>
-{{ with .Title }}<div class="caption">{{ . }}</div>{{ end }}
+<div class="figure">
+  <img loading="lazy" 
+  src="{{ $permalink }}" 
+  alt="{{ .Text }}" 
+  width={{ $image.Width }} 
+  height="{{ $image.Height }}"/>
+
+{{ if .PlainText }}
+  <div class="caption">
+  <span>Figura {{ .Title }}</span>
+  {{ .PlainText }}
+  </div>{{ end }}
+</div>
+
 {{- end -}}
