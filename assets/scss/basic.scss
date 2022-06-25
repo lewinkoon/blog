@@ -109,6 +109,8 @@ th,td {
         max-width: 100%;
         height: 100%;
         border-radius: 5px;
+        border: 4px solid var(--dark);
+        background-color: var(--tr-darker);
     }
 
     .caption {

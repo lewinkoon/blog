@@ -13,7 +13,7 @@ Los líquidos son tan incompresibles que podemos despreciar la variación de su 
 
 $$ p_2 - p_1 = - \rho g (z_2 -z_1) $$
 
-donde \\( \rho g \\) es el peso específico medio en el océano o lago. Como veremos, la ecuación 1 es válida también en los niveles más bajos de la atmósfera , con un error del 2 por 100 a 300 m de altura.
+donde \\( \rho g \\) es el peso específico medio en el océano o lago. Como veremos, la ecuación es válida también en los niveles más bajos de la atmósfera , con un error del 2 por 100 a 300 m de altura.
 
 ![Distribución de presión hidroestática en océanos y en la atmósfera.](pressure_main.png "1")
 
