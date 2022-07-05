@@ -9,7 +9,7 @@
     {{ $pages := where .Site.RegularPages "Section" "articles" }}
 
     <div class="list-filter">
-        {{ $maxCategoryToShow := $.Site.Params.maxCategoryToShow | default 10 }}
+        {{ $maxCategoryToShow := $.Site.Params.maxCategoryToShow | default 24 }}
         {{ range .Site.Taxonomies.tags.TaxonomyArray | first $maxCategoryToShow }}
         <div class="filter-item" data-value="{{ .Page.Title }}" data-type="tags">
             {{ partial "svg/hash.svg" . }}
