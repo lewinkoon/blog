@@ -16,13 +16,16 @@
 </section>
 
 {{ $pages := .Paginate (where .Site.RegularPages "Section" "articles") }}
-{{ $projects := where .Site.RegularPages "Section" "projects" }}
+{{ $notes := where .Site.RegularPages "Section" "notes" }}
 {{ $archivesPage := first 1 (where .Site.RegularPages "Layout" "eq" "archives") }}
 
 <section class="articles">
-    <h2>
-        Últimos artículos
-    </h2>
+    <div class="title">
+        <h2>
+            Últimos artículos 
+        </h2>
+        <a href="{{ .RelPermalink }}" >Ver todos</a>
+    </div>
     <div class="posts">
         {{ range $pages.Pages }}
         <a href="{{ .RelPermalink }}">
