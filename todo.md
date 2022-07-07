@@ -1,5 +1,5 @@
 ---
-# TO-DO LIST
+TO-DO LIST
 ---
 
 1. Asignar colores a las etiquetas aleatoriamente.

@@ -32,12 +32,13 @@
         align-items: center;
         gap: 0.5rem;
         padding: 0.4rem 0.8rem;
-        background-color: var(--tr-dark);
+        background-color: var(--dark);
         border-radius: 5px;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
 
         &:hover {
             background-color: var(--accent);
+            // color: var(--dark);
 
             svg {
                 stroke: var(--light);
@@ -71,7 +72,7 @@
             border: 1px solid var(--dark);
 
             &:hover {
-                border: 1px solid var(--medium);
+                border: 1px solid var(--accent);
             }
         }
     }

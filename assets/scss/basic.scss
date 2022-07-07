@@ -3,7 +3,7 @@
 }
 
 html {
-    font-family: "Jost";
+    font-family: "Regular";
     color: var(--light);
     font-size: 1rem;
     line-height: 1.5;
@@ -47,7 +47,7 @@ table,
 blockquote {
     font-size: 1.2rem;
     margin: 0 0 1.5rem 0;
-    color: var(--medium);
+    color: var(--light);
 }
 
 blockquote {
@@ -114,7 +114,6 @@ th,td {
     }
 
     .caption {
-        color: var(--medium);
         text-align: center;
         font-size: 1.2rem;
     
@@ -135,10 +134,9 @@ hr {
 
 ::selection {
     background: var(--accent);
-    color: var(--light);
+    color: var(--dark);
 }
 
 ::placeholder {
-    color: var(--medium);
-    font-family: "Jost";
+    font-family: "Regular";
 }

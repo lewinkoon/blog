@@ -1,6 +1,12 @@
 @font-face {
-  font-family: "Jost";
-  src: url("/fonts/Jost.ttf") format("truetype");
+  font-family: "Regular";
+  src: url("/fonts/Nunito.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Regular";
+  src: url("fonts/Nunito-Italic.ttf");
+  font-style: italic;
 }
 
 @font-face {
