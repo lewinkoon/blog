@@ -5,15 +5,17 @@
     <p>{{ .Params.subtitle }}.</p>
 </section>
 
-<section class="designs">
-
+<section class="design">
     <div class="model">
-        <div class="model-header">Astronaut</div>
-        <model-viewer src="astronaut.glb" poster="astronaut.webp" auto-rotate seamless-poster environment-image="neutral" camera-controls ar ar-modes="webxr">
+        <model-viewer src="plane.glb" auto-rotate seamless-poster environment-image="neutral" camera-controls camera-orbit="-60deg 60deg 60%" camera-target="0m -4m 0m" ar ar-modes="webxr" field-of-view="180">
             <div class="progress-bar hide" slot="progress-bar">
                 <div class="update-bar"></div>
             </div>
         </model-viewer>
+        <div class="model-info">
+            <span>Archivo: </span>
+            plane.gbl
+        </div>
     </div>
 
 </section>

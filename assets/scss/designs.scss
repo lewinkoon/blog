@@ -1,25 +1,33 @@
-.designs {
+.design {
     max-width: 1080px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 1.5rem;
+    // display: grid;
+    // grid-template-columns: auto auto auto;
+    // gap: 1.5rem;
 
     .model {
         border-radius: 10px;
-        background-color: var(--tr-darker);
-        border: 3px solid var(--dark);
+        background-color: var(--darker);
+        border: 4px solid var(--dark);
+        margin-bottom: 2rem;
 
-        .model-header {
-            font-size: 1.2rem;
+        .model-info {
+            font-size: 1rem;
             padding: 0.5rem 1rem;
-            background-color: var(--dark);
+            text-align: end;
+            font-style: italic;
+
+            span {
+                font-weight: bold;
+                font-style: normal;
+                color: var(--accent);
+            }
         }
 
         model-viewer {
             display: block;
             width: 100%;
             height: 100vw;
-            max-height: 360px;
+            max-height: 480px;
             --poster-color: transparent;
         }
 
