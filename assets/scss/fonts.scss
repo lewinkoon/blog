@@ -1,15 +1,18 @@
 @font-face {
   font-family: "Regular";
+  font-display: auto;
   src: url("/fonts/Nunito.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Regular";
+  font-display: auto;
   src: url("fonts/Nunito-Italic.ttf");
   font-style: italic;
 }
 
 @font-face {
   font-family: "Roboto Mono";
+  font-display: auto;
   src: url("/fonts/RobotoMono.ttf") format("truetype");
 }

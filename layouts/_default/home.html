@@ -17,12 +17,13 @@
 
 {{ $pages := .Paginate (where .Site.RegularPages "Section" "articles") }}
 {{ $notes := where .Site.RegularPages "Section" "notes" }}
+{{ $projects := where .Site.RegularPages "Section" "projects" }}
 {{ $archivesPage := first 1 (where .Site.RegularPages "Layout" "eq" "archives") }}
 
 <section class="articles">
     <div class="title">
         <h2>Últimos artículos</h2>
-        <a href="{{ .RelPermalink }}" >Ver todos</a>
+        <a href="{{ ref . "articles" }}" >Ver todos</a>
     </div>
     <div class="posts">
         {{ range $pages.Pages }}
@@ -43,6 +44,20 @@
 <section class="projects">
     <div class="title">
         <h2>Proyectos</h2>
+        <div class="card-list">
+        {{ range $projects }}
+            <div class="card-item">
+                <div class="card-title">{{ .Title }}</div>
+                <div class="card-desc">{{ .Description }}</div>
+                <div class="card-links">
+                    <a href="{{ .RelPermalink }}">Article</a>
+                {{ with .Resources.GetMatch "main.pdf" }}
+                    <a href="{{ .RelPermalink }}">Demo</a>
+                {{ end }}
+                </div>
+            </div>
+        {{ end }}
+        </div>
     </div>
 </section>
 
