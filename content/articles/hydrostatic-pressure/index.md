@@ -9,7 +9,11 @@ tags:
 katex: true
 ---
 
+La presión hidroestática es un término de vital importancia en el cálculo de todo tipo de instalaciones fluidas.
+
 ![Distribución de presión hidroestática en océanos y en la atmósfera.](pressure_main.png "1")
+
+# Explicación
 
 Los líquidos son tan **incompresibles** que podemos despreciar la variación de su densidad hidroestática. Por eso supondremos que la densidad es **constante** en estos casos.  En los lagos y océanos, el sistema de coordenadas utilizado habitualmente es el de la Figura 1, con \\( z = 0 \\) en la superficie libre, donde \\( p \\) tiene el valor de la presion atmosférica \\( p_a \\). Al introducir esto en la ecuación siguiente tendremos, para el valor \\( p \\) de la presión a una profundidad \\( z \\) (de valor negativo).
 

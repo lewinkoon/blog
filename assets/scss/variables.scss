@@ -1,4 +1,5 @@
 :root {
+
     // colors
     --light: #EEEEEE;
     --accent: #4ECCA3;
@@ -11,6 +12,16 @@
     --nav-height: 8em;
     // font
     --font-size: 20px;
+}
+
+[data-color='light'] {
+    // colors
+    --light: #232931;
+    --accent: #4ECCA3;
+    --dark: #dee4e7;
+    --darker: #ffffff;
+    --tr-dark: #393E46ab;
+    --tr-darker: #222831ab;
 }
 
 // --- FOREST THEME --- //

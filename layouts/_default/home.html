@@ -48,12 +48,14 @@
         {{ range $projects }}
             <div class="card-item">
                 <div class="card-title">{{ .Title }}</div>
-                <div class="card-desc">{{ .Description }}</div>
-                <div class="card-links">
+                <div class="card-content">                
+                    <div class="card-desc">{{ .Description }}</div>
+                    <div class="card-links">
                     <a href="{{ .RelPermalink }}">Article</a>
-                {{ with .Resources.GetMatch "main.pdf" }}
+                    {{ with .Resources.GetMatch "main.pdf" }}
                     <a href="{{ .RelPermalink }}">Demo</a>
-                {{ end }}
+                    {{ end }}
+                </div>
                 </div>
             </div>
         {{ end }}
