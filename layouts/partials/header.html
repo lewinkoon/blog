@@ -10,10 +10,9 @@
         </a>
         {{ end }}
     </div>
-    <div class="icons">
-        <button id="dark-mode">
-            {{ partial "svg/moon.svg" . }} Noche
-        </button>
-    </div>
-
+    <button id="dark-mode">
+        {{ partial "svg/moon.svg" . }} <span class="dark">Noche</span>
+        {{ partial "svg/sun.svg" . }} <span class="light">Día</span>
+        
+    </button>
 </nav>

@@ -42,28 +42,42 @@
     }
 }
 
-.icons {
-    button {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        padding: 0.25rem 0.5rem;
-        border: none;
-        border-radius: 4px;
-        box-sizing: border-box;
-        cursor: pointer;
-        background: 0 0;
+#dark-mode {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    border: none;
+    border-radius: 4px;
+    // box-sizing: content-box;
+    cursor: pointer;
+    background: transparent;
+
+    .dark {
+        display: none;
+    }
+
+    svg {
+        width: 1.8rem;
+        height: 1.8rem;
+        stroke: var(--accent);
+    }
+
+    &:hover {
+        background-color: var(--dark);
+    }
+
+    span {
         font-size: 1.2rem;
         color: var(--light);
-
-        &:hover {
-            background-color: var(--dark);
-        }
-
-        svg {
-            width: 1.6rem;
-            height: 1.6rem;
-            stroke: var(--accent);
-        }
     }
 }
+
+[data-color="dark"] #dark-mode {
+    .light {
+      display: none;
+    }
+    .dark {
+      display: unset;
+    }
+  }

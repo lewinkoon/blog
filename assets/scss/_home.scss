@@ -55,20 +55,29 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 0.5rem;
 
         h2 {
             font-size: 2rem;
-            margin: 0.5rem 0;
+            margin: 0;
+        }
+
+       .line {
+            flex-grow: 1;
+            border-bottom: 4px solid var(--accent);
+            margin: auto 1rem;
+            border-radius: 2px;
         }
 
         a {
-            font-size: 0.8rem;
+            font-size: 0.9rem;
             padding: 0.3rem 0.6rem;
             border-radius: 0.25rem;
             border: 1px solid var(--dark);
 
             &:hover {
                 border: 1px solid var(--accent);
+                font-weight: bold;
             }
         }
     }
@@ -78,17 +87,18 @@
             display: flex;
             align-items: center;
             gap: 0.5em;
-            padding: 0.5em;
-            // border: 1px solid grey;
+            padding: 0.25rem 0.5rem;
+            border: 1px solid var(--darker);
 
             &:hover {
-                background-color: var(--tr-dark);
+                border: 1px solid var(--dark);
                 border-radius: 5px;
+                font-weight: bold;
             }
 
             time {
                 font-size: 1rem;
-                font-weight: bold;
+                // font-weight: bold;
                 color: var(--accent);
                 margin-right: 0.5em;
             }
@@ -119,12 +129,21 @@
 
 .projects {
 
-    .title h2 {
+    .title {
+        display: flex;
+        margin-bottom: 0.5rem;
 
-        font-size: 2rem;
-        margin: 0.5rem 0;
+        h2 {
+            font-size: 2rem;
+            margin: 0;
+        }
 
-        // border-bottom: 1px solid grey;
+        .line {
+            flex-grow: 1;
+            border-bottom: 4px solid var(--accent);
+            margin: auto 0 auto 1rem;
+            border-radius: 2px;
+        }
     }
 
     .card-list {

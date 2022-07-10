@@ -1,12 +1,13 @@
 :root {
 
     // colors
+    // --lighter: #EEEEEE;
     --light: #EEEEEE;
-    --accent: #4ECCA3;
+    --accent: #00ADB5;
     --dark: #393E46;
-    --darker: #232931;
-    --tr-dark: #393E46ab;
-    --tr-darker: #232931ab;
+    --darker: #222831;
+    // --tr-dark: #393E46ab;
+    // --tr-darker: #232931ab;
     
     // dimensions
     --nav-height: 8em;
@@ -16,12 +17,13 @@
 
 [data-color='light'] {
     // colors
-    --light: #232931;
-    --accent: #4ECCA3;
-    --dark: #dee4e7;
+    // --lighter: #ffffff;
+    --light: #000;
+    --accent: #3a86ff;
+    --dark: #cbddfd;
     --darker: #ffffff;
-    --tr-dark: #393E46ab;
-    --tr-darker: #222831ab;
+    // --tr-dark: #393E46ab;
+    // --tr-darker: #222831ab;
 }
 
 // --- FOREST THEME --- //

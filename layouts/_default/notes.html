@@ -7,7 +7,10 @@
 
 {{ range .Pages.GroupByParam "course" "desc"}}
 <section class="notes">
-    <h2>{{ .Key }}</h2>
+    <div class="notes-header">
+        <h2>{{ .Key }}</h2>
+        <span class="line"></span>
+    </div>
     <div class="note-list">
 
         {{ range .Pages }}
