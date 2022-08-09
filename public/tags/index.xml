@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Lewin.app</title>
+    <link>https://lewin.netlify.app/tags/</link>
+    <description>Recent content in Tags on Lewin.app</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Tue, 05 Jul 2022 20:05:34 +0200</lastBuildDate><atom:link href="https://lewin.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>fluidomecánica</title>
+      <link>https://lewin.netlify.app/tags/fluidomec%C3%A1nica/</link>
+      <pubDate>Tue, 05 Jul 2022 20:05:34 +0200</pubDate>
+      
+      <guid>https://lewin.netlify.app/tags/fluidomec%C3%A1nica/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>propiedades</title>
+      <link>https://lewin.netlify.app/tags/propiedades/</link>
+      <pubDate>Tue, 05 Jul 2022 20:05:34 +0200</pubDate>
+      
+      <guid>https://lewin.netlify.app/tags/propiedades/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tensiones</title>
+      <link>https://lewin.netlify.app/tags/tensiones/</link>
+      <pubDate>Tue, 05 Jul 2022 20:05:34 +0200</pubDate>
+      
+      <guid>https://lewin.netlify.app/tags/tensiones/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hidroestática</title>
+      <link>https://lewin.netlify.app/tags/hidroest%C3%A1tica/</link>
+      <pubDate>Fri, 24 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://lewin.netlify.app/tags/hidroest%C3%A1tica/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>presión</title>
+      <link>https://lewin.netlify.app/tags/presi%C3%B3n/</link>
+      <pubDate>Fri, 24 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://lewin.netlify.app/tags/presi%C3%B3n/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bash</title>
+      <link>https://lewin.netlify.app/tags/bash/</link>
+      <pubDate>Mon, 14 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://lewin.netlify.app/tags/bash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>github</title>
+      <link>https://lewin.netlify.app/tags/github/</link>
+      <pubDate>Mon, 14 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://lewin.netlify.app/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://lewin.netlify.app/tags/hugo/</link>
+      <pubDate>Mon, 14 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://lewin.netlify.app/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>clipboard</title>
+      <link>https://lewin.netlify.app/tags/clipboard/</link>
+      <pubDate>Sat, 12 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://lewin.netlify.app/tags/clipboard/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dunst</title>
+      <link>https://lewin.netlify.app/tags/dunst/</link>
+      <pubDate>Sat, 12 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://lewin.netlify.app/tags/dunst/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>script</title>
+      <link>https://lewin.netlify.app/tags/script/</link>
+      <pubDate>Sat, 12 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://lewin.netlify.app/tags/script/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

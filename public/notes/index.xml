@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notas on Lewin.app</title>
+    <link>https://lewin.netlify.app/notes/</link>
+    <description>Recent content in Notas on Lewin.app</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language><atom:link href="https://lewin.netlify.app/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tecnología de Control</title>
+      <link>https://lewin.netlify.app/notes/tcon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lewin.netlify.app/notes/tcon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tecnología de Eléctrica</title>
+      <link>https://lewin.netlify.app/notes/te/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lewin.netlify.app/notes/te/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tecnología Electrónica</title>
+      <link>https://lewin.netlify.app/notes/tele/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lewin.netlify.app/notes/tele/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tecnología Energética</title>
+      <link>https://lewin.netlify.app/notes/tene/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lewin.netlify.app/notes/tene/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tecnología Química</title>
+      <link>https://lewin.netlify.app/notes/tqui/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lewin.netlify.app/notes/tqui/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

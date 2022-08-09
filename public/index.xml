@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Inicio on Lewin.app</title>
+    <link>https://lewin.netlify.app/</link>
+    <description>Recent content in Inicio on Lewin.app</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Tue, 05 Jul 2022 20:05:34 +0200</lastBuildDate><atom:link href="https://lewin.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Viscosidad</title>
+      <link>https://lewin.netlify.app/articles/viscosity/</link>
+      <pubDate>Tue, 05 Jul 2022 20:05:34 +0200</pubDate>
+      
+      <guid>https://lewin.netlify.app/articles/viscosity/</guid>
+      <description>Las magnitudes tales como presión, temperatura y densidad estudiadas en la sección anterior son variables termodinámicas primarias características de todo sistema. Existen además otras magnitudes secundarias que caracterizan el comportamiento específico de cada fluido. La más importante de éstas es la viscosidad, que relaciona el esfuerzo o tensión local en un fluido en movimiento con la velocidad de deformación de las partículas fluidas.
+Cuando un fluido es sometido a un esfuerzo constante comienza a moverse con una velocidad de deformación inversamente proporcional a una propiedad denominada coeficiente de viscosidad \( \mu \).</description>
+    </item>
+    
+    <item>
+      <title>Presión hidroestática en líquidos</title>
+      <link>https://lewin.netlify.app/articles/hydrostatic-pressure/</link>
+      <pubDate>Fri, 24 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://lewin.netlify.app/articles/hydrostatic-pressure/</guid>
+      <description>La presión hidroestática es un término de vital importancia en el cálculo de todo tipo de instalaciones fluidas.
+Figura 1Distribución de presión hidroestática en océanos y en la atmósfera.#ExplicaciónLos líquidos son tan incompresibles que podemos despreciar la variación de su densidad hidroestática. Por eso supondremos que la densidad es constante en estos casos. En los lagos y océanos, el sistema de coordenadas utilizado habitualmente es el de la Figura 1, con \( z = 0 \) en la superficie libre, donde \( p \) tiene el valor de la presion atmosférica \( p_a \).</description>
+    </item>
+    
+    <item>
+      <title>Publicar Hugo en Github Pages</title>
+      <link>https://lewin.netlify.app/articles/hugo-deploy/</link>
+      <pubDate>Mon, 14 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://lewin.netlify.app/articles/hugo-deploy/</guid>
+      <description>Uno de los problemas que tenía cuando descubrí Hugo era lo poco intuitivo que resultaba publicar la página web generada al hosting, en mi caso Github Pages. Ya que, una vez creado todos los archivos estáticos, había que crear un nuevo repositorio y mover todos los archivos a este, con todos los pasos que conlleva. Al principio, encontré varias soluciones que involucraban crear un submódulo en el propio repositorio de hugo pero nunca conseguí hacerlo funcionar correctamente.</description>
+    </item>
+    
+    <item>
+      <title>Portapapeles con Dunst y Xclip</title>
+      <link>https://lewin.netlify.app/articles/showclip/</link>
+      <pubDate>Sat, 12 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://lewin.netlify.app/articles/showclip/</guid>
+      <description>Figura 1Notificación en escritorio con DunstDunst es un programa sencillo y ligero que ofrece notificaciones en entornos Linux con un nivel de personalización bastante alto. Uno de los usos que se me ocurrió nada más descubrir este programa es mostrar los contenidos del portapapeles. El procedimiento es simple, transmitir el output de xlip tanto para el portapapeles del sistema (clipboard) como al primario (primary) a una notificación de escritorio mediante notify-send.</description>
+    </item>
+    
+    <item>
+      <title>⚙️ Reductora cicloidal</title>
+      <link>https://lewin.netlify.app/projects/cycloidal-drive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lewin.netlify.app/projects/cycloidal-drive/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>M26 Pershing</title>
+      <link>https://lewin.netlify.app/designs/pershing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lewin.netlify.app/designs/pershing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Panzer VIII Maus</title>
+      <link>https://lewin.netlify.app/designs/maus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lewin.netlify.app/designs/maus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tecnología de Control</title>
+      <link>https://lewin.netlify.app/notes/tcon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lewin.netlify.app/notes/tcon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tecnología de Eléctrica</title>
+      <link>https://lewin.netlify.app/notes/te/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lewin.netlify.app/notes/te/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tecnología Electrónica</title>
+      <link>https://lewin.netlify.app/notes/tele/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lewin.netlify.app/notes/tele/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tecnología Energética</title>
+      <link>https://lewin.netlify.app/notes/tene/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lewin.netlify.app/notes/tene/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tecnología Química</title>
+      <link>https://lewin.netlify.app/notes/tqui/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lewin.netlify.app/notes/tqui/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>🌩️ Est. Meteorológica</title>
+      <link>https://lewin.netlify.app/projects/weather-station/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lewin.netlify.app/projects/weather-station/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>🧠 Meditaciones</title>
+      <link>https://lewin.netlify.app/projects/questions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lewin.netlify.app/projects/questions/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

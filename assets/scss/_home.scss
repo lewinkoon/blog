@@ -160,9 +160,10 @@
             border: 4px solid var(--dark);
             
             .card-title {
-                font-size: 1.2rem;
+                font-size: 1rem;
                 font-weight: bold;
-                color: var(--accent);
+                text-transform: uppercase;
+                color: var(--light);
                 text-align: center;
                 padding: 0.5rem;
                 background-color: var(--dark);
@@ -191,6 +192,7 @@
 
                         &:hover {
                             border: 2px solid var(--accent);
+                            font-weight: bold;
                         }
                     }
                 }

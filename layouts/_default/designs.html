@@ -11,12 +11,19 @@
 
     <div class="model">
 
-        <h2>{{ .Title }}</h2>
+        <div class="model-title">
+            <h2>{{ .Title }}</h2>
+            <span class="line"></span>
+        </div>
 
         <div class="model-info">
-            <div class="model-title">
-                <span>Título:</span>
-                {{ .Title }}
+            <div class="model-type">
+                <span>Tipo:</span>
+                {{ .Params.type }}
+            </div>
+            <div class="model-country">
+                <span>País de origen:</span>
+                {{ .Params.country }}
             </div>
             <div class="model-desc">
                 <span>Descripción:</span>
@@ -26,8 +33,10 @@
 
         <model-viewer
         {{ with .Resources.GetMatch "**.glb" }}src="{{ .RelPermalink }}"{{ end }}
-        auto-rotate
-        environment-image="neutral"
+       
+        ar
+        shadow-intensity="1"
+        environment-image="neutral" 
         camera-controls
         camera-orbit="{{ .Params.orbit }}"
         camera-target={{ .Params.target }}>
@@ -35,6 +44,8 @@
                 <div class="update-bar"></div>
             </div>
         </model-viewer>
+
+        <!-- {{ with .Resources.GetMatch "**.webp" }}poster="{{ .RelPermalink }}"{{ end }} -->
 
     </div>
 

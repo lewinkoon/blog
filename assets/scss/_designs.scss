@@ -7,11 +7,17 @@
     .model {
         margin-bottom: 4rem;
 
-        h2 {
+        .model-title {
             display: flex;
-            &:after {
-                content: "";
-                flex: 1 1;
+            margin-bottom: 0.5rem;
+
+            h2 {
+                font-size: 2rem;
+                margin: 0;
+            }
+
+            .line {
+                flex-grow: 1;
                 border-bottom: 4px solid var(--accent);
                 margin: auto 0 auto 1rem;
                 border-radius: 2px;
@@ -27,8 +33,7 @@
             --poster-color: transparent;
 
             border-radius: 10px;
-            background-color: var(--darker);
-            border: 4px solid var(--dark);
+            background-color: var(--dark);
             margin-bottom: 1rem;
         }
 
@@ -40,10 +45,7 @@
                 font-weight: bold;
                 font-style: normal;
                 color: var(--accent);
-            }
-
-            .model-desc {
-                font-style: italic;
+                white-space: pre;
             }
 
         }

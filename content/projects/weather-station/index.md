@@ -1,5 +1,5 @@
 ---
-title: "Estación Meteorológica"
+title: "🌩️ Est. Meteorológica"
 description: "Microcontrolador con sensores de condiciones ambientales en tiempo real."
 resources:
 - src: questions.pdf
