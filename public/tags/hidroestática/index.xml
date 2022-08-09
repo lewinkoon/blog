@@ -1,21 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>hidroestática on Lewin.app</title>
-    <link>https://lewin.netlify.app/tags/hidroest%C3%A1tica/</link>
-    <description>Recent content in hidroestática on Lewin.app</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>es</language>
-    <lastBuildDate>Fri, 24 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://lewin.netlify.app/tags/hidroest%C3%A1tica/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Presión hidroestática en líquidos</title>
-      <link>https://lewin.netlify.app/articles/hydrostatic-pressure/</link>
-      <pubDate>Fri, 24 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://lewin.netlify.app/articles/hydrostatic-pressure/</guid>
-      <description>La presión hidroestática es un término de vital importancia en el cálculo de todo tipo de instalaciones fluidas.
-Figura 1Distribución de presión hidroestática en océanos y en la atmósfera.#ExplicaciónLos líquidos son tan incompresibles que podemos despreciar la variación de su densidad hidroestática. Por eso supondremos que la densidad es constante en estos casos. En los lagos y océanos, el sistema de coordenadas utilizado habitualmente es el de la Figura 1, con \( z = 0 \) en la superficie libre, donde \( p \) tiene el valor de la presion atmosférica \( p_a \).</description>
-    </item>
-    
-  </channel>
-</rss>

@@ -1,20 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>dunst on Lewin.app</title>
-    <link>https://lewin.netlify.app/tags/dunst/</link>
-    <description>Recent content in dunst on Lewin.app</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>es</language>
-    <lastBuildDate>Sat, 12 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://lewin.netlify.app/tags/dunst/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Portapapeles con Dunst y Xclip</title>
-      <link>https://lewin.netlify.app/articles/showclip/</link>
-      <pubDate>Sat, 12 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://lewin.netlify.app/articles/showclip/</guid>
-      <description>Figura 1Notificación en escritorio con DunstDunst es un programa sencillo y ligero que ofrece notificaciones en entornos Linux con un nivel de personalización bastante alto. Uno de los usos que se me ocurrió nada más descubrir este programa es mostrar los contenidos del portapapeles. El procedimiento es simple, transmitir el output de xlip tanto para el portapapeles del sistema (clipboard) como al primario (primary) a una notificación de escritorio mediante notify-send.</description>
-    </item>
-    
-  </channel>
-</rss>
