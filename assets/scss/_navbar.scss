@@ -33,6 +33,7 @@
 
         &:hover .menu-item {
             font-weight: bold;
+            
         }
 
         &.current {
@@ -61,15 +62,6 @@
         width: 1.8rem;
         height: 1.8rem;
         stroke: var(--accent);
-    }
-
-    &:hover {
-        background-color: var(--dark);
-    }
-
-    span {
-        font-size: 1.2rem;
-        color: var(--light);
     }
 }
 
