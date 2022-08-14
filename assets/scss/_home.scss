@@ -33,16 +33,12 @@
         gap: 0.5rem;
         padding: 0.5rem 1rem;
         background-color: var(--dark);
-        // border: 2px solid var(--dark);
-        border-radius: 5px;
+        border: 2px solid var(--dark);
+        border-radius: 10px;
         font-size: 1.1rem;
 
         &:hover {
-            background-color: var(--accent);
-
-            svg {
-                stroke: var(--darker);
-            }
+            border: 2px solid var(--accent);
         }
 
         svg {
