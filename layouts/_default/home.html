@@ -53,14 +53,15 @@
         {{ range $projects }}
             <div class="card-item">
                 <div class="card-title">{{ .Title }}</div>
+                <hr>
                 <div class="card-content">                
                     <div class="card-desc">{{ .Description }}</div>
                     <div class="card-links">
-                    <a href="">.zip</a>
+                    <a href="">🗃️ Source</a>
                     {{ with .Resources.GetMatch "main.pdf" }}
-                    <a href="{{ .RelPermalink }}" target="_blank">.pdf</a>
+                    <a href="{{ .RelPermalink }}" target="_blank">📝 Article</a>
                     {{ end }}
-                </div>
+                    </div>
                 </div>
             </div>
         {{ end }}
