@@ -13,11 +13,13 @@
 {{- end -}}
 
 <div class="figure">
+<a href="{{ $permalink }}" target="_blank">
   <img loading="lazy" 
   src="{{ $permalink }}" 
   alt="{{ .Text }}" 
   width={{ $image.Width }} 
   height="{{ $image.Height }}"/>
+</a>
 
 {{ if .PlainText }}
   <div class="caption">

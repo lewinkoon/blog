@@ -12,12 +12,7 @@
 
     .metadata {
         margin-bottom: 0.5rem;
-
-        .author {
-            font-weight: bold;
-            color: var(--accent);
-        }
-
+        
         .read-time {
             font-style: italic;
         }
@@ -67,36 +62,39 @@
 aside {
     position: absolute;
     top: 310px;
-    right: 200px;
-    height: 100%;
+    right: 240px;
+    height: 100vw;
 
-    #TableOfContents {
+    .toc-container {
+        border-radius: 5px;
+        // background-color: var(--dark);
+        // min-width: 160px;
+
         position: sticky;
         top: 120px;
-        background-color: var(--dark);
-        border-radius: 4px;
-        padding: 0.5rem 1rem;
 
-        &::before {
-            content: "Tabla de Contenidos";
-            font-weight: bold;
-            text-transform: uppercase;
-            color: var(--accent);
+        h2 {
+            font-size: 1.2rem;
+            margin: 0;
+            padding: 0.5rem 0.75rem;
+            background-color: var(--dark);
+            border-radius: 5px;
         }
 
-        ul {
-            font-size: 1rem;
-            list-style-type: none;
-            font-style: italic;
-            padding-left: 1.5rem;
-            margin-bottom: 0;
-
-            &:first-child {
+        #TableOfContents {
+            border-left: 3px solid var(--dark);
+            margin: 0.5rem 0.5rem 0;
+            padding: 0rem 0rem 0rem 0.5rem;
+    
+            ul {
+                font-size: 1.2rem;
+                list-style-type: none;
                 padding: 0;
-            }
-
-            a:hover {
-                font-weight: bold;
+    
+                a:hover {
+                    color: var(--accent);
+                    font-weight: bold;
+                }
             }
         }
     }
