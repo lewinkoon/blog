@@ -31,14 +31,18 @@
         display: flex;
         align-items: center;
         gap: 0.5rem;
-        padding: 0.5rem 1rem;
+        padding: 0.5rem 0.75rem;
         background-color: var(--dark);
-        border: 2px solid var(--dark);
-        border-radius: 10px;
+        border-radius: 5px;
         font-size: 1.1rem;
 
         &:hover {
-            border: 2px solid var(--accent);
+            background-color: var(--accent);
+            font-weight: bold;
+
+            svg {
+                stroke: var(--light);
+            }
         }
 
         svg {
@@ -128,6 +132,7 @@
 
                 &:hover {
                     border: 1px solid var(--accent);
+                    font-weight: bold;
                 }
             }
         }

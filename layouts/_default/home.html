@@ -57,9 +57,9 @@
                 <div class="card-content">                
                     <div class="card-desc">{{ .Description }}</div>
                     <div class="card-links">
-                    <a href="">🗃️ Source</a>
+                    <a href="{{ .RelPermalink }}">📝 Article</a>
                     {{ with .Resources.GetMatch "main.pdf" }}
-                    <a href="{{ .RelPermalink }}" target="_blank">📝 Article</a>
+                    <a href="{{ .RelPermalink }}">🗃️ Source</a>
                     {{ end }}
                     </div>
                 </div>

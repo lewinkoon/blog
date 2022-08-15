@@ -56,11 +56,10 @@
 
 .article-post {
     a {
-        font-weight: bold;
         color: var(--accent);
 
         &:hover {
-            text-decoration: underline;
+            font-weight: bold;
         }
     }
 }
