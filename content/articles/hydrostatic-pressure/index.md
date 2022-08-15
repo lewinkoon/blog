@@ -11,7 +11,7 @@ katex: true
 
 La presión hidroestática es un término de vital importancia en el cálculo de todo tipo de instalaciones fluidas.
 
-![Distribución de presión hidroestática en océanos y en la atmósfera.](pressure_main.png "1")
+![Distribución de presión hidroestática en océanos y en la atmósfera](pressure.png "1")
 
 # Explicación
 
@@ -30,4 +30,4 @@ $$ = 91~kPa + 587~kN/m^2 = 678~kPa $$
 
 # Referencias
 
-White, F. M. (2002). <i>Mecánica de fluidos</i>. MacGraw-Hill.
+White, F. M. (2002). *Mecánica de fluidos*. MacGraw-Hill.

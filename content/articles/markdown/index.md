@@ -9,7 +9,8 @@ tags:
 - markdown
 - charts.js
 - mermaid
-katex: true
+katex: false
+map: true
 ---
 
 Este artículo ofrece una muestra de la sintaxis básica de Markdown que se puede

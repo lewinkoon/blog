@@ -137,6 +137,12 @@ hr {
     border: 1px solid var(--dark);
 }
 
+#map { 
+    border-radius: 10px;
+    border: 4px solid var(--dark);
+    height: 480px; 
+}
+
 ::marker {
     color: var(--accent);
 }

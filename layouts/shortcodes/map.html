@@ -1,0 +1,4 @@
+<div id="map"></div>
+
+{{ $map := resources.Get "scripts/map.js" | js.Build (dict "minify" true ) | fingerprint }}
+<script defer src="{{ $map.RelPermalink }}"></script>
