@@ -104,7 +104,7 @@ th,td {
 }
 
 .figure {
-    
+
     img{
         max-width: 100%;
         height: 100%;
@@ -112,10 +112,6 @@ th,td {
         border: 3px solid var(--dark);
         margin-bottom: 0.25rem;
         // background-color: var(--darker);
-
-        &:hover {
-            border: 3px solid var(--accent);
-        }
     }
 
 
@@ -131,6 +127,7 @@ th,td {
             // color: var(--accent);
         }
     }
+
 }
 
 hr {
