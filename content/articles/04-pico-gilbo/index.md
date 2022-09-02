@@ -6,7 +6,10 @@ tags:
 - montaña
 - senderismo
 - naturaleza
+map: true
 ---
+
+{{< map >}}
 
 Comenzamos la ruta desayunando un delicioso café con leche en una cafetería local  del nuevo pueblo de Riaño. El tiempo parecía que no iba a acompañarnos ya que nada más llegar una nube negra como el azabache cubrió el cielo seguido de cientos de truenos. Sin embargo, una hora después la tormenta amainó y pudimos comenzar a andar.
 
@@ -40,4 +43,4 @@ Más adelante, ya casi terminando la ruta nos encontramos con la *Cueva de la Vi
 
 ![Iglesia de Santa Águeda en Riaño](img-08.jpg "8")
 
-Al ser una ruta circular, termina justo en aparcamiento donde dejamos el coche. Como todavía nos sobraba algo de tiempo, aprovechamos para hacer una breve visita al pueblo y disfrutar de una cerveza en la plaza principal. En la foto se deja entreveer el cervino leonés, llamado así por su semejanza con la montaña alpina, junto con la iglesia de Santa Águeda.
+Al ser una ruta circular, termina justo en el aparcamiento donde dejamos el coche. Como todavía nos sobraba algo de tiempo, aprovechamos para hacer una breve visita al pueblo y disfrutar de una cerveza en la plaza principal. En la foto se deja entreveer el cervino leonés, llamado así por su semejanza con la montaña alpina, junto con la iglesia de Santa Águeda.
