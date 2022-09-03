@@ -21,7 +21,7 @@
     {{ if .Params.map }}
 
     {{ $leaflet := resources.Get "js/leaflet.js" | js.Build (dict "minify" true ) | fingerprint }}
-    <script defer src="{{ $leaflet.RelPermalink }}"></script>
+    <script src="{{ $leaflet.RelPermalink }}"></script>
     {{ end }}
 
     <!-- KATEX -->
