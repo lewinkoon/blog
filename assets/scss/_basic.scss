@@ -7,7 +7,7 @@ html {
     color: var(--light);
     font-size: 1rem;
     line-height: 1.5;
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
     background-color: var(--darker);
 }
 
@@ -109,6 +109,8 @@ th,td {
     // border-radius: 20px;
 
     a {
+
+        scroll-margin-top: 12rem;
 
         img{
             display: block;

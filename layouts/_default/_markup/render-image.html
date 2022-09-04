@@ -1,21 +1,9 @@
-{{- if strings.HasPrefix .Destination "http" -}}
-  <img loading="lazy" 
-    src="{{ .Destination | safeURL }}" 
-    alt="{{ .Text }}" 
-    {{ with .Title}} title="{{ . }}"{{ end }} />
-
-{{- else -}}
-  {{- $image := .Page.Resources.GetMatch (printf "%s" (.Destination | safeURL)) -}}
-  {{- $permalink := "" -}}
-
-{{- if ne $image nil -}}
-  {{- $permalink = $image.RelPermalink -}}
-{{- end -}}
+{{- $image := .Page.Resources.GetMatch (.Destination) -}}
 
 <div class="figure">
-<a href="{{ $permalink }}" target="_blank">
+<a id="{{ path.BaseName $image }}" href="{{ $image.RelPermalink }}" target="_blank">
   <img loading="lazy" 
-  src="{{ $permalink }}" 
+  src="{{ $image.RelPermalink }}" 
   alt="{{ .Text }}" 
   width={{ $image.Width }} 
   height="{{ $image.Height }}"/>
@@ -23,9 +11,8 @@
 
 {{ if .PlainText }}
   <div class="caption">
-  <span>Figura {{ .Title }}</span>
+  <span>{{ $image.Title }}</span>
   {{ .PlainText }}
-  </div>{{ end }}
+  </div>
+{{ end }}
 </div>
-
-{{- end -}}
