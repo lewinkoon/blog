@@ -1,14 +1,11 @@
 ---
+draft: true
 author: "Lewin"
 icon: "🧠"
 title: "Meditaciones"
 description: "Compilación de preguntas personales para cada día del año."
 date: 2022-02-12
 toc: true
-tags:
-- meditación
-- psicología
-- ego
 resources:
 - src: questions.pdf
   title: File
