@@ -61,7 +61,3 @@ id = "99734fce-4de1-4c17-b0e7-b96d859d379b"
   noJSConfigInAssets = true
   useResourceCacheWhen = 'fallback'
   writeStats = false
-  command = "hugo"
-  publish = "public"
-[build.environment]
-  HUGO_VERSION = "0.101.0"
