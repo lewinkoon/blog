@@ -9,5 +9,6 @@ TO-DO LIST
 
 ---
 
+- [x] Añadir un botón de descarga de ruta en formato GPX para el mapa *Leaflet*
 - [x] Añadir un enlace a las imágenes adjuntas a cada post de modo que se pueda hacer click en ellas.
 - [x] Modificar imágenes con fondo transparente (al cambiar la paleta de colores pierde visibilidad)
