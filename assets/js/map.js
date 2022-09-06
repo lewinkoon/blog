@@ -5711,15 +5711,59 @@
   	return new Attribution(options);
   };
 
+  var Custom = Control.extend({
+	// @section
+	// @aka Control.Scale options
+	options: { position: 'topleft' },
+
+	onAdd: function (map) {
+		map.buttonControl = this;
+		var container = document.createElement('div');
+		container.className = 'leaflet-control-zoom leaflet-bar';
+
+		var link = document.createElement('a');
+		link.className = 'leaflet-control-link';
+		link.innerHTML = '<span aria-hidden="true">💾</span>';
+		link.href = 'track.json'
+		link.title = 'Download'
+		link.download = 'pico-gilbo'
+
+		container.appendChild(link);
+
+        return container;
+	},
+
+	onRemove: function (map) {},
+
+});
+
+Map.mergeOptions({
+	customControl: true
+});
+
+Map.addInitHook(function () {
+	if (this.options.customControl) {
+		new Custom().addTo(this);
+	}
+});
+
+// @factory L.control.scale(options?: Control.Scale options)
+// Creates an scale control with the given options.
+var custom = function (options) {
+	return new Custom(options);
+};
+
   Control.Layers = Layers;
   Control.Zoom = Zoom;
   Control.Scale = Scale;
   Control.Attribution = Attribution;
+  Control.Custom = Custom;
 
   control.layers = layers;
   control.zoom = zoom;
   control.scale = scale;
   control.attribution = attribution;
+  control.custom = custom;
 
   /*
   	L.Handler is a base class for handler classes that are used internally to inject
