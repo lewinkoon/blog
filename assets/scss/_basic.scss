@@ -7,7 +7,7 @@ html {
     color: var(--light);
     font-size: 1rem;
     line-height: 1.5;
-    scroll-behavior: auto;
+    scroll-behavior: smooth;
     background-color: var(--darker);
 }
 
@@ -148,10 +148,20 @@ hr {
 }
 
 #map { 
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
     border: 4px solid var(--dark);
     height: 480px; 
+    // margin-bottom: 0.5rem;
+}
+
+#chart { 
+    max-height: 200px;
+    border: 3px solid var(--dark);
+    background-color: var(--dark);
+    border-radius: 0 0 10px 10px;
+    padding: 1.5rem 2.5rem 0.5rem 1rem;
     margin-bottom: 1.5rem;
+    transition: all 0.5s;
 }
 
 ::marker {

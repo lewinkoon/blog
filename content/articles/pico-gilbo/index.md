@@ -7,6 +7,7 @@ tags:
 - senderismo
 - naturaleza
 map: true
+chart: true
 resources:
 - name: llegada-riano
   title: Figura 1
@@ -35,6 +36,8 @@ resources:
 ---
 
 {{< map lat="42.9634" lng="-5.0337">}}
+
+{{< chart >}}
 
 Comenzamos la ruta desayunando un delicioso café con leche en una cafetería local  del nuevo pueblo de Riaño. El tiempo parecía que no iba a acompañarnos ya que nada más llegar una nube negra como el azabache cubrió el cielo seguido de cientos de truenos. Sin embargo, una hora después la tormenta amainó y pudimos comenzar a andar.
 

@@ -5,28 +5,37 @@
     // import data from './track.json'
 
     {{ with .Page.Resources.GetMatch "track.json" }}
-    var data = {{ .Content | safeJS }};
+    const geoData = {{ .Content | safeJS }};
     {{ end }}
 
-    var map = L.map('map', {
+    const map = L.map('map', {
         center: [{{ .Get "lat" }}, {{ .Get "lng" }}],
         zoom: 15,
-        minZoom: 15,
+        minZoom: 14,
         maxZoom: 16,
         attributionControl: true,
         maxBounds: [[42.9802, -5.0755],[42.9471, -4.9910]]
     });
 
-    L.tileLayer('https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png', {attribution: '© OpenStreetMap'}).addTo(map);
+    // L.tileLayer('https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png', {attribution: '© OpenStreetMap'}).addTo(map);
 
-    L.geoJSON(data, {
+    L.tileLayer('https://www.ign.es/wmts/pnoa-ma?service=WMTS&request=GetTile&version=1.0.0&Format=image/png&layer=OI.OrthoimageCoverage&style=default&tilematrixset=GoogleMapsCompatible&TileMatrix={z}&TileRow={y}&TileCol={x}', { attribution: 'Infraestructura de Datos Espaciales de Espa&ntilde;a (IDEE)' }).addTo(map);
+
+    L.tileLayer.wms('https://www.ign.es/wms-inspire/ngbe?', 
+	{
+	   layers: 'GN.GeographicalNames',
+	   format: 'image/png',
+	   transparent: true
+	}).addTo(map);
+
+    L.geoJSON(geoData, {
         style: function (feature) {
             return {color: feature.properties.color};
         }
     }).addTo(map);
 
-    var greenMarker = L.icon({
-        iconUrl: '/icons/marker-icon-blue.png',
+    const greenMarker = L.icon({
+        iconUrl: '/icons/marker-icon-green.png',
         shadowUrl: '/icons/marker-shadow.png',
         iconSize: [25, 41],
         iconAnchor: [12, 41],
@@ -36,7 +45,7 @@
 
     });
 
-    var redMarker = L.icon({
+    const redMarker = L.icon({
         iconUrl: '/icons/marker-icon-red.png',
         shadowUrl: '/icons/marker-shadow.png',
         iconSize: [25, 41],
@@ -47,7 +56,7 @@
 
     });
 
-    var goldMarker = L.icon({
+    const goldMarker = L.icon({
         iconUrl: '/icons/marker-icon-gold.png',
         shadowUrl: '/icons/marker-shadow.png',
         iconSize: [25, 41],
@@ -58,23 +67,39 @@
 
     });
 
-    var start = L.marker([42.968357, -5.018883], {icon: greenMarker}).bindTooltip("Aparcamiento").addTo(map);
+    L.marker([42.968357, -5.018883], {icon: greenMarker}).bindTooltip("Aparcamiento").addTo(map);
 
-    var peak = L.marker([42.95792, -5.04621], {icon: redMarker}).bindTooltip("Pico Gilbo <i>(Fig. 4-5)</i>").addTo(map).on('click',
+    L.marker([42.95792, -5.04621], {icon: redMarker}).bindTooltip("Pico Gilbo <i>(Fig. 4-5)</i>").addTo(map).on('click',
         function(e) {
             window.location.hash = "pico-notas";
         });
 
-    var lookut = L.marker([42.96550, -5.03466], {icon: goldMarker}).bindTooltip("Mirador de las Biescas <i>(Fig. 6)</i>").addTo(map).on('click',
+    L.marker([42.96550, -5.03466], {icon: goldMarker}).bindTooltip("Mirador de las Biescas <i>(Fig. 6)</i>").addTo(map).on('click',
         function(e) {
             window.location.hash = "mirador-biescas";
         });
 
-    var cave = L.marker([42.96630, -5.03221], {icon: goldMarker}).bindTooltip("Cueva de la Vieja del Monte <i>(Fig. 7)</i>").addTo(map).on('click',
+    L.marker([42.96630, -5.03221], {icon: goldMarker}).bindTooltip("Cueva de la Vieja del Monte <i>(Fig. 7)</i>").addTo(map).on('click',
         function(e) {
             window.location.hash = "cueva-vieja";
         });
 
-    var helloPopup = L.popup().setContent('Hello World!');
+    function drawCord(index) {
+        const data = geoData.features[0].geometry.coordinates[index]
+
+        if(typeof circle == 'undefined') {
+            circle = L.circleMarker([data[1], data[0]], {
+                weight: 3,
+                radius: 8,
+                fillColor: '#e3e5e8',
+                fillOpacity: 1
+            }).addTo(map);
+        } else 
+        {
+            circle.setLatLng([data[1], data[0]])
+        }
+    }
+
+
 
 </script>

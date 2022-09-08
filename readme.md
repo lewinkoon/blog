@@ -1,6 +1,7 @@
 
 # To-Do List
 
+- [ ] Añadir sección sobre mi.
 - [ ] Diseñar página de error *404*.
 - [ ] Filtar búsqueda por año en la página de artículos.
 - [ ] Agregar un botón de copiar al portapapeles en los bloques de código.

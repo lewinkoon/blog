@@ -15,14 +15,18 @@
 
     <!-- COLOR THEME TOGGLE -->
     {{ $toggle := resources.Get "scripts/toggle.ts" | js.Build (dict "minify" false ) | fingerprint }}
-    <script src="{{ $toggle.RelPermalink }}"></script>
+    <script src="{{ $toggle.RelPermalink }}" data-chart="{{ .Page.Params.chart | default false}}"></script>
 
     <!-- LEAFLET MAP -->
     {{ if .Params.map }}
-
     {{ $map := resources.Get "js/map.js" | js.Build (dict "minify" false ) | fingerprint }}
     <script src="{{ $map.RelPermalink }}"></script>
+    {{ end }}
 
+    <!-- CHARTS.JS -->
+    {{ if .Params.chart }}
+    {{ $chart := resources.Get "js/charts.js" | js.Build (dict "minify" false ) | fingerprint }}
+    <script src="{{ $chart.RelPermalink }}"></script>
     {{ end }}
 
     <!-- KATEX -->

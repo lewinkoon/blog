@@ -7,6 +7,8 @@ class ThemeColorScheme {
     constructor(toggleEl: HTMLElement) {
         this.currentScheme = this.getSavedScheme();
 
+        this.dispatchEvent(document.documentElement.dataset.color as colorScheme);
+
         if (toggleEl)
             this.bindClick(toggleEl);
     }
@@ -17,6 +19,7 @@ class ThemeColorScheme {
 
     private bindClick(toggleEl: HTMLElement) {
         toggleEl.addEventListener('click', (e) => {
+
             if (this.isDark()) {
                 /// Disable dark mode
                 this.currentScheme = 'light';
@@ -34,6 +37,13 @@ class ThemeColorScheme {
         return (this.currentScheme == 'dark');
     }
 
+    private dispatchEvent(colorScheme: colorScheme) {
+        const event = new CustomEvent('onColorSchemeChange', {
+            detail: colorScheme
+        });
+        window.dispatchEvent(event);
+    }
+
     private setBodyClass() {
         if (this.isDark()) {
             document.documentElement.dataset.color = 'dark';
@@ -41,6 +51,8 @@ class ThemeColorScheme {
         else {
             document.documentElement.dataset.color = 'light';
         }
+
+        this.dispatchEvent(document.documentElement.dataset.color as colorScheme);
     }
 
     private getSavedScheme(): colorScheme {
