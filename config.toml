@@ -4,8 +4,10 @@ title = 'Lewin.app'
 paginate = 5
 
 [params]
-comments = false
-id = "99734fce-4de1-4c17-b0e7-b96d859d379b"
+  repo = "lewinkoon/hugo-blog"
+  issueTerm = "pathname"
+  label = "comment"
+  theme = "github-dark"
 
 [menu]
 ### NAVIGATION BAR ###
