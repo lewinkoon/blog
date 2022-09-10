@@ -56,8 +56,10 @@
     {{ end }}
 </section>
 
+{{ if .Params.comments }}
 <section>
     {{ partial "comments" . }}
 </section>
+{{ end }}
 
 {{ end }}

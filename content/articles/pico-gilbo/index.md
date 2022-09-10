@@ -8,6 +8,7 @@ tags:
 - naturaleza
 map: true
 chart: true
+comments: true
 resources:
 - name: llegada-riano
   title: Figura 1

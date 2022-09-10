@@ -4,8 +4,9 @@ title = 'Lewin.app'
 paginate = 5
 
 [params]
+  id = "fe3c64a0-20d8-4c6c-8932-480b54d0f69d"
   repo = "lewinkoon/hugo-blog"
-  issueTerm = "pathname"
+  issueTerm = "Introduction"
   label = "comment"
   theme = "github-dark"
 

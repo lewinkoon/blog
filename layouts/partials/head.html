@@ -19,13 +19,13 @@
 
     <!-- LEAFLET MAP -->
     {{ if .Params.map }}
-    {{ $map := resources.Get "js/map.js" | js.Build (dict "minify" false ) | fingerprint }}
+    {{ $map := resources.Get "js/map.js" | js.Build (dict "minify" true ) | fingerprint }}
     <script src="{{ $map.RelPermalink }}"></script>
     {{ end }}
 
     <!-- CHARTS.JS -->
     {{ if .Params.chart }}
-    {{ $chart := resources.Get "js/charts.js" | js.Build (dict "minify" false ) | fingerprint }}
+    {{ $chart := resources.Get "js/charts.js" | js.Build (dict "minify" true ) | fingerprint }}
     <script src="{{ $chart.RelPermalink }}"></script>
     {{ end }}
 
