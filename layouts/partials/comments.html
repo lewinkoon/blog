@@ -17,13 +17,13 @@
                     type: 'set-theme',
                     theme: `${theme}`
                 },
-                'https://lewin.netlify.app'
+                '{{ .Site.BaseURL }}'
             );
         }
     }
 
     addEventListener('message', event => {
-        if (event.origin !== 'https://lewin.netlify.app') return;
+        if (event.origin !== '{{ .Site.BaseURL }}') return;
         if (document.documentElement.dataset.color == "dark") {
             setUtterancesTheme("dark-blue")
         } else {

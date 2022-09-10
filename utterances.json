@@ -1,5 +1,7 @@
 {
     "origins": [
-        "https://lewin.netlify.app"
+        "https://utteranc.es",
+        "http://localhost:1313",
+        "http://lewin.netlify.app"
     ]
 }
