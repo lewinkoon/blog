@@ -35,14 +35,11 @@
         background-color: var(--dark);
         border-radius: 5px;
         font-size: 1.1rem;
+        transition: transform 0.25s;
 
         &:hover {
-            background-color: var(--accent);
+            transform: translateY(-5px);
             font-weight: bold;
-
-            svg {
-                stroke: var(--light);
-            }
         }
 
         svg {
@@ -78,6 +75,7 @@
             padding: 0.3rem 0.6rem;
             border-radius: 0.25rem;
             border: 1px solid var(--dark);
+            // transition: all 0.25s;
 
             &:hover {
                 border: 1px solid var(--accent);
