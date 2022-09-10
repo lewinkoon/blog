@@ -17,13 +17,13 @@
                     type: 'set-theme',
                     theme: `${theme}`
                 },
-                '{{ .Site.BaseURL }}'
+                'https://utteranc.es'
             );
         }
     }
 
     addEventListener('message', event => {
-        if (event.origin !== '{{ .Site.BaseURL }}') return;
+        if (event.origin !== 'https://utteranc.es') return;
         if (document.documentElement.dataset.color == "dark") {
             setUtterancesTheme("dark-blue")
         } else {
