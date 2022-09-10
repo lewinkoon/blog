@@ -164,6 +164,10 @@ hr {
 
 }
 
+.utterances {
+    max-width: unset;
+}
+
 ::marker {
     color: var(--accent);
 }
