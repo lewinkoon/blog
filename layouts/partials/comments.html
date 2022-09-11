@@ -1,33 +1,7 @@
-<script src="https://utteranc.es/client.js"
-        repo="lewinkoon/hugo-comments"
-        branch="main"
-        issue-term="{{ .Title }}"
-        label="comment"
-        theme="github-dark"
-        crossorigin="anonymous"
-        async>
-</script>
-
-<script defer>
-    function setUtterancesTheme(theme) {
-        let utterances = document.querySelector('.utterances iframe');
-        if (utterances) {
-            utterances.contentWindow.postMessage(
-                {
-                    type: 'set-theme',
-                    theme: `github-${theme}`
-                },
-                'https://utteranc.es'
-            );
-        }
-    }
-
-    addEventListener('message', event => {
-        if (event.origin !== 'https://utteranc.es') return;
-        setUtterancesTheme(document.documentElement.dataset.color)
-    });
-
-    window.addEventListener('onColorSchemeChange', (e) => {
-        setUtterancesTheme(e.detail)
-    })
-</script>
+<div id="cusdis_thread"
+    data-host="https://cusdis.com"
+    data-app-id="{{ .Site.Params.comments.id }}"
+    data-page-id="{{ .File.UniqueID }}"
+    data-page-url="{{ .Permalink }}"
+    data-page-title="{{ .Title }}"></div>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
