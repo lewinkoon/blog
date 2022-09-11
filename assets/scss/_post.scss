@@ -130,3 +130,22 @@ aside {
         }
     }
 }
+
+.comments {
+    .title {
+        display: flex;
+        margin-bottom: 1.5rem;
+
+        h2 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        .line {
+            flex-grow: 1;
+            border-bottom: 4px solid var(--accent);
+            margin: auto 0 auto 1rem;
+            border-radius: 2px;
+        }
+    }
+}

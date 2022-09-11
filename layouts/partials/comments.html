@@ -45,22 +45,29 @@ function t(t) {
       return `<!DOCTYPE html>\n
       <html>\n
         <style>\n
-          html {color-scheme: unset !important;}\n
-          input, textarea, button {border-radius: 5px;}\n
+          html {color-scheme: unset !important; font-size: 19.2px;}\n
+          label[for="nickname"]:before { content: "🧑 ";}\n
+          label[for="email"]:before { content: "📧 ";}\n
+          label[for="reply_content"]:before { content: "📜 ";}\n
+          input, textarea {border-radius: 5px; background-color}\n
+          button {border-radius: 5px;}\n
           button:focus {outline: none !important; color: #3a86ff;}\n
-          input:focus-visible, textarea:focus-visible {outline-color: #3a86ff;}\n
+          button:hover {font-weight: bold !important;}\n
+          input:focus, textarea:focus {outline-color: #3a86ff;}\n
+          .border {border-width: 2px !important;}\n
           .border-gray-200 {border-color: #c2cad6 !important;}\n
-          .border-color-gray-200 {border-color: #c2cad6 !important;}\n
+          .border-color-gray-200 {border-color: #3a86ff !important;}\n
           .bg-gray-200 {background-color: #c2cad6 !important;}\n
-          .dark button {;
-            background-color: #29313d !important;
+          .dark button {
+            background-color: #c2cad6 !important;
             border: none;
             padding: 0.5rem 1rem;
-            color: #e3e5e8;}\n
+            color: #17191c;}\n
           .dark button[type="button"] {
             background-color: transparent !important;
             padding: 0;
-            color: #3a86ff;}\n}\n
+            color: #e3e5e8;}\n
+          .dark input:focus, textarea:focus {border-color: #3a86ff !important;}\n
         </style>\n
         <head>\n
           <link rel="stylesheet" href="${t}/js/style.css">\n

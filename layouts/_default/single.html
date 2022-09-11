@@ -36,8 +36,14 @@
 
 </section>
 
-<section>
+{{ if .Params.comments }}
+<section class="comments">
+    <div class="title">
+        <h2>Comentarios</h2>
+        <span class="line"></span>
+    </div>
     {{ partial "comments" . }}
 </section>
+{{ end }}
 
 {{ end }}
