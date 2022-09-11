@@ -43,7 +43,7 @@
     {{ end }}
 </section>
 
-{{ $search := resources.Get "js/search.ts" | js.Build (dict "minify" false ) | fingerprint }}
+{{ $search := resources.Get "scripts/search.ts" | js.Build (dict "minify" true ) | fingerprint }}
 <script async src="{{ $search.RelPermalink }}"></script>
 
 {{ end }}
