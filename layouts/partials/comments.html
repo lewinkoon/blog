@@ -1,119 +1,43 @@
-<div id="cusdis_thread" data-host="{{ .Site.Params.host }}" data-app-id="{{ .Site.Params.id }}"
-  data-page-id="{{ .File.UniqueID }}" data-page-url="{{ .Permalink }}" data-page-title="{{ .Title }}">
-</div>
-
-<script src="https://cusdis.com/js/widget/lang/es.js"></script>
+<script src="https://giscus.app/client.js"
+        data-repo="lewinkoon/hugo-blog"
+        data-repo-id="R_kgDOHB709g"
+        data-category="Comments"
+        data-category-id="DIC_kwDOHB709s4CRWpq"
+        data-mapping="specific"
+        data-term="{{ .Title }}"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="dark"
+        data-lang="es"
+        crossorigin="anonymous"
+        async>
+</script>
 
 <script>
-  let setCusdisTheme = a => {
-    let b = document.querySelector('#cusdis_thread iframe');
-    b && window.CUSDIS.setTheme(a) };
-    window.addEventListener('onColorSchemeChange', a => { setCusdisTheme(a.detail) });
-</script>
-
-<script defer>
-  window.CUSDIS = {};
-let e;
-function t(t) {
-  return (
-    e ||
-      ((e = document.createElement("iframe")),
-      (function (e, t) {
-        const s = window.matchMedia("(prefers-color-scheme: dark)"),
-          d = (d) => {
-            try {
-              const i = JSON.parse(d.data);
-              if ("cusdis" === i.from)
-                switch (i.event) {
-                  case "onload":
-                    "auto" === t.dataset.theme && n("setTheme", s.matches ? "dark" : "light");
-                    break;
-                  case "resize":
-                    e.style.height = i.data + "px";
-                }
-            } catch (i) {}
-          };
-        function i(e) {
-          const s = e.matches;
-          "auto" === t.dataset.theme && n("setTheme", s ? "dark" : "light");
-        }
-        window.addEventListener("message", d), s.addEventListener("change", i);
-      })(e, t)),
-    (e.srcdoc = ((e) => {
-      const t = e.dataset.host || "https://cusdis.com",
-        n = e.dataset.iframe || `${t}/js/iframe.umd.js`;
-      return `<!DOCTYPE html>\n
-      <html>\n
-        <style>\n
-          html {color-scheme: unset !important; font-size: 19.2px;}\n
-          label[for="nickname"]:before { content: "🧑 ";}\n
-          label[for="email"]:before { content: "📧 ";}\n
-          label[for="reply_content"]:before { content: "📜 ";}\n
-          input, textarea {border-radius: 5px; background-color}\n
-          button {border-radius: 5px;}\n
-          button:focus {outline: none !important; color: #3a86ff;}\n
-          button:hover {font-weight: bold !important;}\n
-          input:focus, textarea:focus {outline-color: #3a86ff;}\n
-          .border {border-width: 2px !important;}\n
-          .border-gray-200 {border-color: #c2cad6 !important;}\n
-          .border-color-gray-200 {border-color: #3a86ff !important;}\n
-          .bg-gray-200 {background-color: #c2cad6 !important;}\n
-          .p-2 { border-radius: 5px;}
-          .dark button {
-            background-color: #c2cad6 !important;
-            border: none;
-            padding: 0.5rem 1rem;
-            color: #17191c;}\n
-          .dark button[type="button"] {
-            background-color: transparent !important;
-            padding: 0;
-            color: #e3e5e8;}\n
-          .dark input:focus, textarea:focus {border-color: #3a86ff !important;}\n
-        </style>\n
-        <head>\n
-          <link rel="stylesheet" href="${t}/js/style.css">\n
-          <base target="_parent" />\n
-          <script>\n
-            window.CUSDIS_LOCALE = ${JSON.stringify( window.CUSDIS_LOCALE)}\n      window.__DATA__ = ${JSON.stringify(e.dataset)}\n
-          <\/script>\n
-        </head>\n
-        <body>\n
-          <div id="root"></div>\n
-          <script src="${n}" type="module"><\/script>\n
-        </body>\n
-      </html>`;
-    })(t)),
-    (e.style.width = "100%"),
-    (e.style.border = "0"),
-    e
-  );
-}
-function n(t, n) {
-  e && e.contentWindow.postMessage(JSON.stringify({ from: "cusdis", event: t, data: n }));
-}
-function s(e) {
-  if (e) {
-    e.innerHTML = "";
-    const n = t(e);
-    e.appendChild(n);
+  function setGiscusTeheme(theme) {
+      let giscus = document.querySelector('.giscus iframe');
+      if (giscus) {
+          giscus.contentWindow.postMessage(
+              {
+                  giscus: {
+                      setConfig: {
+                          theme: theme
+                      }
+                  }
+              },
+              'https://giscus.app'
+          )
+      }
   }
-}
-function d() {
-  let e;
-  window.cusdisElementId
-    ? (e = document.querySelector(`#${window.cusdisElementId}`))
-    : document.querySelector("#cusdis_thread")
-    ? (e = document.querySelector("#cusdis_thread"))
-    : document.querySelector("#cusdis") && (console.warn("id `cusdis` is deprecated. Please use `cusdis_thread` instead"), (e = document.querySelector("#cusdis"))),
-    !0 === window.CUSDIS_PREVENT_INITIAL_RENDER || (e && s(e));
-}
-(window.renderCusdis = s),
-  (window.CUSDIS.renderTo = s),
-  (window.CUSDIS.setTheme = function (e) {
-    n("setTheme", e);
-  }),
-  (window.CUSDIS.initial = d),
-  d();
 
+  addEventListener('message', event => {
+      if (event.origin !== 'https://giscus.app') return;
+      setGiscusTeheme(document.documentElement.dataset.color)
+  });
+
+  window.addEventListener('onColorSchemeChange', (e) => {
+      setGiscusTeheme(e.detail)
+  })
 </script>
-

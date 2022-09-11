@@ -2,10 +2,13 @@
 author: "Lewin"
 title: "Portapapeles con Dunst y Xclip"
 date: 2022-02-12
+comments: true
 tags:
 - script
 - dunst
 - clipboard
+categories:
+- informática
 ---
 
 ![Notificación en escritorio con Dunst](showclip.png "1")

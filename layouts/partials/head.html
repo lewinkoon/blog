@@ -13,9 +13,9 @@
     {{ $style := resources.Get "main.scss" | toCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}"/>
 
-    <!-- COLOR THEME TOGGLE -->
-    {{ $toggle := resources.Get "scripts/toggle.ts" | js.Build (dict "minify" false ) | fingerprint }}
-    <script src="{{ $toggle.RelPermalink }}" data-chart="{{ .Page.Params.chart | default false}}"></script>
+    <!-- COLOR SCHEME -->
+    {{ $color := resources.Get "scripts/color.ts" | js.Build (dict "minify" false ) | fingerprint }}
+    <script src="{{ $color.RelPermalink }}" data-chart="{{ .Page.Params.chart | default false}}"></script>
 
     <!-- LEAFLET MAP -->
     {{ if .Params.map }}

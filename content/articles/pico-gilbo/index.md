@@ -6,6 +6,8 @@ tags:
 - montaña
 - senderismo
 - naturaleza
+categories:
+- naturaleza
 map: true
 chart: true
 comments: true

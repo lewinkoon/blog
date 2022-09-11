@@ -6,6 +6,8 @@ tags:
 - presión
 - fluidomecánica
 - hidroestática
+categories:
+- ingeniería
 katex: true
 ---
 
