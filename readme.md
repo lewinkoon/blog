@@ -1,12 +1,13 @@
 
 # To-Do List
 
-- [ ] Añadir sección sobre mi.
-- [ ] Diseñar página de error *404*.
-- [ ] Filtar búsqueda por año en la página de artículos.
+- [ ] Tranformar datos de distancia para que sean equiespaciados.
+- [ ] Añadir sección de contacto.
+- [ ] Actualizar la búsqueda por año en la página de artículos.
 - [ ] Añadir colores a las etiquetas, una por tipo
 - [ ] Agregar un botón de copiar al portapapeles en los bloques de código.
 - [ ] Actualizar la paleta de colores en los bloques de código (en el tema claro no hay apenas contraste)
+- [ ] Diseñar página de error *404*.
 
 ---
 
