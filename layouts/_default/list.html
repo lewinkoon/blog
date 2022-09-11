@@ -32,12 +32,12 @@
         </div>
         {{ range .Pages }}
         <a href="{{ .RelPermalink }}">
-            <time>{{ .Date.Format "02 Jan" }}</time>
+            {{ with index (.Params.categories) 0 }}
+            <span class="category" type="{{ . }}">{{ . }}</span>
+            {{ end }}
             <div class="post-title">{{ .Title }}</div>
             <span class="line"></span>
-            {{ range .Params.categories }}
-            <span class="categories" type="{{ . }}">{{ humanize . }}</span>
-            {{ end }}
+            <time>{{ .Date.Format "Jan 02" }}</time>
         </a>
         {{ end }}
     </div>
