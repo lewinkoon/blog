@@ -8,7 +8,7 @@ tags:
 - dunst
 - clipboard
 categories:
-- informática
+- programación
 ---
 
 ![Notificación en escritorio con Dunst](showclip.png "1")

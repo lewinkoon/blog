@@ -29,7 +29,10 @@
     <div class="posts">
         {{ range $pages.Pages }}
         <a href="{{ .RelPermalink }}">
-            <div class="post-title" type="{{ index (.Params.categories) 0 }}">{{ .Title }}</div>
+            {{ with index (.Params.categories) 0 }}
+            <span class="category" type="{{ . }}">{{ . }}</span>
+            {{ end }}
+            <div class="post-title">{{ .Title }}</div>
             <span class="line"></span>
             <time>{{ .Date.Format "Jan 02" }}</time>
         </a>
