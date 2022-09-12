@@ -2,54 +2,57 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
 
-.intro-text {
+    .intro-text {
 
-    h1 {
-        font-size: 4rem;
-        margin: 0;
-    }
-
-    a {
-        color: var(--accent);
-        border-radius: 10px;
-        transition: color 0.5s;
-
-        &:hover {
-            color: var(--special);
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+        }
+    
+        a {
+            color: var(--accent);
+            border-radius: 10px;
+            transition: all 0.25s;
+    
+            &:hover {
+                color: var(--special);
+            }
+        }
+    
+        p {
+            font-size: 1.4rem;
         }
     }
 
-    p {
-        font-size: 1.4rem;
-    }
-}
-
-.intro-links {
-    display: flex;
-    gap: 10px;
-    // justify-content: center;
-
-    a {
+    .intro-links {
         display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        padding: 0.5rem 0.75rem;
-        background-color: var(--dark);
-        border-radius: 5px;
-        font-size: 1.1rem;
-        transition: transform 0.25s;
-
-        &:hover {
-            transform: translateY(-5px);
-            font-weight: bold;
-        }
-
-        svg {
-            width: 1.6rem;
-            height: 1.6rem;
-            stroke: var(--accent);
+        gap: 10px;
+        // justify-content: center;
+    
+        a {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.4rem 0.6rem;
+            background-color: var(--dark);
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: transform 0.25s;
+    
+            &:hover {
+                transform: translateY(-5px);
+                
+                svg {
+                    stroke: var(--special);
+                }
+            }
+    
+            svg {
+                width: 1.4rem;
+                height: 1.4rem;
+                stroke: var(--accent);
+            }
         }
     }
 }
@@ -78,11 +81,10 @@
             font-size: 0.9rem;
             padding: 0.3rem 0.6rem;
             border-radius: 0.25rem;
-            border: 1px solid var(--dark);
-            // transition: all 0.25s;
+            border: 2px solid var(--dark);
 
             &:hover {
-                border: 1px solid var(--accent);
+                border: 2px solid var(--special);
                 font-weight: bold;
             }
         }
@@ -133,7 +135,8 @@
 
             .line {
                 flex-grow: 1;
-                border-bottom: 1px solid var(--dark);
+                border-bottom: 2px solid var(--dark);
+                border-radius: 1px;
                 padding-top: 0.2rem;
                 margin: auto 0rem;
             }
@@ -143,8 +146,12 @@
                 border-radius: 10px;
                 font-weight: bold;
 
+                time {
+                    color: var(--special);
+                }
+
                 .line {
-                    border-bottom: 1px solid var(--accent);
+                    border-bottom: 2px solid var(--darker);
                 }
             }
         }

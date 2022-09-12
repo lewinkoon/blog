@@ -25,14 +25,10 @@ paginate = 3
   name = "Diseños"
   url = "/designs/"
   weight = 30
-# [[menu.main]]
-#   name = "Datos"
-#   url = "/dashboard/"
-#   weight = 40
 
 [[menu.secondary]]
   name = "Contacto"
-  url = "/contact/"
+  url = "/about/"
   weight = 10
 
 ### SOCIAL LINKS ###

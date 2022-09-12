@@ -38,7 +38,7 @@ header {
         }
 
         &.current {
-            border-bottom: 3px solid var(--accent);
+            border-bottom: 3px solid var(--special);
             font-weight: bold;
         }
     }
@@ -60,7 +60,7 @@ header {
         &:hover {
             // border: 2px solid var(--accent);
             font-weight: bold;
-            transform: scale(1.2);
+            transform: scale(1.25);
             svg {
                 stroke: var(--light);
             }
@@ -75,7 +75,7 @@ header {
     
         span {
             font-family: "regular";
-            font-size: 2rem;
+            font-size: 1.8rem;
             color: var(--light);
         }
     

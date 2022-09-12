@@ -15,6 +15,7 @@
 
         .author {
             font-weight: bold;
+            color: var(--accent);
         }
         
         .read-time {
@@ -36,10 +37,9 @@
             padding: 0.2rem 0.4rem;
 
             &:hover {
-                background-color: var(--accent);
 
                 svg {
-                    stroke: var(--light);
+                    stroke: var(--special);
                 }
             }
 
@@ -127,6 +127,7 @@ aside {
 
         &:hover {
             transform: translateY(-4px);
+            color: var(--special);
         }
     }
 }

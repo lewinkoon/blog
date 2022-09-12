@@ -24,23 +24,21 @@
         align-items: center;
         gap: 5px;
         font-size: 1rem;
-        padding: 0.3rem 0.7rem;
-        border: 2px solid var(--dark);
+        padding: 0.3rem 0.6rem;
         background: var(--dark);
         border-radius: 5px;
         cursor: pointer;
 
         &.active {
-            border-color: var(--accent);
-            background-color: var(--accent);
-
             svg {
-                stroke: var(--light);
+                stroke: var(--special);
             }
         }
 
         &:hover {
-            border-color: var(--accent);
+            svg {
+                stroke: var(--special);
+            }
         }
 
         svg {
@@ -157,7 +155,8 @@
 
         .line {
             flex-grow: 1;
-            border-bottom: 1px solid var(--dark);
+            border-bottom: 2px solid var(--dark);
+            border-radius: 1px;
             padding-top: 0.2rem;
             margin: auto 0rem;
         }
@@ -166,6 +165,10 @@
             background-color: var(--dark);
             border-radius: 10px;
             font-weight: bold;
+
+            time {
+                color: var(--special);
+            }
 
             .line {
                 border-bottom: 1px solid var(--accent);
