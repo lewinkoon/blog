@@ -30,6 +30,11 @@ paginate = 3
 #   url = "/dashboard/"
 #   weight = 40
 
+[[menu.secondary]]
+  name = "Contacto"
+  url = "/contact/"
+  weight = 10
+
 ### SOCIAL LINKS ###
 [[menu.social]]
   name = "Email"

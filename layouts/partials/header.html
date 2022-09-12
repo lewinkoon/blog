@@ -1,18 +1,22 @@
-<nav class="navbar">
-    <div class="nav-links">
-        <a href="/" class="logo">👨🏿‍🚀 Lewin</a>
-        {{ $currentPage := . }}
-        {{ range .Site.Menus.main }}
-        <a href="{{ .URL | relURL }}" class="menu {{ if eq .URL $.RelPermalink }}current{{ end }}" >
-            <span class="menu-icon">{{ .Pre }}</span>
-            <span class="menu-item">{{ .Name }}</span>
-            <span class="menu-icon">{{ .Post }}</span> 
-        </a>
-        {{ end }}
-    </div>
-    <button id="dark-mode">
-        {{ partial "svg/moon.svg" . }}
-        {{ partial "svg/sun.svg" . }}
-        <span>Modo</span>
-    </button>
-</nav>
+<a href="/" class="logo">👨🏿‍🚀 Lewin</a>
+{{ $currentPage := . }}
+{{ range first 3 .Site.Menus.main }}
+<a href="{{ .URL | relURL }}" class="menu {{ if eq .URL $.RelPermalink }}current{{ end }}" >
+    <span class="menu-item">{{ .Name }}</span>
+</a>
+{{ end }}
+
+<span class="line"></span>
+
+{{ range first 3 .Site.Menus.secondary }}
+<a href="{{ .URL | relURL }}" class="menu {{ if eq .URL $.RelPermalink }}current{{ end }}" >
+    <span class="menu-item">{{ .Name }}</span>
+</a>
+{{ end }}
+
+<button id="dark-mode">
+    <span class="dark">🌑</span>
+    <span class="light">☀️</span>
+    {{/*  {{ partial "svg/moon.svg" . }}  */}}
+    {{/*  {{ partial "svg/sun.svg" . }}  */}}
+</button>

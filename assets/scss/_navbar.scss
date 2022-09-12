@@ -1,25 +1,19 @@
-.navbar {
+header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    // flex-direction: row;
+    // justify-content: space-between;
     align-items: center;
-    max-width: 1380px;
-    padding: 1rem 1.5rem;
+    max-width: 1280px;
+    padding: 1rem;
     margin: 0 auto;
-}
-
-.nav-links {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-
+    
     .logo {
         font-size: 1.4rem;
         color: var(--light);
         border: 2px solid var(--dark);
         margin-right: 0.5rem;
         padding: 0.25rem 0.75rem 0.25rem 0.75rem;
-        border-radius: 5px;
+        border-radius: 10px;
         transition: border 0.2s;
 
         &:hover {
@@ -48,41 +42,48 @@
             font-weight: bold;
         }
     }
-}
 
-#dark-mode {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem 0.75rem;
-    border: 2px solid var(--dark);
-    border-radius: 5px;
-    // box-sizing: content-box;
-    cursor: pointer;
-    background: transparent;
-    transition: all 0.2s;
-
-    &:hover {
-        border: 2px solid var(--accent);
-        font-weight: bold;
+    .line {
+        flex-grow: 1;
+        border-bottom: 2px solid var(--dark);
+        margin: auto 1rem;
+        border-radius: 1px;
     }
 
-    svg {
-        width: 1.4rem;
-        height: 1.4rem;
-        stroke: var(--accent);
+    #dark-mode {
+        align-items: center;
+        border: none;
+        cursor: pointer;
+        background: transparent;
+        transition: all 0.2s;
+    
+        &:hover {
+            // border: 2px solid var(--accent);
+            font-weight: bold;
+            transform: scale(1.2);
+            svg {
+                stroke: var(--light);
+            }
+        }
+    
+        svg {
+            width: 1.4rem;
+            height: 1.4rem;
+            stroke: var(--accent);
+            transition: all 0.2s;
+        }
+    
+        span {
+            font-family: "regular";
+            font-size: 2rem;
+            color: var(--light);
+        }
+    
+        .dark {
+            display: none;
+        }
+    
     }
-
-    span {
-        font-family: "Regular";
-        font-size: 1.2rem;
-        color: var(--light);
-    }
-
-    .dark {
-        display: none;
-    }
-
 }
 
 [data-color="dark"] #dark-mode {
