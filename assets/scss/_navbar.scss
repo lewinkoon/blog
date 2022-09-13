@@ -60,7 +60,7 @@ header {
         &:hover {
             // border: 2px solid var(--accent);
             font-weight: bold;
-            transform: scale(1.25);
+            transform: scale(1.33);
             svg {
                 stroke: var(--light);
             }
@@ -75,7 +75,7 @@ header {
     
         span {
             font-family: "regular";
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             color: var(--light);
         }
     

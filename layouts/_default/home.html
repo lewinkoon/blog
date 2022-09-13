@@ -7,7 +7,7 @@
     </div>
     <div class="intro-links">
         {{ range .Site.Menus.social }}
-        <a href="{{ . }}" class="icon">
+        <a href="{{ .URL }}" class="icon">
             {{ partialCached (print .Pre) . }}
             {{ .Name }}
         </a>

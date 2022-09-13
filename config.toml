@@ -25,13 +25,6 @@ paginate = 3
   name = "Diseños"
   url = "/designs/"
   weight = 30
-
-[[menu.secondary]]
-  name = "Contacto"
-  url = "/about/"
-  weight = 10
-
-### SOCIAL LINKS ###
 [[menu.social]]
   name = "Email"
   url = "mailto:lewinkoon@gmail.com"
@@ -44,6 +37,10 @@ paginate = 3
   name = "Rss"
   url = "/index.xml"
   pre = "svg/rss.svg"
+[[menu.secondary]]
+  name = "Contacto"
+  url = "/about/"
+  weight = 10
 
 ### MARKDOWN ###
 [markup]
