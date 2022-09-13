@@ -16,6 +16,10 @@
         .author {
             font-weight: bold;
             color: var(--accent);
+
+            &:hover {
+                color: var(--special);
+            }
         }
         
         .read-time {
@@ -54,12 +58,26 @@
 }
 
 .article-post {
-    a {
+    p a {
         color: var(--accent);
+        text-decoration: underline;
 
         &:hover {
-            font-weight: bold;
+            color: var(--special);
         }
+    }
+
+    a.anchor {
+        text-decoration: none;
+
+        span {
+            color: var(--accent);
+        }
+
+        &:hover span {
+            color: var(--special);
+        }
+
     }
 }
 

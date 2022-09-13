@@ -13,13 +13,13 @@
     <div class="article-header">
         <h1>{{ .Title }}</h1>
         <div class="post-meta">
-            <div class="metadata"><span class="author">
+            <div class="metadata"><a href="{{ "about" | absURL }}" class="author">
                     {{ $author := .Params.author }}
                     {{ if eq $author nil }}
                     {{ $author = .Site.Params.author }}
                     {{ end }}
                     {{ $author }}
-                </span> · <time>{{ .Date.Format "Jan 02" }}</time> ·
+            </a> · <time>{{ .Date.Format "Jan 02" }}</time> ·
                 <span class="read-time">{{ .ReadingTime }} min</span>
             </div>
             <div class="tags">

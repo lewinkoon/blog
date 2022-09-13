@@ -1,4 +1,4 @@
 <h{{ .Level }} id="{{ .Anchor }}">
-    <a href="#{{ .Anchor }}" class="anchor">{{ strings.Repeat .Level "#" }}</a>
-    {{ .Text | safeHTML }}
+    <a href="#{{ .Anchor }}" class="anchor"><span>{{ strings.Repeat .Level "#" }}</span>
+    {{ .Text | safeHTML }}</a>
 </h{{ .Level }}>

@@ -25,6 +25,7 @@ paginate = 3
   name = "Diseños"
   url = "/designs/"
   weight = 30
+### SOCIAL LINKS ###
 [[menu.social]]
   name = "Email"
   url = "mailto:lewinkoon@gmail.com"
@@ -46,7 +47,7 @@ paginate = 3
 [markup]
   [markup.highlight]
   noClasses = false
-  lineNos = true
+  lineNos = false
   [markup.goldmark.renderer]
   unsafe = true
   [markup.tableOfContents]
