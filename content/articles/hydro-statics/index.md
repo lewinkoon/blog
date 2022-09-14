@@ -2,18 +2,22 @@
 author: "Lewin"
 title: Presión hidroestática en líquidos
 date: 2022-06-24
+katex: true
 tags:
 - presión
 - fluidomecánica
 - hidroestática
 categories:
 - ingeniería
-katex: true
+resources:
+- name: distribucion
+  title: Figura 1
+  src: distribucion.png
 ---
 
 La presión hidroestática es un término de vital importancia en el cálculo de todo tipo de instalaciones fluidas.
 
-![Distribución de presión hidroestática en océanos y en la atmósfera](pressure.png "1")
+![Distribución de presión hidroestática en océanos y en la atmósfera](distribucion)
 
 # Explicación
 

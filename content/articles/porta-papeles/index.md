@@ -2,16 +2,19 @@
 author: "Lewin"
 title: "Portapapeles con Dunst y Xclip"
 date: 2022-02-12
-comments: true
 tags:
 - script
 - dunst
 - clipboard
 categories:
 - programación
+resources:
+- name: showclip
+  title: Figura 1
+  src: showclip.png
 ---
 
-![Notificación en escritorio con Dunst](showclip.png "1")
+![Notificación en escritorio con Dunst](showclip)
 
 [Dunst](https://github.com/dunst-project/dunst) es un programa sencillo y ligero que ofrece notificaciones en entornos *Linux* con un nivel de personalización bastante alto. Uno de los usos que se me ocurrió nada más descubrir este programa es mostrar los contenidos del portapapeles. El procedimiento es simple, transmitir el output de `xlip` tanto para el portapapeles del sistema (clipboard) como al primario (primary) a una notificación de escritorio mediante `notify-send`.
 

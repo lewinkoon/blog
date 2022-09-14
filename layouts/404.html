@@ -1,5 +1,12 @@
 {{ define "main"}}
 
-"Error"
+<section class="section-title">
+    <h1>🔥 {{ .Title }}</h1>
+    <p>Lo siento, la página que estabas buscando ya no existe.</p>
+</section>
+
+<section class="error">
+  {{ partial "svg/error.svg" . }}
+</section>
 
 {{ end }}

@@ -7,4 +7,3 @@
 - Agregar un **botón de copiar** al portapapeles en los bloques de código.
 - Actualizar la **paleta de colores** en los bloques de código (en el tema claro no hay apenas contraste)
 - Diseñar página de error **404**.
-- Corregir nomenclatura de figuras en algunos artículso antiguos.
