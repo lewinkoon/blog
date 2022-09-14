@@ -3,6 +3,7 @@
   padding: 1rem;
   border-radius: 10px;
   background: var(--dark);
+  position: relative;
   // overflow-x: auto;
 
   pre {
@@ -23,13 +24,41 @@
         font-weight: bold;
       }
     }
-    
   }
 
-  /* Background */.bg { }
-  /* Other */ .x {  }
-  /* Error */ .err {  }
-  /* CodeLine */ .cl {  }
+  button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: var(--accent);
+    border: none;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2),0px 2px 6px rgba(0, 0, 0, 0.2),0px 0px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 0.25rem 0.75rem;
+    color: var(--fixed-light);
+    cursor: pointer;
+    font-family: "regular";
+    font-size: 1rem;
+    // font-weight: bold;
+    opacity: 0;
+    transition: opacity .3s ease;
+
+    // &.copy {
+    //   background-color: var(--special);
+    //   color: var(--fixed-dark);
+    // }
+  }
+
+  &:hover {
+    button {
+        opacity: 1;
+    }
+  }
+
+  // /* Background */.bg { }
+  // /* Other */ .x {  }
+  // /* Error */ .err {  }
+  // /* CodeLine */ .cl {  }
 
   /* LineTableTD */ .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
   /* LineTable */ .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; }
@@ -46,7 +75,7 @@
   /* KeywordReserved */ .kr { color: var(--blue); font-weight: bold }
   /* KeywordType */ .kt { color: var(--blue) }
 
-  /* Name */ .n {  }
+  /* Name */ .n { color: var(--magenta) }
   /* NameAttribute */ .na { color: var(--magenta) }
   /* NameBuiltin */ .nb { color: var(--magenta) }
   /* NameBuiltinPseudo */ .bp { color: var(--magenta) }
@@ -56,20 +85,20 @@
   /* NameEntity */ .ni { color: var(--magenta); font-weight: bold }
   /* NameException */ .ne { color: var(--magenta); font-weight: bold }
   /* NameFunction */ .nf { color: var(--magenta) }
-  /* NameFunctionMagic */ .fm {  }
+  /* NameFunctionMagic */ .fm { color: var(--magenta) }
   /* NameLabel */ .nl { color: var(--magenta) }
   /* NameNamespace */ .nn { color: var(--magenta); font-weight: bold }
   /* NameOther */ .nx { color: var(--whiter) }
-  /* NameProperty */ .py {  }
+  /* NameProperty */ .py { color: var(--magenta) }
   /* NameTag */ .nt { color: var(--magenta); font-weight: bold }
   /* NameVariable */ .nv { color: var(--magenta) }
-  /* NameVariableClass */ .vc {  }
-  /* NameVariableGlobal */ .vg {  }
-  /* NameVariableInstance */ .vi {  }
-  /* NameVariableMagic */ .vm {  }
+  /* NameVariableClass */ .vc { color: var(--magenta) }
+  /* NameVariableGlobal */ .vg { color: var(--magenta) }
+  /* NameVariableInstance */ .vi { color: var(--magenta) }
+  /* NameVariableMagic */ .vm { color: var(--magenta) }
 
-  /* Literal */ .l {  }
-  /* LiteralDate */ .ld {  }
+  /* Literal */ .l { color: var(--green) }
+  /* LiteralDate */ .ld { color: var(--green) }
   /* LiteralString */ .s { color: var(--green) }
   /* LiteralStringAffix */ .sa { color: var(--green) }
   /* LiteralStringBacktick */ .sb { color: var(--green) }
@@ -104,7 +133,7 @@
   /* CommentPreproc */ .cp { color: var(--white) }
   /* CommentPreprocFile */ .cpf { color: var(--white) }
 
-  /* Generic */ .g {  }
+  /* Generic */ .g { color: var(--white) }
   /* GenericDeleted */ .gd { color: var(--white) }
   /* GenericEmph */ .ge { font-style: italic }
   /* GenericError */ .gr { color: var(--white) }

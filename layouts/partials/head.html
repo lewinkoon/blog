@@ -17,6 +17,10 @@
     {{ $color := resources.Get "scripts/color.ts" | js.Build (dict "minify" false ) | fingerprint }}
     <script src="{{ $color.RelPermalink }}" data-chart="{{ .Page.Params.chart | default false}}"></script>
 
+    <!-- COPY BUTTON -->
+    {{ $copy := resources.Get "scripts/copy.ts" | js.Build (dict "minify" false ) | fingerprint }}
+    <script src="{{ $copy.RelPermalink }}"></script>
+
     <!-- LEAFLET MAP -->
     {{ if .Params.map }}
     {{ $map := resources.Get "js/map.js" | js.Build (dict "minify" true ) | fingerprint }}

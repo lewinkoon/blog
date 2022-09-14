@@ -81,12 +81,9 @@ let chart = false
 if (document.currentScript) {
     chart = document.currentScript.dataset.chart == 'true'
 }
-const init = () => {
-    new ThemeColorScheme(document.getElementById('dark-mode'))
-}
 
 window.addEventListener('load', () => {
     setTimeout(function () {
-        init()
+        new ThemeColorScheme(document.getElementById('dark-mode'))
     }, 0)
 })
