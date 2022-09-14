@@ -1,7 +1,7 @@
 baseURL = 'https://lewin.netlify.app/'
 languageCode = 'es'
 title = 'Lewin.app'
-paginate = 3
+paginate = 5
 
 ### CUSTOM OPTIONS ###
 [params]
