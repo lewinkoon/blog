@@ -17,14 +17,19 @@ paginate = 5
   weight = 10
 [[menu.main]]
   # pre = "📚"
-  name = "Notas"
-  url = "/notes/"
+  name = "Contacto"
+  url = "/about/"
   weight = 20
-[[menu.main]]
-  # pre = "📦"
-  name = "Diseños"
-  url = "/designs/"
-  weight = 30
+# [[menu.main]]
+#   # pre = "📚"
+#   name = "Notas"
+#   url = "/notes/"
+  # weight = 20
+# [[menu.main]]
+#   # pre = "📦"
+#   name = "Diseños"
+#   url = "/designs/"
+#   weight = 30
 ### SOCIAL LINKS ###
 [[menu.social]]
   name = "Email"
@@ -38,10 +43,10 @@ paginate = 5
   name = "Rss"
   url = "/index.xml"
   pre = "svg/rss.svg"
-[[menu.secondary]]
-  name = "Contacto"
-  url = "/about/"
-  weight = 10
+# [[menu.secondary]]
+#   name = "Contacto"
+#   url = "/about/"
+#   weight = 10
 
 ### MARKDOWN ###
 [markup]

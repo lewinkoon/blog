@@ -1,5 +1,5 @@
 {{ $image := .Page.Resources.GetMatch (.Destination) }}
-{{ $image := $image.Resize "x1080 webp" }}
+{{ $image := $image.Resize "x720 webp" }}
 
 <div class="figure">
 <a id="{{ path.BaseName $image }}" href="{{ $image.RelPermalink }}" target="_blank">

@@ -8,11 +8,11 @@
 
 <span class="line"></span>
 
-{{ range first 3 .Site.Menus.secondary }}
+{{/*  {{ range first 3 .Site.Menus.secondary }}
 <a href="{{ .URL | relURL }}" class="menu {{ if eq .URL $.RelPermalink }}current{{ end }}" >
     <span class="menu-item">{{ .Name }}</span>
 </a>
-{{ end }}
+{{ end }}  */}}
 
 <button id="dark-mode">
     <span class="dark">🌑</span>

@@ -8,9 +8,9 @@ tags:
 - naturaleza
 categories:
 - naturaleza
-map: true
-chart: true
-comments: true
+map: false
+chart: false
+comments: false
 resources:
 - name: llegada-riano
   title: Figura 1
@@ -38,7 +38,7 @@ resources:
   src: img/iglesia-agueda.jpg
 ---
 
-{{< track lat="42.9634" lng="-5.0337">}}
+<!-- {{< track lat="42.9634" lng="-5.0337">}} -->
 
 Comenzamos la ruta desayunando un delicioso café con leche en una cafetería local  del nuevo pueblo de Riaño. El tiempo parecía que no iba a acompañarnos ya que nada más llegar una nube negra como el azabache cubrió el cielo seguido de cientos de truenos. Sin embargo, una hora después la tormenta amainó y pudimos comenzar a andar.
 
