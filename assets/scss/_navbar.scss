@@ -6,7 +6,7 @@ header {
     max-width: 1280px;
     padding: 1rem;
     margin: 0 auto;
-    
+
     .logo {
         font-size: 1.4rem;
         color: var(--light);
@@ -65,13 +65,13 @@ header {
             stroke: var(--accent);
             transition: all 0.2s;
         }
-    
+
         span {
             font-family: "regular";
             font-size: 1.6rem;
             color: var(--light);
         }
-    
+
         .dark {
             display: none;
         }
@@ -80,20 +80,22 @@ header {
             // border: 2px solid var(--accent);
             // font-weight: bold;
             transform: scale(1.2);
+
             svg {
                 stroke: var(--light);
             }
         }
-    
-    
+
+
     }
 }
 
 [data-color="dark"] #dark-mode {
     .light {
-      display: none;
+        display: none;
     }
+
     .dark {
-      display: unset;
+        display: unset;
     }
-  }
+}
