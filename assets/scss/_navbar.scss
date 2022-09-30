@@ -51,21 +51,14 @@ header {
     }
 
     #dark-mode {
-        align-items: center;
+        // align-items: center;
         border: none;
+        // border-radius: 20px;
+        // padding: 0.4rem 0.4rem;
         cursor: pointer;
         background: transparent;
         transition: all 0.2s;
-    
-        &:hover {
-            // border: 2px solid var(--accent);
-            font-weight: bold;
-            transform: scale(1.33);
-            svg {
-                stroke: var(--light);
-            }
-        }
-    
+
         svg {
             width: 1.4rem;
             height: 1.4rem;
@@ -82,6 +75,16 @@ header {
         .dark {
             display: none;
         }
+
+        &:hover {
+            // border: 2px solid var(--accent);
+            // font-weight: bold;
+            transform: scale(1.2);
+            svg {
+                stroke: var(--light);
+            }
+        }
+    
     
     }
 }
