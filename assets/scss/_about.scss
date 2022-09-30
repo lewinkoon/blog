@@ -8,16 +8,4 @@
       }
   }
 
-  a.anchor {
-      text-decoration: none;
-
-      span {
-          color: var(--accent);
-      }
-
-      &:hover span {
-          color: var(--special);
-      }
-
-  }
 }
