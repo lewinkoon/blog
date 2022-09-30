@@ -60,10 +60,10 @@
 .article-post {
     p a {
         color: var(--accent);
-        text-decoration: underline;
 
         &:hover {
             color: var(--special);
+            font-weight: bold;
         }
     }
 

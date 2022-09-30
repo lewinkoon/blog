@@ -1,8 +1,7 @@
 ---
 title: Resume
 subtitle: List of some of my past actions
-layout: "resume"
-draft: true
+
 ---
 
 Hey, I'm Tania! I'm a software engineer working in Chicago. Welcome to my spot on the web for projects I've created, tutorials I've written, musings, and anything else I want to show the world.
