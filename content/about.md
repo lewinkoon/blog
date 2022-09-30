@@ -1,11 +1,10 @@
 ---
-title: Resume
-subtitle: List of some of my past actions
+title: Contacto
+subtitle: Quién está detrás de todo esto
+layout: about
 
 ---
 
-Hey, I'm Tania! I'm a software engineer working in Chicago. Welcome to my spot on the web for projects I've created, tutorials I've written, musings, and anything else I want to show the world.
+<!-- Me encanta construir proyectos de código abierto y escribir sobre lo que aprendo. Esta página es mi jardín digital, un compendio de las cosas que he aprendido y creado a lo largo de los años. -->
 
-My site has no ads, no affiliate links, no tracking or analytics, no sponsored posts, and no paywall. My only motivation for this site is to share what I've learned with the world and document notes for myself, and hopefully connect with a few people.
-
-Check out the projects page to see a highlight of the open-source projects I've made, and articles to see everything I've written. I've also written external publications for DigitalOcean, Envato Tuts+, etc. and done a few speaking engagements and podcasts, which you can find below.
+Me llamo Luis y como ingeniero mecánico me gusta cacharrear. He diseñado esta página web con el objetivo de poder plasmar los conocimientos que voy adquiriendo no solo en el ámbito técnico sino de la vida en general.

@@ -1,0 +1,23 @@
+.about {
+  p a {
+      color: var(--accent);
+
+      &:hover {
+          color: var(--special);
+          font-weight: bold;
+      }
+  }
+
+  a.anchor {
+      text-decoration: none;
+
+      span {
+          color: var(--accent);
+      }
+
+      &:hover span {
+          color: var(--special);
+      }
+
+  }
+}
