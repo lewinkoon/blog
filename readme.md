@@ -4,6 +4,8 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/lewinkoon/hugo-blog)
 ![GitHub last commit](https://img.shields.io/github/last-commit/lewinkoon/hugo-blog)
 
+![image](https://user-images.githubusercontent.com/57636993/193427918-ed969d62-51ad-43d5-b537-b1c21fd8935a.png)
+
 These are the source files for my personal blog made with [Hugo](https://github.com/gohugoio/hugo).
 
 During the design process I tried to keep it all simple and bloat-free, as this is a static web and heavy javascript imports could compromise performance.
