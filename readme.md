@@ -1,8 +1,7 @@
 # 📝 Personal blog
 
-![Netlify Status](https://api.netlify.com/api/v1/badges/fc586c02-2fc6-4665-b4a1-2811f5e2b272/deploy-status)
+![Netlify](https://img.shields.io/netlify/fc586c02-2fc6-4665-b4a1-2811f5e2b272)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/lewinkoon/hugo-blog)
-![GitHub](https://img.shields.io/github/license/lewinkoon/hugo-blog)
 ![GitHub last commit](https://img.shields.io/github/last-commit/lewinkoon/hugo-blog)
 
 These are the source files for my personal blog made with [Hugo](https://github.com/gohugoio/hugo).
