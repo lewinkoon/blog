@@ -9,6 +9,7 @@ html {
     line-height: 1.5;
     scroll-behavior: smooth;
     background-color: var(--darker);
+    scrollbar-gutter: stable both-edges;
 }
 
 body {
