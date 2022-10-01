@@ -1,6 +1,6 @@
-baseURL = 'https://lewin.netlify.app/'
+baseURL = 'https://lewin.app/'
 languageCode = 'es'
-title = 'Lewin.app'
+title = 'lewin.app'
 paginate = 5
 
 ### CUSTOM OPTIONS ###
@@ -20,16 +20,6 @@ paginate = 5
   name = "Contacto"
   url = "/about/"
   weight = 20
-# [[menu.main]]
-#   # pre = "📚"
-#   name = "Notas"
-#   url = "/notes/"
-  # weight = 20
-# [[menu.main]]
-#   # pre = "📦"
-#   name = "Diseños"
-#   url = "/designs/"
-#   weight = 30
 ### SOCIAL LINKS ###
 [[menu.social]]
   name = "Email"
@@ -43,10 +33,6 @@ paginate = 5
   name = "Rss"
   url = "/index.xml"
   pre = "svg/rss.svg"
-# [[menu.secondary]]
-#   name = "Contacto"
-#   url = "/about/"
-#   weight = 10
 
 ### MARKDOWN ###
 [markup]
