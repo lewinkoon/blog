@@ -2,7 +2,7 @@ import Fuse from "js/fuse.js"
 
 interface searchItem {
     item: {
-        categorise: Array<string>,
+        categories: Array<string>,
         contents: string,
         date: string,
         year: string,
@@ -93,22 +93,31 @@ class Search {
         }
 
         let result = this.fuse.search(value);
+
+
         if (result.length > 0) {
             this.populateResults(result);
         } else {
-            this.searchResults.innerHTML = '<p>Sorry, nothing matched that search.</p>';
+            this.searchResults.innerHTML = '';
         }
     }
 
     private populateResults(results: Array<searchItem>) {
-        this.searchResults.innerHTML = "";
+        this.searchResults.innerHTML = `
+            <div class="title">
+                <h2>Resultados</h2>
+                <span class="line"></span>
+            </div>
+            `;
 
         results.forEach((value) => {
             let item = value.item
             let html = `
                 <a href="${item.permalink}">
+                    <span class="category" type="${item.categories}">${item.categories}</span>
+                    <div class="post-title">${item.title}</div>
+                    <span class="line"></span>
                     <time>${item.date}</time>
-                    ${item.title}
                 </a>
                 `
             this.searchResults.innerHTML += html;
@@ -122,9 +131,9 @@ class Search {
         }
         this.searchFilter.forEach((v: string, k: string) => {
             let object = {};
-            if (v == "tags") {
+            if (v == "categories") {
                 object = {
-                    tags: k
+                    categories: k
                 }
             }
             filter.push(object);

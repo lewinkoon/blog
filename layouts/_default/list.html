@@ -1,31 +1,37 @@
 {{ define "main" }}
+{{ $pages := where .Site.RegularPages "Section" "articles" }}
 
 <section>
     <div class="section-title">
         <h1>📝 Artículos</h1>
-        <p>Tutoriales, artículos técnicos, atajos, referencias, y todos los recursos de desarrollo escritos hasta la fecha.</p>
+        <p>Tutoriales, artículos técnicos, atajos, referencias, y todos los recursos de desarrollo escritos hasta la
+            fecha.</p>
     </div>
 
-    {{ $pages := where .Site.RegularPages "Section" "articles" }}
-
     <div class="list-filter">
-        {{ $maxCategoryToShow := $.Site.Params.maxCategoryToShow | default 24 }}
-        {{ range .Site.Taxonomies.tags.TaxonomyArray | first $maxCategoryToShow }}
-        <div class="filter-item" data-value="{{ .Page.Title }}" data-type="tags">
+        {{ range .Site.Taxonomies.categories }}
+        <div class="filter-item" data-value="{{ .Page.Title }}" data-type="categories">
             {{ partial "svg/hash.svg" . }}
             {{ .Page.Title }}
         </div>
         {{ end }}
     </div>
 
-    <input id="search-query" type="search" placeholder="Busca cualquier cosa...">
+    <input id="search-query" placeholder="Busca cualquier cosa...">
 </section>
 
-<section id="search-results"></section>
+<section id="search-results">
+    <div class="title">
+        <h2>Resultados</h2>
+        <span class="line"></span>
+    </div>
+    <div class="list"></div>
+</section>
 
-<section class="section-list" id="section-list">
+
+<section id="section-list">
     {{ range $pages.GroupByDate "2006" }}
-    <div class="list-item">
+    <div class="group">
         <div class="title">
             <h2>{{ .Key }}</h2>
             <span class="line"></span>
@@ -37,12 +43,13 @@
             {{ end }}
             <div class="post-title">{{ .Title }}</div>
             <span class="line"></span>
-            <time>{{ .Date.Format "Jan 02" }}</time>
+            <time>{{ .Date.Format "02/01" }}</time>
         </a>
         {{ end }}
     </div>
     {{ end }}
 </section>
+
 
 {{ $search := resources.Get "scripts/search.ts" | js.Build (dict "minify" true ) | fingerprint }}
 <script async src="{{ $search.RelPermalink }}"></script>

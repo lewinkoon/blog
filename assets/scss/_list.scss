@@ -22,28 +22,57 @@
         display: flex;
         align-items: center;
         gap: 5px;
-        font-size: 1rem;
         padding: 0.3rem 0.6rem;
         background: var(--dark);
         border-radius: 5px;
         cursor: pointer;
-
-        &.active {
-            svg {
-                stroke: var(--special);
-            }
-        }
-
-        &:hover {
-            svg {
-                stroke: var(--special);
-            }
-        }
+        user-select: none;
 
         svg {
             width: 1.4rem;
             height: 1.4rem;
-            stroke: var(--accent);
+        }
+
+        &[data-value="naturaleza"] {
+            svg {
+                stroke: #caffbf;
+            }
+
+            &.active {
+                background-color: #caffbf;
+            }
+        }
+
+        &[data-value="programación"] {
+            svg {
+                stroke: #bdb2ff;
+            }
+
+            &.active {
+                background-color: #bdb2ff;
+            }
+        }
+
+        &[data-value="ingeniería"] {
+            svg {
+                stroke: #ffd6a5;
+            }
+
+            &.active {
+                background-color: #ffd6a5;
+            }
+        }
+
+        &.active {
+            color: var(--dark);
+
+            svg {
+                stroke: var(--dark)
+            }
+        }
+
+        &:hover {
+            font-weight: bold;
         }
     }
 }
@@ -59,36 +88,18 @@
     font-size: inherit;
     color: inherit;
 
-    &:focus, &:hover {
+    &:focus,
+    &:hover {
         border: 2px solid var(--accent);
     }
 }
 
 #search-results {
     display: none;
-    margin-bottom: 1rem;
-    a {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        padding: 0.5rem;
-        font-size: 1.2rem;
-
-        &:hover {
-            background-color: var(--dark);
-            border-radius: 5px;
-        }
-
-        time {
-            font-size: 1rem;
-            font-weight: bold;
-            color: var(--accent);
-        }
-    }
 }
 
-.list-item {
-    margin-bottom: 1rem;
+#section-list,
+#search-results {
 
     .title {
         display: flex;
@@ -102,7 +113,7 @@
             margin: 0;
         }
 
-       .line {
+        .line {
             flex-grow: 1;
             border-bottom: 4px solid var(--accent);
             margin: auto 1rem;
@@ -125,7 +136,7 @@
             padding: 0.1rem 0.4rem;
             background-color: var(--dark);
             border-radius: 5px;
-            color: #17191c;
+            color: var(--fixed-dark);
 
             &[type="naturaleza"] {
                 background-color: #caffbf;
@@ -146,8 +157,7 @@
 
         time {
             font-size: 1rem;
-            // font-family: "mono";
-            // font-weight: bold;
+            font-family: "mono";
             color: var(--accent);
             margin-right: 0.5rem;
         }
@@ -166,11 +176,11 @@
             font-weight: bold;
 
             time {
-                color: var(--special);
+                font-weight: bold;
             }
 
             .line {
-                border-bottom: 1px solid var(--accent);
+                border-bottom: 2px solid var(--darker);
             }
         }
     }
