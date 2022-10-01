@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ $.Site.LanguageCode | default "es" }}">
     {{ partial "head.html" . }}
-    <!-- {{ partialCached "scheme.html" . }} -->
     <body>
         <header>
             {{ partial "header.html" . }}
-            <!-- {{ partial "particles.html" . }} -->
         </header>
         <main>
             {{ block "main" . }}{{ end }}
