@@ -9,7 +9,7 @@ During the design process I tried to keep it all simple and bloat-free, as this 
 
 Some **features** on my blog are:
 
- - 🌙 Dark mode
- - 📋 Copy button on code blocks
- - 🔍 Text based search on regular articles
- - 🏷️ Filter by categories
+ > 🌙 Dark mode
+ > 📋 Copy button on code blocks
+ > 🔍 Text based search
+ > 🏷️ Filter by categories
