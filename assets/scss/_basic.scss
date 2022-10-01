@@ -211,15 +211,16 @@ hr {
 }
 
 @media (max-width: 480px) {
-    html {
-        font-size: 9pt;
-    }
+
+    header {
+        button, .line {
+            display: none;
+        }  
+    } 
 
     a {
-
-        time,
-        .line {
-            display: none;
+        .category, time, .line {
+            display: none !important;
         }
     }
 
