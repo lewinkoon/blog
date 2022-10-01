@@ -1,7 +1,7 @@
+# 📝 Personal blog
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/fc586c02-2fc6-4665-b4a1-2811f5e2b272/deploy-status)](https://app.netlify.com/sites/lewin/deploys)
-
-# 📝 Personal blog
+![Hugo](https://img.shields.io/badge/Hugo-black.svg?style=for-the-badge&logo=Hugo)
 
 These are the source files for my personal blog made with [Hugo](https://github.com/gohugoio/hugo).
 
