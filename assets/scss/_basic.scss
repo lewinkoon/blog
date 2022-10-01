@@ -204,9 +204,13 @@ hr {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     html {
         font-size: 10pt;
+    }
+
+    .intro-text span {
+        display: none;
     }
 }
 
@@ -219,7 +223,7 @@ hr {
     } 
 
     a {
-        .category, time, .line {
+        .category, .line {
             display: none !important;
         }
     }
@@ -231,4 +235,10 @@ hr {
         }
     }
 
+}
+
+@media (max-width: 300px) {
+    html {
+        font-size: 8pt;
+    }
 }
