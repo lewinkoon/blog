@@ -100,13 +100,16 @@
 
 #section-list,
 #search-results {
+    .group {
+        margin-bottom: 1.5rem;
+    }
 
     .title {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 0.5rem;
-        margin-left: 0.5rem;
+        // margin-bottom: 0.5rem;
+        margin-left: 0.75rem;
 
         h2 {
             font-size: 2rem;
@@ -183,5 +186,6 @@
                 border-bottom: 2px solid var(--darker);
             }
         }
+
     }
 }
