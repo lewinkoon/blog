@@ -6,7 +6,8 @@
     margin-top: 6rem;
 
     .intro-text {
-
+        text-align: center;
+        
         h1 {
             font-size: 4rem;
             margin: 0;
@@ -30,7 +31,7 @@
     .intro-links {
         display: flex;
         gap: 10px;
-        // justify-content: center;
+        justify-content: center;
     
         a {
             display: flex;
