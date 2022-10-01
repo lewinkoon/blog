@@ -203,3 +203,31 @@ hr {
         background: var(--accent);
     }
 }
+
+@media (max-width: 600px) {
+    html {
+        font-size: 10pt;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 9pt;
+    }
+
+    a {
+
+        time,
+        .line {
+            display: none;
+        }
+    }
+
+    .title {
+
+        a {
+            display: none;
+        }
+    }
+
+}
