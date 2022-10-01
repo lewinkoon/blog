@@ -13,18 +13,18 @@
             margin: 0;
         }
     
+        p {
+            font-size: 1.4rem;
+
+        }
+
         a {
             color: var(--accent);
-            border-radius: 10px;
             transition: all 0.25s;
     
             &:hover {
                 color: var(--special);
             }
-        }
-    
-        p {
-            font-size: 1.4rem;
         }
     }
 
