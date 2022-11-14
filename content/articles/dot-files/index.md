@@ -1,6 +1,6 @@
 ---
 author: "Lewin"
-title: How to manage dotfiles with git
+title: Guardar dotfiles en en repositorio git
 date: 2022-11-13
 categories:
 - programación
