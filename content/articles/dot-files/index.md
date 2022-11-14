@@ -1,6 +1,6 @@
 ---
 author: "Lewin"
-title: Guardar dotfiles en en repositorio git
+title: Guardar dotfiles en repositorio git
 date: 2022-11-13
 categories:
 - programación
