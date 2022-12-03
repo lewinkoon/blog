@@ -18,10 +18,10 @@
             color: var(--blue);
 
             &:hover {
-                color: var(--red);
+                color: var(--flamingo);
             }
         }
-        
+
         .read-time {
             font-style: italic;
         }
@@ -36,21 +36,22 @@
             align-items: center;
             gap: 0.25rem;
             font-size: 0.8rem;
-            background-color: var(--mantle);
+            background-color: var(--surface0);
             border-radius: 0.2rem;
             padding: 0.2rem 0.4rem;
-
-            &:hover {
-
-                svg {
-                    stroke: var(--red);
-                }
-            }
 
             svg {
                 width: 1rem;
                 height: 1rem;
                 stroke: var(--blue);
+            }
+
+            &:hover {
+                background-color: var(--surface1);
+
+                svg {
+                    stroke: var(--flamingo);
+                }
             }
 
         }
@@ -62,8 +63,7 @@
         color: var(--blue);
 
         &:hover {
-            color: var(--red);
-            font-weight: bold;
+            color: var(--flamingo);
         }
     }
 
@@ -75,7 +75,7 @@
         }
 
         &:hover span {
-            color: var(--red);
+            color: var(--flamingo);
         }
 
     }
@@ -107,12 +107,12 @@ aside {
             border-left: 3px solid var(--mantle);
             margin: 0.5rem 0.5rem 0;
             padding: 0rem 0rem 0rem 0.5rem;
-    
+
             ul {
                 font-size: 1.2rem;
                 list-style-type: none;
                 padding: 0;
-    
+
                 a:hover {
                     color: var(--blue);
                     font-weight: bold;
@@ -145,7 +145,7 @@ aside {
 
         &:hover {
             transform: translateY(-4px);
-            color: var(--red);
+            color: var(--flamingo);
         }
     }
 }

@@ -23,7 +23,7 @@
         align-items: center;
         gap: 5px;
         padding: 0.3rem 0.6rem;
-        background: var(--mantle);
+        background: var(--surface0);
         border-radius: 5px;
         cursor: pointer;
         user-select: none;
@@ -35,44 +35,45 @@
 
         &[data-value="naturaleza"] {
             svg {
-                stroke: #caffbf;
+                stroke: var(--green);
             }
 
             &.active {
-                background-color: #caffbf;
+                background-color: var(--green);
             }
         }
 
         &[data-value="programación"] {
             svg {
-                stroke: #bdb2ff;
+                stroke: var(--yellow);
             }
 
             &.active {
-                background-color: #bdb2ff;
+                background-color: var(--yellow);
             }
         }
 
         &[data-value="ingeniería"] {
             svg {
-                stroke: #ffd6a5;
+                stroke: var(--pink);
             }
 
             &.active {
-                background-color: #ffd6a5;
+                background-color: var(--pink);
             }
         }
 
         &.active {
-            color: var(--mantle);
+            color: var(--surface0);
 
             svg {
-                stroke: var(--mantle)
+                stroke: var(--surface0)
             }
         }
 
         &:hover {
-            font-weight: bold;
+            // font-weight: bold;
+            background-color: var(--surface1);
         }
     }
 }
@@ -87,11 +88,6 @@
     font-family: inherit;
     font-size: inherit;
     color: inherit;
-
-    &:focus,
-    &:hover {
-        border: 2px solid var(--blue);
-    }
 }
 
 #search-results {
@@ -108,7 +104,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        // margin-bottom: 0.5rem;
         margin-left: 0.75rem;
 
         h2 {
@@ -128,7 +123,7 @@
         display: flex;
         align-items: center;
         gap: 0.5em;
-        padding: 0.5rem 0.5rem 0.5rem 0.75rem;
+        padding: 0.5rem 0.25rem 0.5rem 0.75rem;
 
         .category {
             display: flex;
@@ -137,20 +132,19 @@
             font-weight: bold;
             align-items: center;
             padding: 0.1rem 0.4rem;
-            background-color: var(--mantle);
             border-radius: 5px;
             color: var(--base);
 
             &[type="naturaleza"] {
-                background-color: #caffbf;
+                background-color: var(--green);
             }
 
             &[type="programación"] {
-                background-color: #bdb2ff;
+                background-color: var(--yellow);
             }
 
-            &[type="ingeniería"] {
-                background-color: #ffd6a5;
+            &[type="historia"] {
+                background-color: var(--yellow);
             }
         }
 
@@ -161,20 +155,20 @@
         time {
             font-size: 1rem;
             font-family: "mono";
-            color: var(--red);
+            color: var(--blue);
             margin-right: 0.5rem;
         }
 
         .line {
             flex-grow: 1;
-            border-bottom: 2px solid var(--mantle);
+            border-bottom: 2px solid var(--surface0);
             border-radius: 1px;
             padding-top: 0.2rem;
             margin: auto 0rem;
         }
 
         &:hover {
-            background-color: var(--mantle);
+            background-color: var(--surface0);
             border-radius: 10px;
             font-weight: bold;
 
@@ -183,9 +177,8 @@
             }
 
             .line {
-                border-bottom: 2px solid var(--base);
+                border-bottom: 2px solid var(--surface1);
             }
         }
-
     }
 }

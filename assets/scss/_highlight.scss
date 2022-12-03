@@ -19,7 +19,7 @@
         display: block;
         content: attr(data-lang);
         margin-bottom: 1rem;
-        color: var(--text);
+        color: var(--blue);
         text-transform: uppercase;
         font-weight: bold;
       }
@@ -30,7 +30,7 @@
     position: absolute;
     top: 20px;
     right: 20px;
-    background: var(--blue);
+    background: var(--overlay0);
     border: none;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2),0px 2px 6px rgba(0, 0, 0, 0.2),0px 0px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -39,7 +39,7 @@
     cursor: pointer;
     font-family: "regular";
     font-size: 1rem;
-    // font-weight: bold;
+    font-weight: bold;
     opacity: 0;
     transition: opacity .3s ease;
   }
@@ -70,27 +70,27 @@
   /* KeywordReserved */ .kr { color: var(--blue); font-weight: bold }
   /* KeywordType */ .kt { color: var(--blue) }
 
-  /* Name */ .n { color: var(--magenta) }
-  /* NameAttribute */ .na { color: var(--magenta) }
-  /* NameBuiltin */ .nb { color: var(--magenta) }
-  /* NameBuiltinPseudo */ .bp { color: var(--magenta) }
-  /* NameClass */ .nc { color: var(--magenta); font-weight: bold }
-  /* NameConstant */ .no { color: var(--magenta) }
-  /* NameDecorator */ .nd { color: var(--magenta)}
-  /* NameEntity */ .ni { color: var(--magenta); font-weight: bold }
-  /* NameException */ .ne { color: var(--magenta); font-weight: bold }
-  /* NameFunction */ .nf { color: var(--magenta) }
-  /* NameFunctionMagic */ .fm { color: var(--magenta) }
-  /* NameLabel */ .nl { color: var(--magenta) }
-  /* NameNamespace */ .nn { color: var(--magenta); font-weight: bold }
-  /* NameOther */ .nx { color: var(--whiter) }
-  /* NameProperty */ .py { color: var(--magenta) }
-  /* NameTag */ .nt { color: var(--magenta); font-weight: bold }
-  /* NameVariable */ .nv { color: var(--magenta) }
-  /* NameVariableClass */ .vc { color: var(--magenta) }
-  /* NameVariableGlobal */ .vg { color: var(--magenta) }
-  /* NameVariableInstance */ .vi { color: var(--magenta) }
-  /* NameVariableMagic */ .vm { color: var(--magenta) }
+  /* Name */ .n { color: var(--pink) }
+  /* NameAttribute */ .na { color: var(--pink) }
+  /* NameBuiltin */ .nb { color: var(--pink) }
+  /* NameBuiltinPseudo */ .bp { color: var(--pink) }
+  /* NameClass */ .nc { color: var(--pink); font-weight: bold }
+  /* NameConstant */ .no { color: var(--pink) }
+  /* NameDecorator */ .nd { color: var(--pink)}
+  /* NameEntity */ .ni { color: var(--pink); font-weight: bold }
+  /* NameException */ .ne { color: var(--pink); font-weight: bold }
+  /* NameFunction */ .nf { color: var(--pink) }
+  /* NameFunctionMagic */ .fm { color: var(--pink) }
+  /* NameLabel */ .nl { color: var(--pink) }
+  /* NameNamespace */ .nn { color: var(--pink); font-weight: bold }
+  /* NameOther */ .nx { color: var(--subtext1) }
+  /* NameProperty */ .py { color: var(--pink) }
+  /* NameTag */ .nt { color: var(--pink); font-weight: bold }
+  /* NameVariable */ .nv { color: var(--pink) }
+  /* NameVariableClass */ .vc { color: var(--pink) }
+  /* NameVariableGlobal */ .vg { color: var(--pink) }
+  /* NameVariableInstance */ .vi { color: var(--pink) }
+  /* NameVariableMagic */ .vm { color: var(--pink) }
 
   /* Literal */ .l { color: var(--green) }
   /* LiteralDate */ .ld { color: var(--green) }
@@ -116,30 +116,30 @@
   /* LiteralNumberIntegerLong */ .il { color: var(--red) }
   /* LiteralNumberOct */ .mo { color: var(--red) }
 
-  /* Operator */ .o { color: var(--cyan) }
-  /* OperatorWord */ .ow { color: var(--cyan); font-weight: bold }
-  /* Punctuation */ .p { color: var(--white) }
+  /* Operator */ .o { color: var(--teal) }
+  /* OperatorWord */ .ow { color: var(--teal); font-weight: bold }
+  /* Punctuation */ .p { color: var(--subtext0) }
 
-  /* Comment */ .c { color: var(--white); font-style: italic }
-  /* CommentHashbang */ .ch { color: var(--white); font-style: italic }
-  /* CommentMultiline */ .cm { color: var(--white); font-style: italic }
-  /* CommentSingle */ .c1 { color: var(--white); font-style: italic }
-  /* CommentSpecial */ .cs { color: var(--white); font-style: italic }
-  /* CommentPreproc */ .cp { color: var(--white) }
-  /* CommentPreprocFile */ .cpf { color: var(--white) }
+  /* Comment */ .c { color: var(--subtext0); font-style: italic }
+  /* CommentHashbang */ .ch { color: var(--subtext0); font-style: italic }
+  /* CommentMultiline */ .cm { color: var(--subtext0); font-style: italic }
+  /* CommentSingle */ .c1 { color: var(--subtext0); font-style: italic }
+  /* CommentSpecial */ .cs { color: var(--subtext0); font-style: italic }
+  /* CommentPreproc */ .cp { color: var(--subtext0) }
+  /* CommentPreprocFile */ .cpf { color: var(--subtext0) }
 
-  /* Generic */ .g { color: var(--white) }
-  /* GenericDeleted */ .gd { color: var(--white) }
+  /* Generic */ .g { color: var(--subtext0) }
+  /* GenericDeleted */ .gd { color: var(--subtext0) }
   /* GenericEmph */ .ge { font-style: italic }
-  /* GenericError */ .gr { color: var(--white) }
-  /* GenericHeading */ .gh { color: var(--white); font-weight: bold }
-  /* GenericInserted */ .gi { color: var(--white) }
-  /* GenericOutput */ .go { color: var(--white) }
-  /* GenericPrompt */ .gp { color: var(--white); font-weight: bold }
+  /* GenericError */ .gr { color: var(--subtext0) }
+  /* GenericHeading */ .gh { color: var(--subtext0); font-weight: bold }
+  /* GenericInserted */ .gi { color: var(--subtext0) }
+  /* GenericOutput */ .go { color: var(--subtext0) }
+  /* GenericPrompt */ .gp { color: var(--subtext0); font-weight: bold }
   /* GenericStrong */ .gs { font-weight: bold }
-  /* GenericSubheading */ .gu { color: var(--white); font-weight: bold }
-  /* GenericTraceback */ .gt { color: var(--white) }
+  /* GenericSubheading */ .gu { color: var(--subtext0); font-weight: bold }
+  /* GenericTraceback */ .gt { color: var(--subtext0) }
   /* GenericUnderline */ .gl { text-decoration: underline }
-  /* TextWhitespace */ .w { color: var(--white) }
+  /* TextWhitespace */ .w { color: var(--subtext0) }
 
 }
