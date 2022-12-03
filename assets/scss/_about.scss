@@ -1,9 +1,9 @@
 .about {
   p a {
-      color: var(--accent);
+      color: var(--blue);
 
       &:hover {
-          color: var(--special);
+          color: var(--red);
           font-weight: bold;
       }
   }

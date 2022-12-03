@@ -2,7 +2,7 @@
   margin: 0 0 2rem;
   padding: 1rem;
   border-radius: 10px;
-  background: var(--dark);
+  background: var(--mantle);
   position: relative;
   // overflow-x: auto;
 
@@ -19,7 +19,7 @@
         display: block;
         content: attr(data-lang);
         margin-bottom: 1rem;
-        color: var(--light);
+        color: var(--text);
         text-transform: uppercase;
         font-weight: bold;
       }
@@ -30,23 +30,18 @@
     position: absolute;
     top: 20px;
     right: 20px;
-    background: var(--accent);
+    background: var(--blue);
     border: none;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2),0px 2px 6px rgba(0, 0, 0, 0.2),0px 0px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 0.25rem 0.75rem;
-    color: var(--fixed-light);
+    color: var(--text);
     cursor: pointer;
     font-family: "regular";
     font-size: 1rem;
     // font-weight: bold;
     opacity: 0;
     transition: opacity .3s ease;
-
-    // &.copy {
-    //   background-color: var(--special);
-    //   color: var(--fixed-dark);
-    // }
   }
 
   &:hover {

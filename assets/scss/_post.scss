@@ -15,10 +15,10 @@
 
         .author {
             font-weight: bold;
-            color: var(--accent);
+            color: var(--blue);
 
             &:hover {
-                color: var(--special);
+                color: var(--red);
             }
         }
         
@@ -36,21 +36,21 @@
             align-items: center;
             gap: 0.25rem;
             font-size: 0.8rem;
-            background-color: var(--dark);
+            background-color: var(--mantle);
             border-radius: 0.2rem;
             padding: 0.2rem 0.4rem;
 
             &:hover {
 
                 svg {
-                    stroke: var(--special);
+                    stroke: var(--red);
                 }
             }
 
             svg {
                 width: 1rem;
                 height: 1rem;
-                stroke: var(--accent);
+                stroke: var(--blue);
             }
 
         }
@@ -59,10 +59,10 @@
 
 .article-post {
     p a {
-        color: var(--accent);
+        color: var(--blue);
 
         &:hover {
-            color: var(--special);
+            color: var(--red);
             font-weight: bold;
         }
     }
@@ -71,11 +71,11 @@
         text-decoration: none;
 
         span {
-            color: var(--accent);
+            color: var(--blue);
         }
 
         &:hover span {
-            color: var(--special);
+            color: var(--red);
         }
 
     }
@@ -89,7 +89,7 @@ aside {
 
     .toc-container {
         border-radius: 5px;
-        // background-color: var(--dark);
+        // background-color: var(--mantle);
         // min-width: 160px;
 
         position: sticky;
@@ -99,12 +99,12 @@ aside {
             font-size: 1.2rem;
             margin: 0;
             padding: 0.5rem 0.75rem;
-            background-color: var(--dark);
+            background-color: var(--mantle);
             border-radius: 5px;
         }
 
         #TableOfContents {
-            border-left: 3px solid var(--dark);
+            border-left: 3px solid var(--mantle);
             margin: 0.5rem 0.5rem 0;
             padding: 0rem 0rem 0rem 0.5rem;
     
@@ -114,7 +114,7 @@ aside {
                 padding: 0;
     
                 a:hover {
-                    color: var(--accent);
+                    color: var(--blue);
                     font-weight: bold;
                 }
             }
@@ -130,8 +130,8 @@ aside {
         flex: 0 0 calc(50% - 1rem);
         padding: 1rem;
         border-radius: .35rem;
-        background: var(--dark);
-        color: var(--accent);
+        background: var(--mantle);
+        color: var(--blue);
         transition: transform 0.2s;
 
         &:first-of-type {
@@ -140,12 +140,12 @@ aside {
 
         span {
             display: block;
-            color: var(--light);
+            color: var(--text);
         }
 
         &:hover {
             transform: translateY(-4px);
-            color: var(--special);
+            color: var(--red);
         }
     }
 }
@@ -162,7 +162,7 @@ aside {
 
         .line {
             flex-grow: 1;
-            border-bottom: 4px solid var(--accent);
+            border-bottom: 4px solid var(--blue);
             margin: auto 0 auto 1rem;
             border-radius: 2px;
         }

@@ -23,7 +23,7 @@
         align-items: center;
         gap: 5px;
         padding: 0.3rem 0.6rem;
-        background: var(--dark);
+        background: var(--mantle);
         border-radius: 5px;
         cursor: pointer;
         user-select: none;
@@ -64,10 +64,10 @@
         }
 
         &.active {
-            color: var(--dark);
+            color: var(--mantle);
 
             svg {
-                stroke: var(--dark)
+                stroke: var(--mantle)
             }
         }
 
@@ -79,8 +79,8 @@
 
 #search-query {
     padding: 0.5rem 1rem;
-    background: var(--dark);
-    border: 2px solid var(--dark);
+    background: var(--mantle);
+    border: 2px solid var(--mantle);
     border-radius: 10px;
     outline: none;
     width: 100%;
@@ -90,7 +90,7 @@
 
     &:focus,
     &:hover {
-        border: 2px solid var(--accent);
+        border: 2px solid var(--blue);
     }
 }
 
@@ -118,7 +118,7 @@
 
         .line {
             flex-grow: 1;
-            border-bottom: 4px solid var(--accent);
+            border-bottom: 4px solid var(--blue);
             margin: auto 1rem;
             border-radius: 2px;
         }
@@ -137,9 +137,9 @@
             font-weight: bold;
             align-items: center;
             padding: 0.1rem 0.4rem;
-            background-color: var(--dark);
+            background-color: var(--mantle);
             border-radius: 5px;
-            color: var(--fixed-dark);
+            color: var(--base);
 
             &[type="naturaleza"] {
                 background-color: #caffbf;
@@ -161,20 +161,20 @@
         time {
             font-size: 1rem;
             font-family: "mono";
-            color: var(--special);
+            color: var(--red);
             margin-right: 0.5rem;
         }
 
         .line {
             flex-grow: 1;
-            border-bottom: 2px solid var(--dark);
+            border-bottom: 2px solid var(--mantle);
             border-radius: 1px;
             padding-top: 0.2rem;
             margin: auto 0rem;
         }
 
         &:hover {
-            background-color: var(--dark);
+            background-color: var(--mantle);
             border-radius: 10px;
             font-weight: bold;
 
@@ -183,7 +183,7 @@
             }
 
             .line {
-                border-bottom: 2px solid var(--darker);
+                border-bottom: 2px solid var(--base);
             }
         }
 
