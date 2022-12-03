@@ -8,6 +8,7 @@ header {
     .logo {
         font-size: 1.4rem;
         color: var(--text);
+        background-color: var(--surface0);
         border: 2px solid var(--surface0);
         margin-right: 0.5rem;
         padding: 0.25rem 0.75rem 0.25rem 0.75rem;
@@ -16,7 +17,6 @@ header {
 
         &:hover {
             border: 2px solid var(--blue);
-            // font-weight: bold;
         }
     }
 
