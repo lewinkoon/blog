@@ -6,32 +6,41 @@ header {
     margin: 0 auto;
 
     .logo {
-        font-size: 1.4rem;
-        color: var(--text);
-        background-color: var(--surface0);
-        border: 2px solid var(--surface0);
-        margin-right: 0.5rem;
-        padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+        display: flex;
+        align-items: center;
         border-radius: 10px;
-        transition: border 0.2s;
+        margin-right: 0.5rem;
+        padding: 0.25rem 1rem 0.25rem 0.75rem;
+        background-color: var(--surface0);
+
+        span {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--blue);
+            transition: color 0.2s;
+        }
+
+        svg {
+            width: 2rem;
+            height: auto;
+            margin-right: 0.5rem;
+        }
 
         &:hover {
-            border: 2px solid var(--blue);
+            background-color: var(--surface1);
         }
     }
 
     .menu {
         margin: 0 0.25em;
         font-size: 1.2rem;
-        padding: 0 0.25rem;
-        // border-bottom: 2px solid var(--base);
+        border-bottom: 3px solid var(--base);
 
         .menu-icon {
             font-size: 1.4rem;
         }
 
         &:hover {
-            font-weight: bold;
             border-bottom: 3px solid var(--blue);
         }
 
@@ -53,18 +62,12 @@ header {
         cursor: pointer;
         background: transparent;
         transition: all 0.2s;
+        padding: 0;
 
         svg {
-            width: 1.4rem;
-            height: 1.4rem;
-            stroke: var(--blue);
+            width: 2rem;
+            height: 2rem;
             transition: all 0.2s;
-        }
-
-        span {
-            font-family: "regular";
-            font-size: 1.6rem;
-            color: var(--text);
         }
 
         .dark {
@@ -73,12 +76,7 @@ header {
 
         &:hover {
             transform: scale(1.2);
-
-            svg {
-                stroke: var(--text);
-            }
         }
-
 
     }
 }
