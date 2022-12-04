@@ -126,6 +126,14 @@
                 border-radius: 5px;
                 color: var(--base);
 
+                &[type="historia"] {
+                    background-color: var(--pink);
+                }
+
+                &[type="ingeniería"] {
+                    background-color: var(--mauve);
+                }
+
                 &[type="naturaleza"] {
                     background-color: var(--green);
                 }
@@ -134,9 +142,7 @@
                     background-color: var(--yellow);
                 }
 
-                &[type="historia"] {
-                    background-color: var(--pink);
-                }
+
             }
 
             .post-title {
