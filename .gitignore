@@ -1,4 +1,5 @@
 /misc
 /resources
+/.vscode
 .hugo_build.lock
 tsconfig.json
