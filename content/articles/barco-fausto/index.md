@@ -58,5 +58,3 @@ En el interio del barco no había nadie con vida, únicamente habia un cadáver 
 Los italianos acordaron remolcar el pesquero hasta puerto cabello en venezuela pero solo dos días después la tripulación volvió a comunicarse con las autoridades para decir que habían vuelto a perder de vista el barco. Los italianos relataron que el cabo que unía los dos barcos se había soltado, o cortado según algunas versiones, lo que hizo imposible volver a dar con el Fausto.
 
 Los italianos, al ser interrogados en tierra, mencionaron la existencia de una libreta con hojas arrancadas que había pertenecido a García Pino. En la única hoja sin arrancar, que era la última, el mecánico canario daba instrucciones sobre cómo su mujer debía administrar las propiedades y los dineros que tenían cuando él faltara, a modo de testamento. El texto terminaba con una frase terrible que decía: "Nunca le digas a Julín lo que ha pasado". Julín, era uno de los hijos de este marino. Y continuaba con otro frase turbia que decía: "Tú sabes que Dios quiso para mí este destino".
-
-Dentro de las posibles causas de la desaparición del Fausto se comenta que podría haber sido ...
