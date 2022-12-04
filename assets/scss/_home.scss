@@ -9,10 +9,23 @@
         text-align: center;
 
         h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             font-size: 4rem;
             margin: 0;
+
+            span {
+                color: var(--blue);
+                margin: 0 0.5rem 0 1rem;
+            }
+
+            svg {
+                width: 6rem;
+                height: auto;
+            }
         }
-    
+
         p {
             font-size: 1.4rem;
 
@@ -21,7 +34,7 @@
         a {
             color: var(--blue);
             transition: all 0.25s;
-    
+
             &:hover {
                 color: var(--flamingo);
             }
@@ -32,7 +45,7 @@
         display: flex;
         gap: 10px;
         justify-content: center;
-    
+
         a {
             display: flex;
             align-items: center;
@@ -42,16 +55,16 @@
             border-radius: 5px;
             font-size: 1rem;
             transition: transform 0.25s;
-    
+
             &:hover {
                 transform: translateY(-5px);
                 background-color: var(--surface1);
-                
+
                 svg {
                     stroke: var(--flamingo);
                 }
             }
-    
+
             svg {
                 width: 1.4rem;
                 height: 1.4rem;
@@ -74,9 +87,9 @@
             margin: 0;
         }
 
-       .line {
+        .line {
             flex-grow: 1;
-            border-bottom: 4px solid var(--surface0);
+            border-bottom: 4px solid var(--blue);
             margin: auto 1rem;
             border-radius: 2px;
         }
@@ -131,18 +144,12 @@
             }
 
             time {
+                flex-grow: 1;
                 font-size: 1rem;
                 font-family: "mono";
                 color: var(--blue);
                 margin-right: 0.5rem;
-            }
-
-            .line {
-                flex-grow: 1;
-                border-bottom: 2px solid var(--surface0);
-                border-radius: 1px;
-                padding-top: 0.2rem;
-                margin: auto 0rem;
+                text-align: end;
             }
 
             &:hover {

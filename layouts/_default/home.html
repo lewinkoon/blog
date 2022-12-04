@@ -2,7 +2,10 @@
 
 <section class="intro">
     <div class="intro-text">
-        <h1>Hola, soy <a href="{{ "about" | absURL }}">Lewin.</a></h1>
+        <h1>
+            Hola, soy <span>Lewin</span>
+            {{ partial "svg/cat.svg" . }}
+        </h1>
         {{ .Content }}
     </div>
     <div class="intro-links">
@@ -24,7 +27,7 @@
     <div class="title">
         <h2>Últimos artículos</h2>
         <span class="line"></span>
-        <a href="{{ ref . "articles" }}" >Ver todos</a>
+        <a href="{{ ref . " articles" }}">Ver todos</a>
     </div>
     <div class="posts">
         {{ range $pages.Pages }}
@@ -33,39 +36,10 @@
             <span class="category" type="{{ . }}">{{ . }}</span>
             {{ end }}
             <div class="post-title">{{ .Title }}</div>
-            <span class="line"></span>
             <time>{{ .Date.Format "02/01" }}</time>
         </a>
         {{ end }}
     </div>
 </section>
-
-{{ if .Site.Params.projects }}
-<section class="projects">
-    
-    <div class="title">
-        <h2>Proyectos</h2>
-        <span class="line"></span>
-    </div>
-
-    <div class="card-list">
-        {{ range $projects }}
-            <div class="card-item">
-                <div class="card-title">{{ .Params.icon }} {{ .Title }}</div>
-                <hr>
-                <div class="card-content">                
-                    <div class="card-desc">{{ .Description }}</div>
-                    <div class="card-links">
-                    <a href="{{ .RelPermalink }}">📝 Artículo</a>
-                    {{ with .Resources.GetMatch "main.pdf" }}
-                    <a href="{{ .RelPermalink }}" target="_blank">🗃️ Archivos</a>
-                    {{ end }}
-                    </div>
-                </div>
-            </div>
-        {{ end }}
-        </div>
-</section>
-{{ end }}
 
 {{ end }}

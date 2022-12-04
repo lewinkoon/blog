@@ -8,17 +8,16 @@ header {
     .logo {
         display: flex;
         align-items: center;
-        border-radius: 10px;
+        
         margin-right: 0.5rem;
         padding: 0.25rem 1rem 0.25rem 0.75rem;
         background-color: var(--surface0);
-
-        span {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: var(--blue);
-            transition: color 0.2s;
-        }
+        border-radius: 10px;
+        
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: var(--blue);
+        transition: color 0.2s;
 
         svg {
             width: 2rem;
@@ -33,6 +32,7 @@ header {
 
     .menu {
         margin: 0 0.25em;
+        padding: 0 0.25rem;
         font-size: 1.2rem;
         border-bottom: 3px solid var(--base);
 
