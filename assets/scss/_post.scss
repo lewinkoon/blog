@@ -6,55 +6,44 @@
         font-size: 3rem;
         margin: 0;
     }
-}
 
-.post-meta {
+    .post-meta {
 
-    .metadata {
-        margin-bottom: 0.5rem;
-
-        .author {
+        a.categories {
+            display: inline-block;
+            font-size: 1rem;
             font-weight: bold;
-            color: var(--blue);
+            color: var(--base);
+            background-color: var(--blue);
+            border-radius: 5px;
+            padding: 0rem 0.6rem;
+            
+            &[type="tutorial"] {
+                background-color: var(--sapphire);
+            }
 
-            &:hover {
-                color: var(--flamingo);
+            &[type="viajes"] {
+                background-color: var(--green);
             }
         }
 
-        .read-time {
-            font-style: italic;
-        }
-    }
+        .metadata {
+            margin-bottom: 0.75rem;
 
-    .tags {
-        display: flex;
-        gap: 0.5rem;
+            a.author {
+                font-weight: bold;
+                color: var(--blue);
 
-        a {
-            display: flex;
-            align-items: center;
-            gap: 0.25rem;
-            font-size: 0.8rem;
-            background-color: var(--surface0);
-            border-radius: 0.2rem;
-            padding: 0.2rem 0.4rem;
-
-            svg {
-                width: 1rem;
-                height: 1rem;
-                stroke: var(--blue);
-            }
-
-            &:hover {
-                background-color: var(--surface1);
-
-                svg {
-                    stroke: var(--flamingo);
+                &:hover {
+                    color: var(--flamingo);
                 }
             }
 
+            span.read-time {
+                font-style: italic;
+            }
         }
+
     }
 }
 

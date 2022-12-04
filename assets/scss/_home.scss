@@ -118,30 +118,22 @@
 
             .category {
                 display: flex;
+                align-items: center;
                 // font-family: "mono";
                 font-size: 0.8rem;
                 font-weight: bold;
-                align-items: center;
                 padding: 0.1rem 0.4rem;
                 border-radius: 5px;
                 color: var(--base);
+                background-color: var(--blue);
 
-                &[type="historia"] {
-                    background-color: var(--pink);
+                &[type="tutorial"] {
+                    background-color: var(--sapphire);
                 }
 
-                &[type="ingeniería"] {
-                    background-color: var(--mauve);
-                }
-
-                &[type="naturaleza"] {
+                &[type="viajes"] {
                     background-color: var(--green);
                 }
-
-                &[type="programación"] {
-                    background-color: var(--yellow);
-                }
-
 
             }
 

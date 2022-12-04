@@ -3,7 +3,7 @@
 {{ if .Params.toc }}
 <aside>
     <div class="toc-container">
-        <h2>📋 Contenidos</h2>
+        <h2>Contenidos</h2>
         {{ .TableOfContents }}
     </div>
 </aside>
@@ -11,22 +11,27 @@
 
 <section>
     <div class="article-header">
-        <h1>{{ .Title }}</h1>
+        <h1> {{ .Title }}</h1>
+
         <div class="post-meta">
-            <div class="metadata"><a href="{{ "about" | absURL }}" class="author">
+
+            <div class="metadata">
+
+                <a href="{{ " about" | absURL }}" class="author">
                     {{ $author := .Params.author }}
                     {{ if eq $author nil }}
                     {{ $author = .Site.Params.author }}
                     {{ end }}
                     {{ $author }}
-            </a> · <time>{{ .Date.Format "Jan 02" }}</time> ·
+                </a> ·
+                <time>{{ .Date.Format "02/01/06" }}</time> · 
                 <span class="read-time">{{ .ReadingTime }} min</span>
             </div>
-            <div class="tags">
-                {{ range (.GetTerms "tags") }}
-                <a href="{{ .RelPermalink }}">{{ partial "svg/hash.svg" . }}{{ .LinkTitle }}</a>
-                {{ end }}
-            </div>
+
+            {{ range (.GetTerms "categories") }}
+            <a href="{{ .RelPermalink }}" class="categories" type="{{ .LinkTitle }}">{{ .LinkTitle }}</a>
+            {{ end }}
+
         </div>
     </div>
 

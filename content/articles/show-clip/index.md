@@ -3,7 +3,7 @@ author: "Lewin"
 title: "Portapapeles con Dunst y Xclip"
 date: 2022-02-12
 categories:
-- programación
+- tutorial
 resources:
 - name: showclip
   title: Figura 1

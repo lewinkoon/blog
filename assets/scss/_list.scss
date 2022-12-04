@@ -40,43 +40,23 @@
             height: 1.4rem;
         }
 
-        &[data-value="historia"] {
+        &[data-value="tutorial"] {
             svg {
-                stroke: var(--pink);
+                stroke: var(--sapphire);
             }
 
             &.active {
-                background-color: var(--pink);
+                background-color: var(--sapphire);
             }
         }
 
-        &[data-value="ingeniería"] {
-            svg {
-                stroke: var(--mauve);
-            }
-
-            &.active {
-                background-color: var(--mauve);
-            }
-        }
-
-        &[data-value="naturaleza"] {
+        &[data-value="viajes"] {
             svg {
                 stroke: var(--green);
             }
 
             &.active {
                 background-color: var(--green);
-            }
-        }
-
-        &[data-value="programación"] {
-            svg {
-                stroke: var(--yellow);
-            }
-
-            &.active {
-                background-color: var(--yellow);
             }
         }
 
@@ -144,30 +124,22 @@
 
         .category {
             display: flex;
+            align-items: center;
             // font-family: "mono";
             font-size: 0.8rem;
             font-weight: bold;
-            align-items: center;
             padding: 0.1rem 0.4rem;
             border-radius: 5px;
             color: var(--base);
+            background-color: var(--blue);
 
-            &[type="historia"] {
-                background-color: var(--pink);
+            &[type="tutorial"] {
+                background-color: var(--sapphire);
             }
 
-            &[type="ingeniería"] {
-                background-color: var(--mauve);
-            }
-
-            &[type="naturaleza"] {
+            &[type="viajes"] {
                 background-color: var(--green);
             }
-
-            &[type="programación"] {
-                background-color: var(--yellow);
-            }
-
 
         }
 

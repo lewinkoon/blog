@@ -1,9 +1,9 @@
 ---
 author: "Lewin"
-title: Guardar dotfiles en repositorio git
+title: Guardar «dotfiles» en repositorio git
 date: 2022-11-13
 categories:
-- programación
+- tutorial
 ---
 
 Desde que empecé a utilizar [Archlinux](https://archlinux.org/) como sistema operativo, siempre me ha surgido la misma pregunta: cómo guardar los archivos de configuración.
