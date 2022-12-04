@@ -52,7 +52,7 @@
             gap: 0.5rem;
             padding: 0.4rem 0.6rem;
             background-color: var(--surface0);
-            border-radius: 5px;
+            border-radius: 10px;
             font-size: 1rem;
             transition: transform 0.25s;
 
@@ -66,8 +66,8 @@
             }
 
             svg {
-                width: 1.4rem;
-                height: 1.4rem;
+                width: 1.6rem;
+                height: auto;
                 stroke: var(--blue);
             }
         }

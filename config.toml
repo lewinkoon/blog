@@ -11,24 +11,23 @@ paginate = 5
 ### NAVIGATION BAR ###
 [menu]
 [[menu.main]]
-  # pre = "📝"
   name = "Artículos"
   url = "/articles/"
   weight = 10
 [[menu.main]]
-  # pre = "📚"
   name = "Contacto"
   url = "/about/"
   weight = 20
+
 ### SOCIAL LINKS ###
-[[menu.social]]
-  name = "Email"
-  url = "mailto:lewinkoon@gmail.com"
-  pre = "svg/mail.svg"
 [[menu.social]]
   name = "Github"
   url = "https://github.com/lewinkoon"
   pre = "svg/github.svg"
+[[menu.social]]
+  name = "Mastodon"
+  url = "https://masto.ai/@lewinkoon"
+  pre = "svg/mastodon.svg"
 [[menu.social]]
   name = "Rss"
   url = "/index.xml"
