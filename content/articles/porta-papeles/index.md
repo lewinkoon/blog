@@ -1,7 +1,7 @@
 ---
 author: "Lewin"
 title: "Portapapeles con Dunst y Xclip"
-date: 2021-02-12
+date: 2022-02-12
 categories:
 - programación
 resources:
