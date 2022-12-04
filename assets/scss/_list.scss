@@ -40,6 +40,26 @@
             height: 1.4rem;
         }
 
+        &[data-value="historia"] {
+            svg {
+                stroke: var(--pink);
+            }
+
+            &.active {
+                background-color: var(--pink);
+            }
+        }
+
+        &[data-value="ingeniería"] {
+            svg {
+                stroke: var(--mauve);
+            }
+
+            &.active {
+                background-color: var(--mauve);
+            }
+        }
+
         &[data-value="naturaleza"] {
             svg {
                 stroke: var(--green);
@@ -57,16 +77,6 @@
 
             &.active {
                 background-color: var(--yellow);
-            }
-        }
-
-        &[data-value="ingeniería"] {
-            svg {
-                stroke: var(--pink);
-            }
-
-            &.active {
-                background-color: var(--pink);
             }
         }
 
@@ -142,6 +152,14 @@
             border-radius: 5px;
             color: var(--base);
 
+            &[type="historia"] {
+                background-color: var(--pink);
+            }
+
+            &[type="ingeniería"] {
+                background-color: var(--mauve);
+            }
+
             &[type="naturaleza"] {
                 background-color: var(--green);
             }
@@ -150,9 +168,7 @@
                 background-color: var(--yellow);
             }
 
-            &[type="historia"] {
-                background-color: var(--yellow);
-            }
+
         }
 
         .post-title {
@@ -160,18 +176,12 @@
         }
 
         time {
+            flex-grow: 1;
             font-size: 1rem;
             font-family: "mono";
             color: var(--blue);
             margin-right: 0.5rem;
-        }
-
-        .line {
-            flex-grow: 1;
-            border-bottom: 2px solid var(--surface0);
-            border-radius: 1px;
-            padding-top: 0.2rem;
-            margin: auto 0rem;
+            text-align: end;
         }
 
         &:hover {
