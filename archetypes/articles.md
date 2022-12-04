@@ -1,9 +1,8 @@
 ---
-author: "Benito"
-title: "{{ replace .Name "-" " " | title }}"
+author: "Lewin"
+title: "New post"
 date: {{ .Date }}
 categories:
-tags:
-draft: true
+resources:
 ---
 
