@@ -2,10 +2,6 @@
 author: "Lewin"
 title: "Portapapeles con Dunst y Xclip"
 date: 2021-02-12
-tags:
-- script
-- dunst
-- clipboard
 categories:
 - programación
 resources:
