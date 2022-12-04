@@ -20,7 +20,6 @@ resources:
 - name: periodico
   title: Figura 5
   src: img/periodico.jpg
-draft: true
 ---
 
 ![Fotografía del Fausto días antes de su desaparición](barco)
