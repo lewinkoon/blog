@@ -11,19 +11,23 @@
 
         a.categories {
             display: inline-block;
-            font-size: 1rem;
+            font-size: 0.9rem;
             font-weight: bold;
             color: var(--base);
-            background-color: var(--blue);
+            background-color: var(--surface0);
             border-radius: 5px;
-            padding: 0rem 0.6rem;
+            padding: 0.2rem 0.6rem;
 
             &[type="tutorial"] {
-                background-color: var(--sapphire);
+                color: var(--yellow);
             }
 
             &[type="viajes"] {
-                background-color: var(--green);
+                color: var(--green);
+            }
+
+            &:hover {
+                background-color: var(--surface1);
             }
         }
 

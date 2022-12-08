@@ -123,22 +123,19 @@
         padding: 0.5rem 0.25rem 0.5rem 0.75rem;
 
         .category {
-            display: flex;
-            align-items: center;
-            // font-family: "mono";
-            font-size: 0.8rem;
+            font-size: 0.9rem;
             font-weight: bold;
-            padding: 0.1rem 0.4rem;
+            padding: 0.2rem 0.5rem;
             border-radius: 5px;
             color: var(--base);
-            background-color: var(--blue);
+            background-color: var(--surface0);
 
             &[type="tutorial"] {
-                background-color: var(--sapphire);
+                color: var(--yellow);
             }
 
             &[type="viajes"] {
-                background-color: var(--green);
+                color: var(--green);
             }
 
         }
@@ -160,6 +157,10 @@
             background-color: var(--surface0);
             border-radius: 10px;
             font-weight: bold;
+
+            .category {
+                background-color: var(--surface1);
+            }
 
             time {
                 font-weight: bold;
