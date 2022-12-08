@@ -11,13 +11,15 @@ Siempre he intentado tratar de buscar la solución más simple posible a los pro
 
 # Curiosidades
 
+- Mi color favorito es el turquesa 🎨
+- Estoy leyendo La isla del tesoro de Robert Louis Stevenson 📚
 - Llevo diseñando este blog desde 2021 ✨
 
 # Ordenador
 
 - CPU : [AMD Rizen 5 3600][cpu]
 - GPU : [GeForce GTX 1660 Super 6GB](gpu)
-- RAM : [Kingston Fury Beast DDR4 8GB 3200MHz](ram)
+- RAM : [Kingston Fury Beast DDR4 8GB 3200MHz](ram) (x2)
 - Placa base : [MSI B450M Mortar Max](mb)
 - Fuente de alimentación : [Corsair CX550M](ps)
 - Monitor : [AOC 24G2u/BK](monitor) (x2)
