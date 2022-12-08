@@ -17,7 +17,7 @@
             background-color: var(--blue);
             border-radius: 5px;
             padding: 0rem 0.6rem;
-            
+
             &[type="tutorial"] {
                 background-color: var(--sapphire);
             }
@@ -48,7 +48,7 @@
 }
 
 .article-post {
-    p a {
+    a {
         color: var(--blue);
 
         &:hover {
@@ -58,6 +58,7 @@
 
     a.anchor {
         text-decoration: none;
+        color: inherit;
 
         span {
             color: var(--blue);

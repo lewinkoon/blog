@@ -26,9 +26,9 @@ paginate = 5
   pre = "svg/github.svg"
   weight = 10
 [[menu.social]]
-  name = "Youtube"
-  url = "https://www.youtube.com/channel/UCt4Ogih7oqbDAa6eVSw601g"
-  pre = "svg/youtube.svg"
+  name = "Twitter"
+  url = "https://twitter.com/lewinkoon"
+  pre = "svg/twitter.svg"
   weight = 20
 [[menu.social]]
   name = "Rss"
