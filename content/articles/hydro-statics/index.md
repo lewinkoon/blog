@@ -5,10 +5,6 @@ title: Presión hidroestática en líquidos
 date: 2022-06-24
 katex: true
 tags:
-- presión
-- fluidomecánica
-- hidroestática
-categories:
 - ingeniería
 resources:
 - name: distribucion

@@ -2,7 +2,7 @@
 author: "Lewin"
 title: "New post"
 date: {{ .Date }}
-categories:
+tags:
 resources:
 ---
 

@@ -2,7 +2,7 @@
 author: "Lewin"
 title: "Dotfiles: guarda tus configuraciones con Github"
 date: 2022-11-13
-categories:
+tags:
 - tutorial
 ---
 

@@ -15,4 +15,4 @@ Some **features** on my blog are:
  - 🌙 Dark mode
  - 📋 Copy button on code blocks
  - 🔍 Search tool made with [Fuse.js](https://github.com/krisk/Fuse)
- - 🏷️ Filter by categories
+ - 🏷️ Filter by tags

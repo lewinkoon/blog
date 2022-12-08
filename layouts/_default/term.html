@@ -3,19 +3,31 @@
 {{ $pages := .Pages }}
 
 <section class="section-title">
-    <h1>🏷️ {{ .Title }}</h1>
-    <p><span>{{ len .Pages }}</span> artículos encontrados.</p>
+    <h1>
+        {{ partial "svg/clipboard.svg" . }}
+        {{ .Title  | humanize }}
+    </h1>
+    <p>
+        <span>{{ len .Pages }}</span>
+        artículos encontrados</p>
 </section>
 
-<section class="section-list" id="section-list">
+<section class="section-list">
     {{ range $pages.GroupByDate "2006" }}
     <div class="list-item">
-        <h2>{{ .Key }}</h2>
+        <div class="title">
+            <h2>{{ .Key }}</h2>
+            <span class="line"></span>
+        </div>
         {{ range .Pages }}
-            <a href="{{ .RelPermalink }}">
-                <time>{{ .Date.Format "02 Jan" }}</time>
-                {{ .Title }}
-            </a>
+        <a href="{{ .RelPermalink }}">
+            {{ with index (.Params.tags) 0 }}
+            <span class="tag" type="{{ . }}">{{ . }}</span>
+            {{ end }}
+            <div class="post-title">{{ .Title }}</div>
+            <span class="line"></span>
+            <time>{{ .Date.Format "02/01" }}</time>
+        </a>
         {{ end }}
     </div>
     {{ end }}

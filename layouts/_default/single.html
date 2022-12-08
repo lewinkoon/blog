@@ -28,8 +28,8 @@
                 <span class="read-time">{{ .ReadingTime }} min</span>
             </div>
 
-            {{ range (.GetTerms "categories") }}
-            <a href="{{ .RelPermalink }}" class="categories" type="{{ .LinkTitle }}">{{ .LinkTitle }}</a>
+            {{ range (.GetTerms "tags") }}
+            <a href="{{ .RelPermalink }}" class="tags" type="{{ .LinkTitle }}">{{ .LinkTitle }}</a>
             {{ end }}
 
         </div>

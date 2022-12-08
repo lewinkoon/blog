@@ -2,7 +2,7 @@
 author: "Lewin"
 title: "Subida al cervino leonés: Pico Gilbo"
 date: 2022-09-01
-categories:
+tags:
 - viajes
 map: false
 chart: false
