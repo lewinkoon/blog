@@ -3,7 +3,7 @@
 <section class="intro">
     <div class="intro-text">
         <h1>
-            Hola, soy <span>Lewin</span>
+            El blog de <span>Lewin</span>
             {{ partial "svg/face.svg" . }}
         </h1>
         {{ .Content }}
@@ -36,6 +36,7 @@
             <span class="tag" type="{{ . }}">{{ . }}</span>
             {{ end }}
             <div class="post-title">{{ .Title }}</div>
+            <span class="line"></span>
             <time>{{ .Date.Format "02/01" }}</time>
         </a>
         {{ end }}

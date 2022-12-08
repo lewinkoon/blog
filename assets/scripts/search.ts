@@ -114,7 +114,7 @@ class Search {
             let item = value.item
             let html = `
                 <a href="${item.permalink}">
-                    <span class="category" type="${item.categories}">${item.categories}</span>
+                    <span class="tag" type="${item.tags}">${item.tags}</span>
                     <div class="post-title">${item.title}</div>
                     <span class="line"></span>
                     <time>${item.date}</time>
