@@ -24,14 +24,17 @@ paginate = 5
   name = "Github"
   url = "https://github.com/lewinkoon"
   pre = "svg/github.svg"
+  weight = 10
 [[menu.social]]
-  name = "Mastodon"
-  url = "https://masto.ai/@lewinkoon"
-  pre = "svg/mastodon.svg"
+  name = "Youtube"
+  url = "https://www.youtube.com/channel/UCt4Ogih7oqbDAa6eVSw601g"
+  pre = "svg/youtube.svg"
+  weight = 20
 [[menu.social]]
   name = "Rss"
   url = "/index.xml"
   pre = "svg/rss.svg"
+  weight = 30
 
 ### MARKDOWN ###
 [markup]
