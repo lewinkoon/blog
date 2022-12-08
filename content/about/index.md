@@ -2,8 +2,13 @@
 title: Contacto
 subtitle: Te cuento un poquito de mi pero sin entrar mucho en detalles no vaya a ser que sepas demasiado
 layout: about
-
+resources:
+- name: intro
+  title: Figura 1
+  src: intro.jpg
 ---
+
+![Las laderas de Canfranc (2016)](intro)
 
 He diseñado esta página web con el objetivo de poder plasmar los conocimientos que voy adquiriendo no solo en el ámbito técnico sino de la vida en general.
 
