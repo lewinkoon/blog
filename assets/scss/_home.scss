@@ -32,11 +32,11 @@
         }
 
         a {
-            color: var(--blue);
-            transition: all 0.25s;
-
+            color: var(--maroon);
+    
             &:hover {
-                color: var(--flamingo);
+                text-decoration: underline;
+                // text-decoration-thickness: 2px;
             }
         }
     }

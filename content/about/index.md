@@ -1,6 +1,6 @@
 ---
 title: Contacto
-subtitle: Te cuento un poquito de mi pero sin entrar mucho en detalles no vaya a ser que sepas demasiado
+subtitle: Te cuento un poquito de mi pero sin entrar mucho en detalles
 layout: about
 resources:
 - name: intro
@@ -10,27 +10,27 @@ resources:
 
 ![Las laderas de Canfranc (2016)](intro)
 
-He diseñado esta página web con el objetivo de poder plasmar los conocimientos que voy adquiriendo no solo en el ámbito técnico sino de la vida en general.
+He diseñado esta página web con el objetivo de poder plasmar los *conocimientos* que voy adquiriendo no solo en el ámbito técnico sino de la vida en general.
 
-Siempre he intentado tratar de buscar la solución más simple posible a los problemas y en esta web he querido aplicar esa filosofía con un diseño muy simple sin sacrificar la estética.
+Siempre he intentado tratar de buscar la solución más *simple* posible a los problemas y en esta web he querido aplicar esa *filosofía* con un diseño muy simple sin sacrificar la estética.
 
 # Curiosidades
 
-- Mi color favorito es el turquesa 🎨
-- Estoy leyendo La isla del tesoro de Robert Louis Stevenson 📚
-- Llevo diseñando este blog desde 2021 ✨
+- Mi *color* favorito es el turquesa 🎨
+- Estoy leyendo *La Isla del Tesoro* de Robert Louis Stevenson 📚
+- Llevo diseñando este blog desde *2021* ✨
 
 # Ordenador
 
-- CPU : [AMD Rizen 5 3600][cpu]
-- GPU : [GeForce GTX 1660 Super 6GB](gpu)
-- RAM : [Kingston Fury Beast DDR4 8GB 3200MHz](ram) (x2)
-- Placa base : [MSI B450M Mortar Max](mb)
-- Fuente de alimentación : [Corsair CX550M](ps)
-- Monitor : [AOC 24G2u/BK](monitor) (x2)
-- Teclado : [Ducky One 2 Mini RGB](keyboard)
-- Ratón : [Logitech G305 Lightspeed](mouse)
-- Auriculares : [Razer Barracuda X](headphones)
+- [Procesador](cpu) : AMD Rizen 5 3600
+- [Tarjeta gráfica](gpu) : GeForce GTX 1660 Super 6GB
+- [Memoria RAM](ram) : Kingston Fury Beast DDR4 8GB 3200MHz (x2)
+- [Placa base](mb) : MSI B450M Mortar Max
+- [Fuente de alimentación](ps) : Corsair CX550M
+- [Monitor](monitor) : AOC 24G2u/BK (x2)
+- [Teclado](keyboard) : Ducky One 2 Mini RGB
+- [Ratón](mouse) : Logitech G305 Lightspeed
+- [Auriculares](headphones) : Razer Barracuda X
 
 [cpu]: https://www.amd.com/en/products/cpu/amd-ryzen-5-3600
 [gpu]: https://www.gigabyte.com/es/Graphics-Card/GV-N166SOC-6GD#kf

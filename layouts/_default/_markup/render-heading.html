@@ -1,4 +1,9 @@
 <h{{ .Level }} id="{{ .Anchor }}">
-    <a href="#{{ .Anchor }}" class="anchor"><span>{{ strings.Repeat .Level "#" }}</span>
-    {{ .Text | safeHTML }}</a>
+    <a href="#{{ .Anchor }}" class="anchor">
+        {{ .Text | safeHTML }}</a>
+    {{ if eq .Level 1 }}
+    <span class="line"></span>
+    {{ else if eq .Level 2 }}
+    <span class="thin-line"></span>
+    {{ end }}
 </h{{ .Level }}>
