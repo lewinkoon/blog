@@ -6,7 +6,7 @@ tags:
 - viajes
 map: false
 chart: false
-comments: false
+comments: true
 resources:
 - name: llegada-riano
   title: Figura 1

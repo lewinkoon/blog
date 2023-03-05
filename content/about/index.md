@@ -1,14 +1,15 @@
 ---
 title: Contacto
-subtitle: Te cuento un poquito de mi pero sin entrar mucho en detalles
+subtitle: ¿Quién demonios ha montado todo este tinglado?
 layout: about
 resources:
 - name: intro
   title: Figura 1
   src: intro.jpg
+
 ---
 
-![Las laderas de Canfranc (2016)](intro)
+![EL cosmonauta abducido](intro)
 
 He diseñado esta página web con el objetivo de poder plasmar los *conocimientos* que voy adquiriendo no solo en el ámbito técnico sino de la vida en general.
 
@@ -17,7 +18,7 @@ Siempre he intentado tratar de buscar la solución más *simple* posible a los p
 # Curiosidades
 
 - Mi *color* favorito es el turquesa 🎨
-- Estoy leyendo *La Isla del Tesoro* de Robert Louis Stevenson 📚
+- Estoy leyendo *Dune* de Frank Herbert 📚
 - Llevo diseñando este blog desde *2021* ✨
 
 # Ordenador

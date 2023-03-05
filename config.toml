@@ -1,6 +1,6 @@
 baseURL = 'https://lewin.app/'
 languageCode = 'es'
-title = 'Astroblog'
+title = 'Astrobitácora'
 paginate = 5
 
 ### CUSTOM OPTIONS ###

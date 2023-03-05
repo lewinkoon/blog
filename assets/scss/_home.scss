@@ -17,13 +17,18 @@
 
             span {
                 color: var(--blue);
+                transition: color 0.25s ;
                 // margin-left: 1rem;
+
+                &:hover {
+                    color: var(--red);
+                }
             }
 
             svg {
-                width: 6rem;
+                width: 8rem;
                 height: auto;
-                margin-left: 1rem;
+                // margin-left: 1rem;
             }
         }
 
