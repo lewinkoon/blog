@@ -1,10 +1,10 @@
-# 📝 Personal blog
+# 📝 Astrobitácora
 
 ![Netlify](https://img.shields.io/netlify/fc586c02-2fc6-4665-b4a1-2811f5e2b272)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/lewinkoon/hugo-blog)
 ![GitHub last commit](https://img.shields.io/github/last-commit/lewinkoon/hugo-blog)
 
-![image](https://user-images.githubusercontent.com/57636993/193427918-ed969d62-51ad-43d5-b537-b1c21fd8935a.png)
+![image](https://user-images.githubusercontent.com/57636993/222993534-a3f2b8f1-197a-4c43-ac13-d958ca5cc5bb.png)
 
 These are the source files for my personal blog made with [Hugo](https://github.com/gohugoio/hugo).
 
