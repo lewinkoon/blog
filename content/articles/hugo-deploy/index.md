@@ -4,7 +4,7 @@ author: "Lewin"
 title: Publicar Hugo en Github Pages
 date: 2022-02-14
 tags:
-- tutorial
+- tecnología
 ---
 
 Uno de los problemas que tenía cuando descubrí [Hugo](https://github.com/gohugoio/hugo) era lo poco intuitivo que resultaba publicar la página web generada al *hosting*, en mi caso Github Pages. Ya que, una vez creado todos los archivos estáticos, había que crear un nuevo repositorio y mover todos los archivos a este, con todos los pasos que conlleva. Al principio, encontré varias soluciones que involucraban crear un submódulo en el propio repositorio de *hugo* pero nunca conseguí hacerlo funcionar correctamente.

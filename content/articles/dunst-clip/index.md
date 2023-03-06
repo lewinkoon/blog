@@ -3,7 +3,7 @@ author: "Lewin"
 title: "Gestión del portapapeles con Dunst"
 date: 2022-02-12
 tags:
-- tutorial
+- tecnología
 resources:
 - name: capture
   title: Figura 1

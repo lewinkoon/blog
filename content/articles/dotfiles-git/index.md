@@ -3,7 +3,7 @@ author: "Lewin"
 title: "Dotfiles: guarda tus configuraciones con Github"
 date: 2022-11-13
 tags:
-- tutorial
+- tecnología
 ---
 
 Desde que empecé a utilizar [Archlinux](https://archlinux.org/) como sistema operativo, siempre me ha surgido la misma pregunta: cómo guardar los archivos de configuración.

@@ -18,12 +18,12 @@
             border-radius: 5px;
             padding: 0.2rem 0.6rem;
 
-            &[type="tutorial"] {
-                color: var(--yellow);
+            &[type="tecnología"] {
+                color: var(--mauve);
             }
 
             &[type="viajes"] {
-                color: var(--green);
+                color: var(--sky);
             }
 
             &:hover {

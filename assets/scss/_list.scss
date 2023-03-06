@@ -40,23 +40,23 @@
             height: 1.4rem;
         }
 
-        &[data-type="tutorial"] {
+        &[data-type="tecnología"] {
             svg {
-                stroke: var(--sapphire);
+                stroke: var(--mauve);
             }
 
             &.active {
-                background-color: var(--sapphire);
+                background-color: var(--mauve);
             }
         }
 
         &[data-type="viajes"] {
             svg {
-                stroke: var(--green);
+                stroke: var(--sky);
             }
 
             &.active {
-                background-color: var(--green);
+                background-color: var(--sky);
             }
         }
 
@@ -122,12 +122,12 @@
             color: var(--base);
             background-color: var(--surface0);
 
-            &[type="tutorial"] {
-                color: var(--yellow);
+            &[type="tecnología"] {
+                color: var(--mauve);
             }
 
             &[type="viajes"] {
-                color: var(--green);
+                color: var(--sky);
             }
 
         }
