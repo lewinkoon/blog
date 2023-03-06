@@ -15,7 +15,7 @@ paginate = 5
   url = "/articles/"
   weight = 10
 [[menu.main]]
-  name = "Contacto"
+  name = "Sobre mi"
   url = "/about/"
   weight = 20
 

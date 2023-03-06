@@ -1,6 +1,6 @@
 ---
-title: Contacto
-subtitle: ¿Quién demonios ha montado todo este tinglado?
+title: Sobre mi
+subtitle: Por si quieres saber quién está detrás de todo esto
 layout: about
 resources:
 - name: intro
@@ -9,16 +9,17 @@ resources:
 
 ---
 
-![](intro)
+<!-- ![](intro) -->
 
-He diseñado esta página web con el objetivo de poder plasmar los *conocimientos* que voy adquiriendo no solo en el ámbito técnico sino de la vida en general.
+Desde siempre me ha gustado trastear con los ordenadores y otros dispositivos electrónicos que tenía por casa. Se podría pensar que tenía una **pasión innata** por la informática pero han pasado los años y me he dado cuenta que tuvo más peso el que fuera una aficción barata comparada con otras disciplinas.
 
-Siempre he intentado tratar de buscar la solución más *simple* posible a los problemas y en esta web he querido aplicar esa *filosofía* con un diseño muy simple sin sacrificar la estética.
+Quería crear página simple y **minimalista**, donde plasmar todas las pequeñas píldoras de conocimiento que he ido aprendiendo con el paso de los años, y que demostrara que no hacen falta librerías pesadas de javascript para hacer algo curioso.
 
 # Curiosidades
 
-- Mi *color* favorito es el turquesa 🎨
+- Mi comida preferida es el *lacón con pimientos asados* 😋
 - Estoy leyendo *Dune* de Frank Herbert 📚
+- Estudié *ingeniería mecánica* en la universidad ⚙️
 - Llevo diseñando este blog desde *2021* ✨
 
 # Ordenador
