@@ -42,4 +42,28 @@
     </div>
 </section>
 
+<section class="projects">
+    <div class="title">
+        <h2>Proyectos</h2>
+        <span class="line"></span>
+    </div>
+    <div class="items">
+        {{ range $projects }}
+        <div href="{{ .Params.link }}" class="container">
+            <time>{{ .Date.Format "2006" }}</time>
+            <h2>{{ .Title }}</h2>
+            <p>{{ .Description }}</p>
+            <div class="links">
+                {{ with .Params.source }}
+                <a href="{{ . }}">Source</a>
+                {{ end }}
+                {{ with .Params.demo }}
+                <a href="{{ . }}">Demo</a>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</section>
+
 {{ end }}

@@ -179,3 +179,90 @@
         }
     }
 }
+
+.projects {
+
+    .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 0 0.75rem 0.5rem;
+
+        h2 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        .line {
+            flex-grow: 1;
+            border-bottom: 4px solid var(--blue);
+            margin: auto 1rem;
+            border-radius: 2px;
+        }
+
+        a {
+            font-size: 0.9rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 10px;
+            // border: 2px solid var(--surface0);
+            background-color: var(--surface0);
+
+            &:hover {
+                // border: 2px solid var(--surface1);
+                background-color: var(--surface1);
+                font-weight: bold;
+            }
+        }
+    }
+
+    .items {
+        display: flex;
+
+        div.container {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            padding: 1.2rem;
+
+            background-color: var(--surface0);
+            border-radius: 10px;
+
+            time {
+                font-size: 1rem;
+                font-family: "mono";
+                color: var(--blue);
+                text-align: end;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+                margin: 0;
+            }
+
+            p {
+                font-size: 1rem;
+                margin: 0;
+            }
+
+            div.links {
+                display: flex;
+                flex-direction: row;
+                gap: 0.5rem;
+                margin-top: 0.5rem;
+
+                a {
+                    background-color: var(--surface1);
+                    padding: 0.4rem 0.8rem;
+                    border-radius: 10px;
+                    border: thin solid var(--blue);
+                    font-size: 0.8rem;
+    
+                    &:hover {
+                        font-weight: bold;
+                        border: thin solid var(--red);
+                    }
+                }
+            }
+        }
+    }
+}
