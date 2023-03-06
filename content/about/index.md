@@ -9,7 +9,7 @@ resources:
 
 ---
 
-![EL cosmonauta abducido](intro)
+![](intro)
 
 He diseñado esta página web con el objetivo de poder plasmar los *conocimientos* que voy adquiriendo no solo en el ámbito técnico sino de la vida en general.
 
