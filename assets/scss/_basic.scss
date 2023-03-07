@@ -183,12 +183,14 @@ hr {
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--base);
+    background: transparent;
+    border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
     background: var(--overlay0);
     border-radius: 6px;
+    
 
     &:hover {
         background: var(--overlay1);
