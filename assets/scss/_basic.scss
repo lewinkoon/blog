@@ -195,40 +195,44 @@ hr {
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 720px) {
     html {
         font-size: 10pt;
     }
 
-    .intro-text span {
+    .intro-text svg {
         display: none;
     }
-}
 
-@media (max-width: 480px) {
-
-    header {
-
-        button,
-        .line {
+    a.logo {
+        span {
             display: none;
         }
     }
 
     a {
-
-        .category,
-        .line {
-            display: none !important;
+        div.post-title {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
-    }
 
-    .title {
-
-        a {
+        span.line {
             display: none;
         }
     }
+}
+
+@media (max-width: 480px) {
+
+    html {
+        font-size: 9pt;
+    }
+
+    .title a {
+        display: none;
+    }
+
 
 }
 

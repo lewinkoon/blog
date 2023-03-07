@@ -10,7 +10,7 @@ header {
         align-items: center;
         
         margin-right: 0.5rem;
-        padding: 0.25rem 1rem 0.25rem 0.75rem;
+        padding: 0.25rem 0.5rem 0.25rem 0.5rem;
         background-color: var(--surface0);
         border-radius: 10px;
         
@@ -22,12 +22,15 @@ header {
         svg {
             width: 2rem;
             height: auto;
-            margin-right: 0.5rem;
         }
 
         &:hover {
             background-color: var(--surface1);
             color: var(--red)
+        }
+
+        span {
+            margin: 0 0.5rem;
         }
     }
 
