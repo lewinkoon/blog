@@ -39,7 +39,7 @@
                 color: var(--blue);
 
                 &:hover {
-                    color: var(--flamingo);
+                    color: var(--red);
                 }
             }
 
@@ -74,7 +74,7 @@
             }
     
             &:hover span {
-                color: var(--flamingo);
+                color: var(--red);
             }
     
         }
@@ -163,7 +163,7 @@ aside {
 
         &:hover {
             transform: translateY(-4px);
-            color: var(--flamingo);
+            color: var(--red);
         }
     }
 }
