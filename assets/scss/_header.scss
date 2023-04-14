@@ -8,29 +8,26 @@ header {
     .logo {
         display: flex;
         align-items: center;
+        margin: 0 1rem;
+        padding-bottom: 0.5rem;
         
-        margin-right: 0.5rem;
-        padding: 0.25rem 0.5rem 0.25rem 0.5rem;
-        background-color: var(--surface0);
-        border-radius: 10px;
-        
-        font-size: 1.2rem;
-        font-weight: bold;
-        color: var(--blue);
+        font-size: 1.6rem;
         transition: color 0.25s;
 
         svg {
-            width: 2rem;
+            width: 3rem;
             height: auto;
-        }
-
-        &:hover {
-            background-color: var(--surface1);
-            color: var(--red)
+            margin-right: 0.5rem;
         }
 
         span {
-            margin: 0 0.5rem;
+            color: var(--blue);
+            transition: color 0.25s ;
+            font-weight: bold;
+        }
+
+        &:hover span{
+            color: var(--red)
         }
     }
 
