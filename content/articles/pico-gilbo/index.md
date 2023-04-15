@@ -4,6 +4,8 @@ title: "Subida al cervino leonés: Pico Gilbo"
 date: 2022-09-01
 tags:
 - viajes
+images:
+ - llegada-riano
 map: false
 chart: false
 comments: true
