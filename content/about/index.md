@@ -22,7 +22,7 @@ Quería crear página simple y **minimalista**, donde plasmar todas las pequeña
 - Estudié *ingeniería mecánica* en la universidad ⚙️
 - Llevo diseñando este blog desde *2021* ✨
 
-# Ordenador
+<!-- # Ordenador
 
 - [Procesador](cpu) : AMD Rizen 5 3600
 - [Tarjeta gráfica](gpu) : GeForce GTX 1660 Super 6GB
@@ -32,7 +32,7 @@ Quería crear página simple y **minimalista**, donde plasmar todas las pequeña
 - [Monitor](monitor) : AOC 24G2u/BK (x2)
 - [Teclado](keyboard) : Ducky One 2 Mini RGB
 - [Ratón](mouse) : Logitech G305 Lightspeed
-- [Auriculares](headphones) : Razer Barracuda X
+- [Auriculares](headphones) : Razer Barracuda X -->
 
 [cpu]: https://www.amd.com/en/products/cpu/amd-ryzen-5-3600
 [gpu]: https://www.gigabyte.com/es/Graphics-Card/GV-N166SOC-6GD#kf

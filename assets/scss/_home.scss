@@ -8,7 +8,7 @@
     .intro-text {
         text-align: center;
 
-        h1 {
+        a {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -18,32 +18,24 @@
             span {
                 color: var(--blue);
                 transition: color 0.25s ;
-                // margin-left: 1rem;
+                font-weight: bold;
 
-                &:hover {
-                    color: var(--red);
-                }
             }
 
             svg {
-                width: 8rem;
+                width: 6rem;
                 height: auto;
                 // margin-left: 1rem;
+            }
+
+            &:hover span {
+                color: var(--red);
             }
         }
 
         p {
             font-size: 1.4rem;
 
-        }
-
-        a {
-            color: var(--maroon);
-    
-            &:hover {
-                text-decoration: underline;
-                // text-decoration-thickness: 2px;
-            }
         }
     }
 
@@ -56,7 +48,7 @@
             display: flex;
             align-items: center;
             gap: 0.5rem;
-            padding: 0.4rem 0.6rem;
+            padding: 0.5rem 1rem;
             background-color: var(--surface0);
             border-radius: 10px;
             font-size: 1rem;
