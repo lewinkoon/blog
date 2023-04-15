@@ -7,6 +7,8 @@ paginate = 5
 [params]
   host = "https://cusdis.com"
   id = "8157fbc3-799a-4a57-a9cd-d201d6315340"
+  description = "Blog sobre tecnología y alguna que otra ruta de montaña"
+  title = "Astrobitácora"
 
 ### NAVIGATION BAR ###
 [menu]
