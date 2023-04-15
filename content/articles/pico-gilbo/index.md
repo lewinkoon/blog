@@ -8,6 +8,8 @@ map: false
 chart: false
 comments: true
 resources:
+- name: feature
+  src: img/llegada-riano.jpg
 - name: llegada-riano
   title: Figura 1
   src: img/llegada-riano.jpg
