@@ -1,4 +1,4 @@
-# 📝 Astrobitácora
+# 📝 Astrotintero
 
 ![Netlify](https://img.shields.io/netlify/fc586c02-2fc6-4665-b4a1-2811f5e2b272)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/lewinkoon/hugo-blog)
