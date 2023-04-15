@@ -14,8 +14,8 @@ En mi caso, suelo echarle muchas horas de customización hasta que considero que
 
 La primera idea que me surgió para abordar esta problemática fue subir todos los archivos a [Google Drive](https://www.google.com/drive/). Sin embargo, este sistema tenía dos problemas críticos:
 
-- No se puede visualizar el contenido del archivo desde el navegador.
-- No existe un histórico de versiones.
+- No se puede **visualizar el contenido** del archivo desde el navegador.
+- No existe un **histórico** de versiones.
 
 Buscando un poco por internet me encontré con un post en [Hacker News](https://news.ycombinator.com/item?id=11071754) donde explicaba una sencilla solución a partir de un repositorio [git](https://git-scm.com/).
 
@@ -25,7 +25,7 @@ alias dot="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 dot config status.showUntrackedFiles no
 ```
 
-De esta forma cualquier archivo en la carpeta *HOME* se puede registrar con comandos básicos:
+De esta forma cualquier archivo en la carpeta ```/home``` se puede registrar con comandos básicos:
 
 ```bash
 dot status

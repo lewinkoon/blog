@@ -4,11 +4,12 @@
   border-radius: 10px;
   background: var(--mantle);
   position: relative;
-  overflow-x: auto;
+  
 
   pre {
     line-height: 1.25;
     margin: 0;
+    overflow-x: auto;
 
     code {
       // padding: 40px 10px 10px;

@@ -206,13 +206,14 @@ hr {
         display: none;
     }
 
-    a.logo {
-        span {
-            display: none;
-        }
-    }
-
     a {
+        &.logo {
+            margin: 0 !important;
+            span {
+                display: none;
+            }
+        }
+
         div.post-title {
             flex-grow: 1;
             white-space: nowrap;
