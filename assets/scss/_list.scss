@@ -40,6 +40,16 @@
             height: 1.4rem;
         }
 
+        &[data-type="historia"] {
+            svg {
+                stroke: var(--pink);
+            }
+
+            &.active {
+                background-color: var(--pink);
+            }
+        }
+
         &[data-type="tecnología"] {
             svg {
                 stroke: var(--mauve);
@@ -121,6 +131,10 @@
             border-radius: 5px;
             color: var(--base);
             background-color: var(--surface0);
+
+            &[type="historia"] {
+                color: var(--pink);
+            }
 
             &[type="tecnología"] {
                 color: var(--mauve);

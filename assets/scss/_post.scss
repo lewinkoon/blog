@@ -18,6 +18,10 @@
             border-radius: 5px;
             padding: 0.2rem 0.6rem;
 
+            &[type="historia"] {
+                color: var(--pink);
+            }
+
             &[type="tecnología"] {
                 color: var(--mauve);
             }

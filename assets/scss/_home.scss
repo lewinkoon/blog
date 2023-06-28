@@ -118,6 +118,10 @@
                 color: var(--base);
                 background-color: var(--surface0);
 
+                &[type="historia"] {
+                    color: var(--pink);
+                }
+
                 &[type="tecnología"] {
                     color: var(--mauve);
                 }
