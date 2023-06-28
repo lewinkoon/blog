@@ -1,12 +1,9 @@
 @font-face {
   font-family: "regular";
-  font-style: normal;
-  font-display: block;
-  src: url("/fonts/Nunito.woff") format('woff');
+  src: url("/fonts/Nunito.ttf") format('truetype');
 }
 
 @font-face {
   font-family: "mono";
-  font-display: auto;
-  src: url("/fonts/JetBrainsMono.woff") format("woff");
+  src: url("/fonts/JetBrainsMono.ttf") format("truetype");
 }
