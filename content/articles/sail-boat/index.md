@@ -7,6 +7,16 @@ tags:
 map: false
 chart: false
 comments: false
+resources:
+- name: egyptian-sailboat
+  title: Figura 1
+  src: img/egyptian-sailboat.jpeg
+- name: egypt-map
+  title: Figura 2
+  src: img/egypt-map.jpeg
+- name: biblos-ruins
+  title: Figura 3
+  src: img/biblos-ruins.jpeg
 ---
 
 La existencia de un verdadero transporte fluvial es atestiguada desde el período mesolítico por los vestigios de embarcaciones y remos, y en el neolítico, por grabados en piedra que representan embarcaciones a remo.
@@ -20,6 +30,8 @@ Para que la embarcación mantenga su curso, se requiere de dos remos maniobrados
 El mismo Herodoto menciona los botes de los pescadores del Indo, que, según dice, «van a pescar en barcas hechas de caña: una sola sección de caña, de un nudo a otro, les proporciona una embarcación».
 
 # Origen egipcio
+
+![Representación de un velero egipcio](egyptian-sailboat)
 
 Los egipcios son los primeros en dejar testimonio de la navegación a vela.
 Se encuentran representaciones de ella desde el Antiguo Imperio en bajorrelieves y pinturas funerarias.
@@ -35,6 +47,8 @@ Así, por ejemplo, la bitácora más antigua que se conoce es un papiro egipcio.
 
 # El «Gran Verde» y el mar Rojo
 
+![Mapa del antiguo reino de Egipto](egypt-map)
+
 Por otra parte, la posición geográfica del país alienta este desarrollo.
 En efecto, Egipto se abre sobre dos mares económicamente importantes: el Mediterráneo —el «Gran Verde» de los texto egipcios— y el mar Rojo.
 Por ello, los egipcios tienen un enorme interés en desarrollar su técnica naval, a diferencia de los mesopotámicos o de los pueblos del Sind.
@@ -43,6 +57,8 @@ Para los primeros, el río Éufrates desemboca en un mar casi completamente cerr
 Esto explica por qué los egipcios son los primeros en renunciar a la sola navegación fluvial para lanzarse a la conquista de los mares.
 
 # Las primeras expediciones
+
+![Templo de los obeliscos en Biblos](biblos-ruins)
 
 Desde el Antiguo Imperio, sus naves remontan, costeando el Mediterráneo oriental, hacia Biblos, en búsqueda de maderas preciosas para las habitaciones palaciegas; hacia Chipre y Cilicia, para conseguir cobre y plata; finalmente, hacia el mar Egeo, para traer objetos manufacturados.
 Al sur, los navegantes egipcios descienden hasta las costas del océano Índico en busca de ébano, marfil, incienso, especias, oro y animales salvajes.
