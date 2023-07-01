@@ -31,6 +31,7 @@
         gap: 5px;
         padding: 0.3rem 0.6rem;
         background: var(--surface0);
+        border: thin solid var(--surface0);
         border-radius: 5px;
         cursor: pointer;
         user-select: none;
@@ -44,19 +45,11 @@
             svg {
                 stroke: var(--pink);
             }
-
-            &.active {
-                background-color: var(--pink);
-            }
         }
 
         &[data-type="tecnología"] {
             svg {
                 stroke: var(--mauve);
-            }
-
-            &.active {
-                background-color: var(--mauve);
             }
         }
 
@@ -64,15 +57,10 @@
             svg {
                 stroke: var(--sky);
             }
-
-            &.active {
-                background-color: var(--sky);
-            }
         }
 
         &:hover {
-            // font-weight: bold;
-            background-color: var(--surface1);
+            border: thin solid var(--surface2)
         }
     }
 }
@@ -129,6 +117,7 @@
             font-weight: bold;
             padding: 0.2rem 0.5rem;
             border-radius: 5px;
+            border: thin solid var(--surface0);
             color: var(--base);
             background-color: var(--surface0);
 
@@ -160,7 +149,7 @@
         time {
             font-size: 1rem;
             font-family: "mono";
-            color: var(--blue);
+            color: var(--lavender);
             margin-right: 0.5rem;
             text-align: end;
         }
@@ -168,14 +157,10 @@
         &:hover {
             background-color: var(--surface0);
             border-radius: 10px;
-            font-weight: bold;
+            // font-weight: bold;
 
-            .category {
-                background-color: var(--surface1);
-            }
-
-            time {
-                font-weight: bold;
+            .tag {
+                border: thin solid var(--surface1);
             }
 
             .line {

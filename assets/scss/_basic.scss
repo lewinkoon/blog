@@ -37,6 +37,11 @@ section {
     margin-bottom: 2rem;
 }
 
+h1,h2,h3 {
+    margin: 0;
+    font-weight: normal;
+}
+
 a {
     text-decoration: none;
     color: var(--text);

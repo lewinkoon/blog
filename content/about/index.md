@@ -9,8 +9,6 @@ resources:
 
 ---
 
-<!-- ![](intro) -->
-
 Desde siempre me ha gustado trastear con los ordenadores y otros dispositivos electrónicos que tenía por casa. Se podría pensar que tenía una **pasión innata** por la informática pero han pasado los años y me he dado cuenta que tuvo más peso el que fuera una aficción barata comparada con otras disciplinas.
 
 Quería crear página simple y **minimalista**, donde plasmar todas las pequeñas píldoras de conocimiento que he ido aprendiendo con el paso de los años, y que demostrara que no hacen falta librerías pesadas de javascript para hacer algo curioso.

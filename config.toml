@@ -1,6 +1,6 @@
 baseURL = 'https://lewin.app/'
 languageCode = 'es'
-title = 'Astrotintero'
+title = 'Lewin Koon'
 paginate = 5
 enableRobotsTXT = true
 
