@@ -21,7 +21,6 @@ header {
 
         span.mark {
             color: var(--lavender);
-            font-weight: bold;
         }
 
         &:hover {
@@ -35,14 +34,14 @@ header {
 .menu {
     font-size: 1.2rem;
     border-bottom: 3px solid var(--base);
-    color: var(--lavender);
+    // color: var(--lavender);
 
     &:hover {
-        border-bottom: 3px solid var(--blue);
+        border-bottom: 3px solid var(--lavender);
     }
 
     &.current {
-        border-bottom: 3px solid var(--red);
+        border-bottom: 3px solid var(--blue);
     }
 }
 

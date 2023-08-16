@@ -2,17 +2,16 @@
 
 <section class="intro">
     <div class="intro-text">
-        <div>Hola, soy&nbsp;<a href="/articles">Lewin</a>{{ partial "svg/logo.svg" . }}</div>
         {{ .Content }}
     </div>
-    <div class="intro-links">
+    <!-- <div class="intro-links">
         {{ range .Site.Menus.social }}
         <a href="{{ .URL }}" class="icon">
             {{ partialCached (print .Pre) . }}
             {{ .Name }}
         </a>
         {{ end }}
-    </div>
+    </div> -->
 </section>
 
 {{ $pages := .Paginate (where .Site.RegularPages "Section" "articles") }}
@@ -22,7 +21,7 @@
 
 <section class="articles">
     <div class="title">
-        <h2>Últimos artículos</h2>
+        <h2>Artículos</h2>
         <span class="line"></span>
         <a href="{{ ref . " articles" }}">Ver todos</a>
     </div>
