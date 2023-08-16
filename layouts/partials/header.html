@@ -1,7 +1,9 @@
 <a href="/" class="logo">
     {{ partial "svg/logo.svg" . }}
-    <span>Lewin</span><span class="mark">Koon</span>
+    <span>lewin</span><span class="mark">koon</span>
 </a>
+
+<span class="line"></span>
 
 {{ $currentPage := . }}
 {{ range first 3 .Site.Menus.main }}
@@ -10,11 +12,9 @@
 </a>
 {{ end }}
 
-<span class="line"></span>
-
 <button id="dark-mode">
     <!-- <span class="dark">🌙</span> -->
     <!-- <span class="light">☀️</span> -->
-    {{ partial "svg/moon.svg" . }}
-    {{ partial "svg/sun.svg" . }}
+    {{ partial "svg/dark.svg" . }}
+    {{ partial "svg/light.svg" . }}
 </button>

@@ -15,11 +15,11 @@ enableRobotsTXT = true
 ### NAVIGATION BAR ###
 [menu]
 [[menu.main]]
-  name = "Artículos"
+  name = "artículos"
   url = "/articles/"
   weight = 10
 [[menu.main]]
-  name = "Sobre mi"
+  name = "contacto"
   url = "/about/"
   weight = 20
 
