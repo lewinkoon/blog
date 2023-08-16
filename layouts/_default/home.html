@@ -1,19 +1,5 @@
 {{ define "main" }}
 
-<section class="intro">
-    <div class="intro-text">
-        {{ .Content }}
-    </div>
-    <!-- <div class="intro-links">
-        {{ range .Site.Menus.social }}
-        <a href="{{ .URL }}" class="icon">
-            {{ partialCached (print .Pre) . }}
-            {{ .Name }}
-        </a>
-        {{ end }}
-    </div> -->
-</section>
-
 {{ $pages := .Paginate (where .Site.RegularPages "Section" "articles") }}
 {{ $notes := where .Site.RegularPages "Section" "notes" }}
 {{ $projects := where .Site.RegularPages "Section" "projects" }}
@@ -21,9 +7,8 @@
 
 <section class="articles">
     <div class="title">
-        <h2>Artículos</h2>
+        <h2 href="{{ ref . " articles" }}">Artículos</h2>
         <span class="line"></span>
-        <a href="{{ ref . " articles" }}">Ver todos</a>
     </div>
     <div class="posts">
         {{ range $pages.Pages }}
