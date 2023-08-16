@@ -5,11 +5,12 @@
 <section class="section-title">
     <h1>
         {{ partial "svg/clipboard.svg" . }}
-        {{ .Title  | humanize }}
+        {{ .Title | humanize }}
     </h1>
     <p>
         <span>{{ len .Pages }}</span>
-        artículos encontrados</p>
+        artículos encontrados
+    </p>
 </section>
 
 <section class="section-list">
@@ -19,16 +20,18 @@
             <h2>{{ .Key }}</h2>
             <span class="line"></span>
         </div>
-        {{ range .Pages }}
-        <a href="{{ .RelPermalink }}">
-            {{ with index (.Params.tags) 0 }}
-            <span class="tag" type="{{ . }}">{{ . }}</span>
+        <div class="posts">
+            {{ range .Pages }}
+            <a href="{{ .RelPermalink }}">
+                {{ with index (.Params.tags) 0 }}
+                <span class="tag" type="{{ . }}">{{ . }}</span>
+                {{ end }}
+                <div class="post-title">{{ .Title }}</div>
+                <span class="line"></span>
+                <time>{{ .Date.Format "02/01/06" }}</time>
+            </a>
             {{ end }}
-            <div class="post-title">{{ .Title }}</div>
-            <span class="line"></span>
-            <time>{{ .Date.Format "02/01/06" }}</time>
-        </a>
-        {{ end }}
+        </div>
     </div>
     {{ end }}
 </section>

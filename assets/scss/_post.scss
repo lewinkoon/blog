@@ -19,15 +19,15 @@
             padding: 0.2rem 0.6rem;
 
             &[type="historia"] {
-                color: var(--pink);
+                color: var(--red);
             }
 
             &[type="tecnología"] {
-                color: var(--mauve);
+                color: var(--peach);
             }
 
             &[type="viajes"] {
-                color: var(--sky);
+                color: var(--green);
             }
 
             &:hover {

@@ -10,12 +10,12 @@
         h2 {
             font-size: 2rem;
             margin-right: 1rem;
-            color: var(--green);
+            color: var(--blue);
         }
 
         .line {
             flex-grow: 1;
-            border-bottom: 2px solid var(--teal);
+            border-bottom: 2px solid var(--lavender);
             border-radius: thin;
         }
     }
@@ -41,15 +41,15 @@
                 background-color: var(--surface0);
 
                 &[type="historia"] {
-                    color: var(--pink);
+                    color: var(--red);
                 }
 
                 &[type="tecnología"] {
-                    color: var(--mauve);
+                    color: var(--peach);
                 }
 
                 &[type="viajes"] {
-                    color: var(--sky);
+                    color: var(--green);
                 }
 
             }
@@ -90,20 +90,21 @@
         h2 {
             font-size: 2rem;
             margin-right: 1rem;
-            color: var(--red);
+            color: var(--blue);
         }
 
         .line {
             flex-grow: 1;
-            border-bottom: 2px solid var(--maroon);
+            border-bottom: 2px solid var(--lavender);
             border-radius: thin;
         }
     }
 
     .items {
         display: flex;
+        gap: 2rem;
 
-        div.container {
+        a.container {
             display: flex;
             flex-direction: column;
             align-items: start;
@@ -116,7 +117,6 @@
                 font-size: 1rem;
                 font-family: "mono";
                 color: var(--lavender);
-                text-align: end;
             }
 
             h2 {
@@ -130,23 +130,8 @@
                 margin: 0;
             }
 
-            div.links {
-                display: flex;
-                flex-direction: row;
-                gap: 0.5rem;
-                margin-top: 0.5rem;
-
-                a {
-                    background-color: var(--surface1);
-                    padding: 0.4rem 0.8rem;
-                    border-radius: 10px;
-                    border: thin solid var(--surface2);
-                    font-size: 0.8rem;
-
-                    &:hover {
-                        border: thin solid var(--lavender);
-                    }
-                }
+            &:hover {
+                border: thin solid var(--blue);
             }
         }
     }
