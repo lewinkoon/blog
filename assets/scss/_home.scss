@@ -9,8 +9,8 @@
 
         h2 {
             font-size: 2rem;
+            font-weight: bold;
             margin-right: 1rem;
-            color: var(--blue);
         }
 
         .line {
@@ -29,7 +29,7 @@
             display: flex;
             align-items: center;
             gap: 0.8rem;
-            transition: transform 0.2s;
+            transition: all 0.2s;
 
             .tag {
                 font-size: 0.9rem;
@@ -60,7 +60,7 @@
 
             .line {
                 flex-grow: 1;
-                border-bottom: thin solid var(--surface0);
+                border-bottom: 2px dashed var(--surface0);
                 margin: auto 0.5rem;
                 border-radius: 2px;
             }
@@ -74,12 +74,14 @@
 
             &:hover {
                 transform: translateX(20px);
+                font-weight: bold;
             }
         }
     }
 }
 
 .projects {
+    margin-bottom: 2rem;
 
     .title {
         display: flex;
@@ -89,8 +91,8 @@
 
         h2 {
             font-size: 2rem;
+            font-weight: bold;
             margin-right: 1rem;
-            color: var(--blue);
         }
 
         .line {
@@ -101,7 +103,8 @@
     }
 
     .items {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         gap: 2rem;
 
         a.container {
@@ -112,6 +115,7 @@
             border: thin solid var(--surface1);
             background-color: var(--surface0);
             border-radius: 10px;
+            transition: all 0.2s;
 
             time {
                 font-size: 1rem;
@@ -131,7 +135,8 @@
             }
 
             &:hover {
-                border: thin solid var(--blue);
+                transform: scale(1.02);
+                border: thin solid var(--surface2);
             }
         }
     }

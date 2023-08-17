@@ -37,7 +37,9 @@ section {
     margin-bottom: 4rem;
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
     margin: 0;
     font-weight: normal;
 }
@@ -195,7 +197,7 @@ hr {
 ::-webkit-scrollbar-thumb {
     background: var(--overlay0);
     border-radius: 6px;
-    
+
 
     &:hover {
         background: var(--overlay1);
@@ -207,17 +209,7 @@ hr {
         font-size: 10pt;
     }
 
-    .intro-text svg {
-        display: none;
-    }
-
     a {
-        &.logo {
-            margin: 0 !important;
-            span {
-                display: none;
-            }
-        }
 
         div.post-title {
             flex-grow: 1;
@@ -238,10 +230,13 @@ hr {
         font-size: 9pt;
     }
 
-    .title a {
+    a.menu {
         display: none;
     }
 
+    section.projects .items {
+        grid-template-columns: 1fr;
+    }
 
 }
 

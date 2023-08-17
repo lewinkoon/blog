@@ -16,6 +16,7 @@
             color: var(--base);
             background-color: var(--surface0);
             border-radius: 5px;
+            border: thin solid var(--surface1);
             padding: 0.2rem 0.6rem;
 
             &[type="historia"] {
@@ -40,15 +41,11 @@
 
             a.author {
                 font-weight: bold;
-                color: var(--blue);
+                color: var(--lavender);
 
                 &:hover {
-                    color: var(--red);
+                    color: var(--blue);
                 }
-            }
-
-            span.read-time {
-                font-style: italic;
             }
         }
 
@@ -71,7 +68,7 @@
 
         a.anchor {
             text-decoration: none;
-            color: inherit;
+            color: var(--blue);
     
             span {
                 color: var(--blue);
@@ -85,7 +82,7 @@
 
         .line {
             flex-grow: 1;
-            border-bottom: 4px solid var(--blue);
+            border-bottom: 4px solid var(--lavender);
             margin: auto 1rem;
             border-radius: 2px;
         }
