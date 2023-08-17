@@ -17,7 +17,7 @@ resources:
 Las dependencias que necesitaremos instalar previamente son las siguientes.
 
 - **notify-send** - Envía la notificación de escritorio.
-- **xclip** - Gestiona el portatapeles. Forma parte del popular *display server* [xorg](https://wiki.archlinux.org/title/xorg)
+- **xclip** - Gestiona el portatapeles. Forma parte del popular servidor de visualización [xorg](https://wiki.archlinux.org/title/xorg)
 - **dunst** - Daemon que recibe las notificaciones y las muestra en pantalla.
 
 Una vez todas las dependencias estén instaladas, se puede ejecutar el script de *Bash*  sin problemas. Recuerda que primero hay que hacer ejecutable al archivo.

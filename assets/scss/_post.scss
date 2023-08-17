@@ -55,11 +55,11 @@
 .article-post {
 
     a {
-        color: var(--maroon);
+        color: var(--mauve);
+        text-decoration: underline;
 
         &:hover {
-            text-decoration: underline;
-            // text-decoration-thickness: 2px;
+            color: var(--pink);
         }
     }
 
