@@ -108,7 +108,10 @@ class Search {
                 <h2>Resultados</h2>
                 <span class="line"></span>
             </div>
+
             `;
+
+        let links: string = '';
 
         results.forEach((value) => {
             let item = value.item
@@ -120,8 +123,12 @@ class Search {
                     <time>${item.date}</time>
                 </a>
                 `
-            this.searchResults.innerHTML += html;
+            links += html;
         });
+
+        this.searchResults.innerHTML += `
+                <div class="posts">${links}</div>
+            `;
     }
 
     private buildSearchValue = function (value: string) {
