@@ -1,4 +1,4 @@
-{{- $pages := where .Site.RegularPages "Section" "articles" -}}
+{{- $pages := where .Site.RegularPages "Section" "blog" -}}
 {{- $limit := .Site.Config.Services.RSS.Limit -}}
 
 {{- if ge $limit 1 -}}

@@ -1,13 +1,13 @@
 {{ define "main" }}
 
-{{ $pages := .Paginate (where .Site.RegularPages "Section" "articles") }}
+{{ $pages := .Paginate (where .Site.RegularPages "Section" "blog") }}
 {{ $notes := where .Site.RegularPages "Section" "notes" }}
 {{ $projects := where .Site.RegularPages "Section" "projects" }}
 {{ $archivesPage := first 1 (where .Site.RegularPages "Layout" "eq" "archives") }}
 
 <section class="articles">
     <div class="title">
-        <h2 href="{{ ref . " articles" }}">Artículos</h2>
+        <h2 href="{{ ref . " blog" }}">Artículos</h2>
         <span class="line"></span>
     </div>
     <div class="posts">
