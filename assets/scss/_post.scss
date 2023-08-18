@@ -136,29 +136,42 @@ aside {
 }
 
 .suggested {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
 
     a {
-        flex: 0 0 calc(50% - 1rem);
         padding: 1rem;
-        border-radius: .35rem;
+        border-radius: 10px;
         background: var(--mantle);
-        color: var(--blue);
+        border: thin solid var(--mantle);
         transition: transform 0.2s;
+
+        svg {
+            width: 1rem;
+            height: auto;
+        }
 
         &:first-of-type {
             text-align: right;
         }
 
-        span {
-            display: block;
+        div.mark {
             color: var(--text);
+            font-weight: bold;
+        }
+
+        div.title {
+            color: var(--lavender);
         }
 
         &:hover {
-            transform: translateY(-4px);
-            color: var(--red);
+            transform: scale(1.02);
+            border: thin solid var(--crust);
+
+            div.title {
+                color: var(--blue);
+            }
         }
     }
 }

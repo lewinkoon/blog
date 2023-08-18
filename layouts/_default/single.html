@@ -24,7 +24,7 @@
                     {{ end }}
                     {{ $author }}
                 </a> ·
-                <time>{{ .Date.Format "02/01/06" }}</time> · 
+                <time>{{ .Date.Format "02/01/06" }}</time> ·
                 <span class="read-time">{{ .ReadingTime }} min</span>
             </div>
 
@@ -41,25 +41,23 @@
 
 </section>
 
-<section>
-    {{ if .Section }}
-    <nav class="suggested">
-        {{ with .PrevInSection }}
-        <a rel="prev" href="{{ .RelPermalink }}" title="Previous post (older)">
-            <span>Anterior</span>
-            {{ .Title }}
-        </a>
-        {{ end }}
-
-        {{ with .NextInSection }}
-        <a rel="next" href="{{ .RelPermalink }}" title="Next post (newer)">
-            <span>Siguiente</span>
-            {{ .Title }}
-        </a>
-        {{ end }}
-    </nav>
+{{ if .Section }}
+<nav class="suggested">
+    {{ with .PrevInSection }}
+    <a rel="prev" href="{{ .RelPermalink }}" title="Previous post (older)">
+        <div class="mark">Anterior</div>
+        <div class="title">{{ .Title }}</div>
+    </a>
     {{ end }}
-</section>
+
+    {{ with .NextInSection }}
+    <a rel="next" href="{{ .RelPermalink }}" title="Next post (newer)">
+        <div class="mark">Siguiente</div>
+        <div class="title">{{ .Title }}</div>
+    </a>
+    {{ end }}
+</nav>
+{{ end }}
 
 {{ if .Params.comments }}
 <section class="comments">
