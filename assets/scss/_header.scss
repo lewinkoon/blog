@@ -1,37 +1,28 @@
-header {
+header .logo {
     display: flex;
     align-items: center;
-    gap: 2rem;
-    max-width: 1080px;
-    padding: 1rem;
-    margin: 0 auto;
+    padding-bottom: 0.4rem;
+    font-size: 1.6rem;
 
-    .logo {
-        display: flex;
-        align-items: center;
-        padding-bottom: 0.5rem;
-        font-size: 1.5rem;
+    svg {
+        width: 2rem;
+        height: 2rem;
+        stroke: var(--blue);
+        margin-right: 0.5rem;
+    }
 
-        svg {
-            width: 2rem;
-            height: 2rem;
-            stroke: var(--blue);
-            margin-right: 0.5rem;
-        }
+    span.mark {
+        color: var(--lavender);
+    }
 
+    &:hover {
         span.mark {
-            color: var(--lavender);
-        }
-
-        &:hover {
-            span.mark {
-                color: var(--blue);
-            }
+            color: var(--blue);
         }
     }
 }
 
-.menu {
+header .menu {
     font-size: 1.2rem;
     border-bottom: 3px solid var(--base);
 
@@ -44,14 +35,14 @@ header {
     }
 }
 
-span.join {
+header span.join {
     flex-grow: 1;
     border-bottom: 2px solid var(--surface0);
     margin: auto 0rem;
     border-radius: 1px;
 }
 
-#dark-mode {
+header #dark-mode {
     border: none;
     cursor: pointer;
     background: transparent;
@@ -74,7 +65,7 @@ span.join {
 
 }
 
-[data-color="dark"] #dark-mode {
+[data-color="dark"] header #dark-mode {
     .light {
         display: none;
     }

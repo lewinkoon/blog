@@ -2,18 +2,17 @@
 
 {{ $pages := .Pages }}
 
-<section class="section-title">
+<section class="title">
     <h1>
         {{ partial "svg/clipboard.svg" . }}
         {{ .Title | humanize }}
     </h1>
     <p>
-        <span>{{ len .Pages }}</span>
-        artículos encontrados
+        Se han encontrado <span>{{ len .Pages }}</span> artículo/s
     </p>
 </section>
 
-<section class="section-list">
+<section class="list">
     {{ range $pages.GroupByDate "2006" }}
     <div class="list-item">
         <div class="title">

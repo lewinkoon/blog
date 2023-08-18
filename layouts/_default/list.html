@@ -1,15 +1,12 @@
 {{ define "main" }}
 {{ $pages := where .Site.RegularPages "Section" "blog" }}
 
-<section>
-    <div class="section-title">
-        <h1>
-            {{ partial "svg/bookmark.svg" . }}
-            Artículos
-        </h1>
-        <p>Tutoriales, artículos técnicos, atajos, referencias, y todos los recursos de desarrollo escritos hasta la
-            fecha.</p>
-    </div>
+<section class="title">
+    <h1>
+        {{ partial "svg/bookmark.svg" . }}
+        Artículos
+    </h1>
+    <p>Todos los tutoriales, disertaciones y referencias escritos hasta la fecha</p>
 
     <div class="tag-list">
         {{ range .Site.Taxonomies.tags }}
@@ -32,7 +29,7 @@
 </section>
 
 
-<section class="section-list" id="section-list">
+<section class="list" id="section-list">
     {{ range $pages.GroupByDate "2006" }}
     <div class="group">
         <div class="title">
