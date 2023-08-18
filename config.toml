@@ -6,58 +6,58 @@ enableRobotsTXT = true
 
 ### CUSTOM OPTIONS ###
 [params]
-  host = "https://cusdis.com"
-  id = "8157fbc3-799a-4a57-a9cd-d201d6315340"
-  description = "Blog sobre tecnología y alguna que otra ruta de montaña"
-  title = "lewinkoon"
-  images = ['banner.png']
+host = "https://cusdis.com"
+id = "8157fbc3-799a-4a57-a9cd-d201d6315340"
+description = "Blog sobre tecnología y alguna que otra ruta de montaña"
+title = "lewinkoon"
+images = ['banner.png']
 
 ### NAVIGATION BAR ###
 [menu]
 [[menu.main]]
-  name = "Blog"
-  url = "/blog/"
-  weight = 10
+name = "Blog"
+url = "/blog/"
+weight = 10
 [[menu.main]]
-  name = "Contacto"
-  url = "/about/"
-  weight = 20
+name = "Autor"
+url = "/about/"
+weight = 20
 
 ### SOCIAL LINKS ###
 [[menu.social]]
-  name = "Github"
-  url = "https://github.com/lewinkoon"
-  pre = "svg/github.svg"
-  weight = 10
+name = "Github"
+url = "https://github.com/lewinkoon"
+pre = "svg/github.svg"
+weight = 10
 [[menu.social]]
-  name = "Email"
-  url = "mailto:lewinkoon@gmail.com"
-  pre = "svg/mail.svg"
-  weight = 20
+name = "Email"
+url = "mailto:lewinkoon@gmail.com"
+pre = "svg/mail.svg"
+weight = 20
 [[menu.social]]
-  name = "Rss"
-  url = "/index.xml"
-  pre = "svg/rss.svg"
-  weight = 30
+name = "Rss"
+url = "/index.xml"
+pre = "svg/rss.svg"
+weight = 30
 
 ### MARKDOWN ###
 [markup]
-  [markup.highlight]
-  noClasses = false
-  lineNos = false
-  [markup.goldmark.renderer]
-  unsafe = true
-  [markup.tableOfContents]
-  endLevel = 2
-  ordered = false
-  startLevel = 1
+[markup.highlight]
+noClasses = false
+lineNos = false
+[markup.goldmark.renderer]
+unsafe = true
+[markup.tableOfContents]
+endLevel = 2
+ordered = false
+startLevel = 1
 
 ### OUTPUT FORMAT ###
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+home = ["HTML", "RSS", "JSON"]
 
 ### BUILD CONFIG ###
 [build]
-  noJSConfigInAssets = true
-  useResourceCacheWhen = 'fallback'
-  writeStats = false
+noJSConfigInAssets = true
+useResourceCacheWhen = 'fallback'
+writeStats = false
