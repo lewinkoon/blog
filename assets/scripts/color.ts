@@ -73,8 +73,8 @@ if (colorSchemeItem == 'dark') {
 } else if (colorSchemeItem == 'light') {
     document.documentElement.dataset.color = 'light'
 } else {
-    localStorage.setItem(colorSchemeKey, "dark")
-    document.documentElement.dataset.color = 'dark'
+    localStorage.setItem(colorSchemeKey, "light")
+    document.documentElement.dataset.color = 'light'
 }
 
 let chart = false
