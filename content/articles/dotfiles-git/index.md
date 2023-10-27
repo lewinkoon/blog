@@ -3,7 +3,7 @@ author: "Lewin"
 date: 2022-11-13
 tags:
 - technology
-title: "Dotfiles: save your configurations with GitHub."
+title: "Dotfiles: save your configurations with GitHub"
 ---
 
 Since I started using [Archlinux](https://archlinux.org/) as my operating system, I've always had the same question: how to save configuration files.

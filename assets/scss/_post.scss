@@ -41,11 +41,7 @@
 
             a.author {
                 font-weight: bold;
-                color: var(--lavender);
-
-                &:hover {
-                    color: var(--blue);
-                }
+                color: var(--blue);
             }
         }
 

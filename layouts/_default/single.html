@@ -17,7 +17,7 @@
 
             <div class="metadata">
 
-                <a href="{{ " about" | absURL }}" class="author">
+                <a href="{{ "about" | absURL }}" class="author">
                     {{ $author := .Params.author }}
                     {{ if eq $author nil }}
                     {{ $author = .Site.Params.author }}

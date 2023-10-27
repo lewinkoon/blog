@@ -8,14 +8,14 @@
     </h1>
     <p>I write about things from time to time.</p>
 
-    <div class="tag-list">
+    <!-- <div class="tag-list">
         {{ range .Site.Taxonomies.tags }}
         <a href="{{ .Page.Permalink }}" class="tag" data-type="{{ .Page.Title }}">
             {{ partial "svg/hash.svg" . }}
             {{ .Page.Title }}
         </a>
         {{ end }}
-    </div>
+    </div> -->
 
     <input class="search-query" id="search-query" placeholder="Search anything...">
 </section>
@@ -39,9 +39,9 @@
         <div class="posts">
             {{ range .Pages }}
             <a href="{{ .RelPermalink }}">
-                {{ with index (.Params.tags) 0 }}
+                <!-- {{ with index (.Params.tags) 0 }}
                 <span class="tag" type="{{ . }}">{{ . }}</span>
-                {{ end }}
+                {{ end }} -->
                 <div class="post-title">{{ .Title }}</div>
                 <span class="line"></span>
                 <time>{{ .Date.Format "02/01/06" }}</time>
