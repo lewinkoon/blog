@@ -1,12 +1,12 @@
 {{ define "main" }}
-{{ $pages := where .Site.RegularPages "Section" "blog" }}
+{{ $pages := where .Site.RegularPages "Section" "articles" }}
 
 <section class="title">
     <h1>
         {{ partial "svg/bookmark.svg" . }}
-        Artículos
+        Articles
     </h1>
-    <p>Todos los tutoriales, disertaciones y referencias escritos hasta la fecha</p>
+    <p>I write about things from time to time.</p>
 
     <div class="tag-list">
         {{ range .Site.Taxonomies.tags }}
@@ -17,7 +17,7 @@
         {{ end }}
     </div>
 
-    <input class="search-query" id="search-query" placeholder="Busca cualquier cosa...">
+    <input class="search-query" id="search-query" placeholder="Search anything...">
 </section>
 
 <section class="search-results" id="search-results">

@@ -1,13 +1,18 @@
 {{ define "main" }}
 
-{{ $pages := .Paginate (where .Site.RegularPages "Section" "blog") }}
+{{ $pages := .Paginate (where .Site.RegularPages "Section" "articles") }}
 {{ $notes := where .Site.RegularPages "Section" "notes" }}
 {{ $projects := where .Site.RegularPages "Section" "projects" }}
 {{ $archivesPage := first 1 (where .Site.RegularPages "Layout" "eq" "archives") }}
 
+<section class="intro">
+    <h2>Hi, I'm&nbsp;<a href="/about">Lewin.</a></h2>
+    <p>{{ .Content }}</p>
+</section>
+
 <section class="articles">
     <div class="title">
-        <h2 href="{{ ref . " blog" }}">Artículos</h2>
+        <h2 href="{{ ref . " articles" }}">Articles</h2>
         <span class="line"></span>
     </div>
     <div class="posts">
@@ -26,7 +31,7 @@
 
 <section class="projects">
     <div class="title">
-        <h2>Proyectos</h2>
+        <h2>Projects</h2>
         <span class="line"></span>
     </div>
     <div class="items">

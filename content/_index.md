@@ -1,7 +1,5 @@
 ---
-title: Lewin Koon
+title: Hi, I'm Lewin.
 ---
 
-Podría haberme *ahorrado* mucho tiempo haciéndome una cuenta en [Wordpress](https://wordpress.com) pero preferí *complicarme* la vida.
-
-<!-- Escribo mayormente sobre *tecnología* aunque de vez en cuando también subo *rutas de montaña*. -->
+I'm a **mechanical engineer** living in Spain. I make open-source projects and write about code, design, and life. I'm interested in warships, history, hiking, and gaming.

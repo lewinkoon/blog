@@ -19,15 +19,15 @@
             border: thin solid var(--surface1);
             padding: 0.2rem 0.6rem;
 
-            &[type="historia"] {
+            &[type="history"] {
                 color: var(--red);
             }
 
-            &[type="tecnología"] {
+            &[type="technology"] {
                 color: var(--peach);
             }
 
-            &[type="viajes"] {
+            &[type="travel"] {
                 color: var(--green);
             }
 

@@ -49,19 +49,19 @@ section.title {
             height: 1.4rem;
         }
 
-        &[data-type="historia"] {
+        &[data-type="history"] {
             svg {
                 stroke: var(--red);
             }
         }
 
-        &[data-type="tecnología"] {
+        &[data-type="technology"] {
             svg {
                 stroke: var(--peach);
             }
         }
 
-        &[data-type="viajes"] {
+        &[data-type="travel"] {
             svg {
                 stroke: var(--green);
             }
@@ -134,15 +134,15 @@ section.title {
                 color: var(--base);
                 background-color: var(--surface0);
 
-                &[type="historia"] {
+                &[type="history"] {
                     color: var(--red);
                 }
 
-                &[type="tecnología"] {
+                &[type="technology"] {
                     color: var(--peach);
                 }
 
-                &[type="viajes"] {
+                &[type="travel"] {
                     color: var(--green);
                 }
 

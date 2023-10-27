@@ -1,6 +1,6 @@
 ---
-title: Biografía
-subtitle: Un pequeño resumen sobre mi persona
+title: About me
+subtitle: Meet the author of this digital garden
 layout: about
 resources:
 - name: intro
@@ -9,35 +9,28 @@ resources:
 
 ---
 
-Desde siempre me ha gustado trastear con los ordenadores y otros dispositivos electrónicos que tenía por casa. Se podría pensar que tenía una **pasión innata** por la informática pero han pasado los años y me he dado cuenta que tuvo más peso el que fuera una aficción barata comparada con otras disciplinas.
+Hello, I'm Lewin, a passionate and driven mechanical engineer with a relentless curiosity for all things related to machines and technology. My journey began with a deep-seated fascination for **how things work**. Over the years, I've honed my skills, from concept to completion, in areas such as mechanical design, electronics and software development.
 
-Quería crear página simple y **minimalista**, donde plasmar todas las pequeñas píldoras de conocimiento que he ido aprendiendo con el paso de los años, y que demostrara que no hacen falta librerías pesadas de javascript para hacer algo curioso.
+Outside of the engineering realm, you'll often find me exploring the latest technological advancements, **tinkering** with DIY projects, or indulging in outdoor adventures that provide the perfect balance to my technical pursuits.
 
-# Curiosidades
+This portfolio showcases some of the projects I've had the privilege to work on. Feel free to explore and get in touch if you'd like to collaborate, discuss a project, or simply share your own passion for engineering. I'm always eager to connect with like-minded individuals who **share my enthusiasm** for innovation and problem-solving.
 
-- Mi comida preferida es el *lacón con pimientos asados* 😋
-- Estoy leyendo *Dune* de Frank Herbert 📚
-- Estudié *ingeniería mecánica* en la universidad ⚙️
-- Llevo diseñando este blog desde *2021* ✨
+**Thank you** for visiting my portfolio, and I look forward to connecting with you soon.
+
+## Random facts
+
+- I love watching *Transformers* movies 🤖
+- I've been writing for this blog since 2021 ✨
+- My favorite meal is pork shoulder with roasted red peppers 😋 
 
 # Hardware
 
-- [Procesador](cpu) : AMD Rizen 5 3600
-- [Tarjeta gráfica](gpu) : GeForce GTX 1660 Super 6GB
-- [Memoria RAM](ram) : Kingston Fury Beast DDR4 8GB 3200MHz (x2)
-- [Placa base](mb) : MSI B450M Mortar Max
-- [Fuente de alimentación](ps) : Corsair CX550M
-- [Monitor](monitor) : AOC 24G2u/BK (x2)
-- [Teclado](keyboard) : Ducky One 2 Mini RGB
-- [Ratón](mouse) : Logitech G305 Lightspeed
-- [Auriculares](headphones) : Razer Barracuda X
-
-[cpu]: https://www.amd.com/en/products/cpu/amd-ryzen-5-3600
-[gpu]: https://www.gigabyte.com/es/Graphics-Card/GV-N166SOC-6GD#kf
-[ram]: https://www.kingston.com/en/memory/gaming/kingston-fury-beast-ddr4-rgb-memory
-[mb]: https://es.msi.com/Motherboard/B450M-MORTAR-MAX
-[ps]: https://www.corsair.com/es/es/Categor%C3%ADas/Productos/Unidades-de-fuente-de-alimentaci%C3%B3n/cxm-series-2015-config/p/CP-9020102-NA
-[monitor]: https://eu.aoc.com/en/gaming/products/monitors/24g2u-bk
-[keyboard]: https://www.duckychannel.com.tw/en/Ducky-One2-Mini-RGB
-[mouse]: https://www.logitechg.com/en-us/products/gaming-mice/g305-lightspeed-wireless-gaming-mouse.910-006376.html
-[headphones]: https://www.razer.com/latam-es/gaming-headsets/razer-barracuda-x
+- **CPU** - AMD Rizen 5 3600
+- **GPU** - GeForce GTX 1660 Super 6GB
+- **Memory** - Kingston Fury Beast DDR4 8GB 3200MHz (x2)
+- **Motherboard** - MSI B450M Mortar Max
+- **PSU** - Corsair CX550M
+- **Display** - AOC 24G2u/BK (x2)
+- **Keyboard** - Ducky One 2 Mini RGB
+- **Mouse** - Logitech G305 Lightspeed
+- **Headphones** - Razer Barracuda X
