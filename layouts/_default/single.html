@@ -45,14 +45,14 @@
 <nav class="suggested">
     {{ with .PrevInSection }}
     <a rel="prev" href="{{ .RelPermalink }}" title="Previous post (older)">
-        <div class="mark">Anterior</div>
+        <div class="mark">Previous</div>
         <div class="title">{{ .Title }}</div>
     </a>
     {{ end }}
 
     {{ with .NextInSection }}
     <a rel="next" href="{{ .RelPermalink }}" title="Next post (newer)">
-        <div class="mark">Siguiente</div>
+        <div class="mark">Next</div>
         <div class="title">{{ .Title }}</div>
     </a>
     {{ end }}

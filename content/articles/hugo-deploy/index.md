@@ -21,11 +21,11 @@ To ensure that the commands are executed only if there are no errors, the `set -
 set -e # exit on error
 
 # declare some variables
-blog="$HOME/code/blog"
+articles="$HOME/code/articles"
 repo="$HOME/code/lewinkoon.github.io"
 
-hugo -s $blog &> /dev/null
-hugo -s $blog -d $repo
+hugo -s $articles &> /dev/null
+hugo -s $articles -d $repo
 
 git -C $repo add "." # stage all changes
 git -C $repo commit -m "update" # commit message

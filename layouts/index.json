@@ -1,5 +1,5 @@
 {{- $.Scratch.Add "index" slice -}}
-{{ $pages := where .Site.RegularPages "Section" "blog" }}
+{{ $pages := where .Site.RegularPages "Section" "articles" }}
 {{- range $pages -}}
     {{- $date := .Date.Format "Jan 02"}}
     {{- $year := .Date.Format "2006"}}
