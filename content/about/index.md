@@ -17,7 +17,7 @@ This portfolio showcases some of the projects I've had the privilege to work on.
 
 **Thank you** for visiting my portfolio, and I look forward to connecting with you soon.
 
-## Random facts
+# Random facts
 
 - I love watching *Transformers* movies 🤖
 - I've been writing for this blog since 2021 ✨
