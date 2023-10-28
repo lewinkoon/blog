@@ -105,7 +105,7 @@ class Search {
     private populateResults(results: Array<searchItem>) {
         this.searchResults.innerHTML = `
             <div class="title">
-                <h2>Resultados</h2>
+                <h2>Results</h2>
                 <span class="line"></span>
             </div>
 
@@ -117,7 +117,6 @@ class Search {
             let item = value.item
             let html = `
                 <a href="${item.permalink}">
-                    <span class="tag" type="${item.tags}">${item.tags}</span>
                     <div class="post-title">${item.title}</div>
                     <span class="line"></span>
                     <time>${item.date}</time>
