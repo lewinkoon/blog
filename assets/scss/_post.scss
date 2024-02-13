@@ -44,10 +44,11 @@
 .article-post {
 
     a {
-        text-decoration: underline;
+        color: var(--orange);
 
         &:hover {
-            color: var(--mauve);
+            color: var(--orange);
+            text-decoration: underline;
         }
     }
 
