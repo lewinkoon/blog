@@ -1,6 +1,6 @@
 .intro {
     margin-bottom: 2rem;
-    
+
     h2 {
         font-size: 3rem;
         font-weight: bold;
@@ -8,7 +8,17 @@
 
         a {
             color: var(--blue);
+            transition: color 0.3s ease-in-out;
+
+            &:hover {
+                color: var(--yellow);
+            }
         }
+    }
+
+    div.quote {
+        padding-left: 1rem;
+        border-left: thick solid var(--blue);
     }
 
 }
@@ -25,12 +35,12 @@
             font-size: 2rem;
             font-weight: bold;
             margin-right: 1rem;
-            color: var(--green);
+            color: var(--subtext);
         }
 
         .line {
             flex-grow: 1;
-            border-bottom: 2px solid var(--lavender);
+            border-bottom: 2px solid var(--blue);
             border-radius: thin;
         }
     }
@@ -47,29 +57,6 @@
             border-radius: 10px;
             transition: all 0.2s;
 
-            .tag {
-                font-size: 0.9rem;
-                font-weight: bold;
-                padding: 0.2rem 0.5rem;
-                border-radius: 5px;
-                border: thin solid var(--surface1);
-                color: var(--base);
-                background-color: var(--surface0);
-
-                &[type="history"] {
-                    color: var(--red);
-                }
-
-                &[type="technology"] {
-                    color: var(--peach);
-                }
-
-                &[type="travel"] {
-                    color: var(--green);
-                }
-
-            }
-
             .post-title {
                 font-size: 1.2rem;
             }
@@ -84,14 +71,12 @@
             time {
                 font-size: 0.9rem;
                 font-family: "mono";
-                color: var(--lavender);
+                color: var(--yellow);
                 text-align: end;
             }
 
             &:hover {
                 background-color: var(--surface0);
-                // transform: translateX(20px);
-                // font-weight: bold;
             }
         }
     }
@@ -110,12 +95,12 @@
             font-size: 2rem;
             font-weight: bold;
             margin-right: 1rem;
-            color: var(--red);
+            color: var(--subtext);
         }
 
         .line {
             flex-grow: 1;
-            border-bottom: 2px solid var(--lavender);
+            border-bottom: 2px solid var(--blue);
             border-radius: thin;
         }
     }
@@ -130,15 +115,15 @@
             flex-direction: column;
             align-items: start;
             padding: 1.2rem;
-            border: thin solid var(--surface1);
+            border: thin solid var(--surface0);
             background-color: var(--surface0);
             border-radius: 10px;
-            transition: transform 0.2s;
+            transition: background-color 0.2s ease-in-out;
 
             time {
                 font-size: 1rem;
                 font-family: "mono";
-                color: var(--lavender);
+                color: var(--yellow);
             }
 
             h2 {
@@ -153,8 +138,8 @@
             }
 
             &:hover {
-                transform: scale(1.02);
-                border: thin solid var(--surface2);
+                background-color: var(--surface1);
+                border: thin solid var(--surface1);
             }
         }
     }

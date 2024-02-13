@@ -69,11 +69,11 @@ a {
 }
 
 strong {
-    color: var(--sky);
+    color: var(--yellow);
 }
 
 em {
-    color: var(--yellow);
+    color: var(--pink);
 }
 
 p,
@@ -89,7 +89,7 @@ blockquote {
 
 blockquote {
     padding: 1rem;
-    background: var(--mantle);
+    background: var(--black);
     border-radius: 10px;
     border-left: 5px solid var(--overlay0);
 
@@ -107,11 +107,11 @@ table {
 }
 
 th {
-    border-bottom: 4px solid var(--mantle);
+    border-bottom: 4px solid var(--black);
 }
 
 td {
-    border-bottom: 2px solid var(--mantle);
+    border-bottom: 2px solid var(--black);
 }
 
 th,
@@ -126,7 +126,7 @@ td {
     font-family: "mono";
     padding: 3px 5px;
     border-radius: 4px;
-    background: var(--mantle);
+    background: var(--black);
 }
 
 .figure {
@@ -169,9 +169,9 @@ hr {
 
 .track {
     border-radius: 10px;
-    border: 4px solid var(--mantle);
+    border: 4px solid var(--black);
     margin-bottom: 1.5rem;
-    background-color: var(--mantle);
+    background-color: var(--black);
 
     #map {
         height: 480px;
@@ -189,7 +189,7 @@ hr {
 }
 
 ::marker {
-    color: var(--lavender);
+    color: var(--surface1);
 }
 
 ::selection {

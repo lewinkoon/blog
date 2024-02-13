@@ -39,7 +39,7 @@ section.title {
         gap: 5px;
         padding: 0.3rem 0.6rem;
         background: var(--surface0);
-        border: thin solid var(--surface1);
+        border: thin solid var(--surface0);
         border-radius: 5px;
         cursor: pointer;
         user-select: none;
@@ -47,36 +47,19 @@ section.title {
         svg {
             width: 1.4rem;
             height: 1.4rem;
-        }
-
-        &[data-type="history"] {
-            svg {
-                stroke: var(--red);
-            }
-        }
-
-        &[data-type="technology"] {
-            svg {
-                stroke: var(--peach);
-            }
-        }
-
-        &[data-type="travel"] {
-            svg {
-                stroke: var(--green);
-            }
+            stroke: var(--blue);
         }
 
         &:hover {
-            background-color: var(--surface1);
+            background-color: var(--surface0);
         }
     }
 }
 
 .search-query {
     padding: 0.5rem 1rem;
-    background: var(--mantle);
-    border: 2px solid var(--mantle);
+    background: var(--black);
+    border: 2px solid var(--black);
     border-radius: 10px;
     outline: none;
     width: 100%;
@@ -105,12 +88,12 @@ section.title {
             font-size: 2rem;
             font-weight: bold;
             margin-right: 1rem;
-            color: var(--green);
+            color: var(--yellow);
         }
 
         .line {
             flex-grow: 1;
-            border-bottom: 2px solid var(--lavender);
+            border-bottom: 2px solid var(--blue);
             border-radius: thin;
         }
     }
@@ -132,21 +115,9 @@ section.title {
                 font-weight: bold;
                 padding: 0.2rem 0.5rem;
                 border-radius: 5px;
-                border: thin solid var(--surface1);
+                border: thin solid var(--surface0);
                 color: var(--base);
                 background-color: var(--surface0);
-
-                &[type="history"] {
-                    color: var(--red);
-                }
-
-                &[type="technology"] {
-                    color: var(--peach);
-                }
-
-                &[type="travel"] {
-                    color: var(--green);
-                }
 
             }
 
@@ -164,14 +135,12 @@ section.title {
             time {
                 font-size: 0.9rem;
                 font-family: "mono";
-                color: var(--lavender);
+                color: var(--yellow);
                 text-align: end;
             }
 
             &:hover {
                 background-color: var(--surface0);
-                // transform: translateX(20px);
-                // font-weight: bold;
             }
         }
     }
