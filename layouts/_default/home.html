@@ -37,11 +37,12 @@
     </div>
     <div class="items">
         {{ range $projects }}
-        <a href="{{ .Params.source }}" class="container">
+        <div class="container">
             <time>{{ .Date.Format "2006" }}</time>
             <h2>{{ .Title }}</h2>
             <p>{{ .Description }}</p>
-        </a>
+            <a href="{{ .Params.source }}">Source</a>
+        </div>
         {{ end }}
     </div>
 </section>
