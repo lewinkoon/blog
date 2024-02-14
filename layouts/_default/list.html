@@ -1,10 +1,10 @@
 {{ define "main" }}
-{{ $pages := where .Site.RegularPages "Section" "articles" }}
+{{ $pages := where .Site.RegularPages "Section" "writing" }}
 
 <section class="title">
     <h1>
         {{ partial "svg/bookmark.svg" . }}
-        Articles
+        Writing
     </h1>
     <p>I write about things from time to time.</p>
 

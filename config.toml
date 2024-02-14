@@ -14,8 +14,8 @@ images = ['banner.png']
 ### NAVIGATION BAR ###
 [menu]
 [[menu.main]]
-name = "Articles"
-url = "/articles/"
+name = "Writing"
+url = "/writing/"
 weight = 10
 [[menu.main]]
 name = "About me"
