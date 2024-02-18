@@ -41,7 +41,12 @@
             <time>{{ .Date.Format "2006" }}</time>
             <h2>{{ .Title }}</h2>
             <p>{{ .Description }}</p>
-            <a href="{{ .Params.source }}">Source</a>
+            <div class="links">
+                <a href="{{ .Params.source }}">Source</a>
+                {{ if .Params.demo }}
+                <a href="{{ .Params.demo }}">Demo</a>
+                {{ end }}
+            </div>
         </div>
         {{ end }}
     </div>
