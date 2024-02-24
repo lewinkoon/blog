@@ -3,7 +3,7 @@ author: "Lewin"
 date: 2022-02-12
 tags:
 - technology
-title: "Dunst: manage you clipboard through desktop notifications"
+title: "View your clipboard with desktop notifications"
 resources:
 - name: capture
   title: Figura 1

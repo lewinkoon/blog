@@ -3,7 +3,7 @@ author: "Lewin"
 date: 2022-05-04
 tags:
 - technology
-title: "Hugo: automated publishing with Github"
+title: "Automate hugo webpage deployment with Github"
 ---
 
 When I first started using [Hugo](https://github.com/gohugoio/hugo), one of the challenges I encountered was how **non-intuitive** it was to publish the generated website to hosting, in my case, Github Pages. After creating all the static files, I had to set up a new repository and move all the files to it, along with all the associated steps. Initially, I came across various **solutions** that involved creating a submodule within the Hugo repository itself, but I could never get it to work correctly.
