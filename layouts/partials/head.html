@@ -5,15 +5,18 @@
     <title>{{.Site.Title}}</title>
 
     {{ template "_internal/opengraph.html" . }}
-    
-    <!-- <link rel="shortcut icon" type="image/x-icon" href="{{ "favicon.ico" | relURL }}" /> -->
+
+    {{ with .OutputFormats.Get "rss" -}}
+    {{ printf `
+    <link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
+    {{ end }}
 
     <!-- FAVICON -->
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 
     <!-- SCSS -->
     {{ $style := resources.Get "main.scss" | toCSS | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $style.RelPermalink }}"/>
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
 
     <!-- COLOR SCHEME -->
     {{ $color := resources.Get "scripts/color.ts" | js.Build (dict "minify" false ) | fingerprint }}
