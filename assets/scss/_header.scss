@@ -1,4 +1,4 @@
-header .logo {
+header a.logo {
     display: flex;
     align-items: center;
     padding-bottom: 0.4rem;
@@ -6,25 +6,25 @@ header .logo {
 
     svg {
         width: 2rem;
-        height: 2rem;
+        height: auto;
         stroke: var(--blue);
-        margin-right: 0.5rem;
+        margin-right: 0.4rem;
     }
 
     span.mark {
         color: var(--blue);
-    }
+        transition: color 0.2s ease-in-out;
 
-    &:hover {
-        span.mark {
+        &:hover {
             color: var(--yellow);
         }
     }
 }
 
-header .menu {
+header a.menu {
     font-size: 1.2rem;
     border-bottom: 3px solid var(--base);
+    transition: border-bottom 0.2s ease-in-out;
 
     &:hover {
         border-bottom: 3px solid var(--yellow);
