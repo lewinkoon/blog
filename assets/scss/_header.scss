@@ -39,7 +39,7 @@ header span.join {
     flex-grow: 1;
     border-bottom: 2px solid var(--surface0);
     margin: auto 0rem;
-    border-radius: 1px;
+    border-radius: thin;
 }
 
 header #dark-mode {
@@ -49,10 +49,9 @@ header #dark-mode {
     padding: 0;
 
     svg {
-        transition: stroke 0.2s ease-in-out;
-        width: 1.6rem;
-        height: 1.6rem;
-        stroke: var(--blue);
+        transition: transform 0.2s ease-in-out;
+        width: 2.4rem;
+        height: auto;
     }
 
     .dark {
@@ -61,7 +60,7 @@ header #dark-mode {
 
     &:hover {
         svg {
-            stroke: var(--yellow);
+            transform: scale(1.2);
         }
     }
 
