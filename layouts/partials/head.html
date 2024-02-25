@@ -5,6 +5,7 @@
     <title>{{.Site.Title}}</title>
 
     {{ template "_internal/opengraph.html" . }}
+    {{ template "_internal/twitter_cards.html" . }}
 
     {{ with .OutputFormats.Get "rss" -}}
     {{ printf `

@@ -13,6 +13,8 @@ images = ['banner.png']
 [params.author]
 email = 'lewinkoon@gmail.com'
 name = 'Lewin'
+[params.social]
+twitter = 'lewinkoon'
 
 ### NAVIGATION BAR ###
 [menu]
