@@ -32,9 +32,9 @@ url = "https://github.com/lewinkoon"
 pre = "svg/github.svg"
 weight = 10
 [[menu.social]]
-name = "Email"
-url = "mailto:lewinkoon@gmail.com"
-pre = "svg/mail.svg"
+name = "Twitter"
+url = "https://twitter.com/lewinkoon"
+pre = "svg/twitter.svg"
 weight = 20
 [[menu.social]]
 name = "Rss"
