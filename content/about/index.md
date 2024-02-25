@@ -1,6 +1,6 @@
 ---
 title: About me
-subtitle: Meet the author of this digital garden
+description: Meet the author of this digital garden
 layout: about
 resources:
 - name: intro
