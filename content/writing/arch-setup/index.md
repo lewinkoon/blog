@@ -3,7 +3,7 @@ author: Lewin
 date: 2024-03-05
 tags:
   - technology
-title: Install Arch linux from zero
+title: Install Archlinux from zero
 ---
 
 First, download the [ISO](https://archlinux.org/download/) file from the Archlinux webpage and create a bootable USB drive with [Rufus](https://rufus.ie). When finished, reboot your computer and wait for your motherboard logo on screen. Press `F11` key and choose to boot from your attached USB drive. After loading, a root prompt will be displayed.
@@ -165,7 +165,7 @@ efibootmgr
 	--create
 	--disk /dev/sda
 	--part 1
-	--label "Arch Linux" \
+	--label "Archlinux" \
 	--loader /vmlinuz-linux \
 	--unicode 'root=UUID=01a40dd8-28f0-4636-be1e-aeed60c98095 rw initrd=\amd-ucode.img initrd=\initramfs-linux.img'
 ```
