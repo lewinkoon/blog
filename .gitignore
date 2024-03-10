@@ -1,4 +1,5 @@
 /misc
+/public
 /resources
 .hugo_build.lock
 tsconfig.json
