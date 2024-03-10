@@ -137,7 +137,7 @@ passwd
 
 Create unprivileged user
 
-```
+```bash
 useradd -m -G wheel -s /usr/bin/zsh me
 ```
 
@@ -149,13 +149,13 @@ passwd me
 
 Allow members of group *wheel* `sudo` access
 
-```
+```bash
 EDITOR=nvim visudo
 ```
 
 Check `UUID` of root partition `/dev/sda2`
 
-```
+```bash
 blkid -s UUID -o value /dev/sda2
 ```
 
