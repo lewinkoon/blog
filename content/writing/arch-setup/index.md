@@ -55,16 +55,16 @@ Install esential packages onto the mounted drive.
 
 ```bash
 pacstrap -K /mnt \
-	base
-	base-devel
-	linux
-	linux-firmware
-	amd-ucode # for amd cpus
-	efibootmgr
-	neovim
-	man-db
-	networkmanager
-	sudo
+	base \
+	base-devel \
+	linux \
+	linux-firmware \
+	amd-ucode \ # for amd cpus
+	efibootmgr \
+	neovim \
+	man-db \
+	networkmanager \
+	sudo \
 	zsh
 ```
 
@@ -162,10 +162,10 @@ blkid -s UUID -o value /dev/sda2
 Create a boot entry
 
 ```bash
-efibootmgr
-	--create
-	--disk /dev/sda
-	--part 1
+efibootmgr \
+	--create \
+	--disk /dev/sda \
+	--part 1 \
 	--label "Archlinux" \
 	--loader /vmlinuz-linux \
 	--unicode 'root=UUID=01a40dd8-28f0-4636-be1e-aeed60c98095 rw initrd=\amd-ucode.img initrd=\initramfs-linux.img'
