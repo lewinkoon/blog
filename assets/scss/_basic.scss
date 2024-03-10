@@ -101,17 +101,16 @@ blockquote {
 table {
     border-collapse: separate;
     border-spacing: 0;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 3rem auto;
     overflow-x: auto;
 }
 
 th {
-    border-bottom: 4px solid var(--black);
+    border-bottom: 4px solid var(--surface0);
 }
 
 td {
-    border-bottom: 2px solid var(--black);
+    border-bottom: 2px solid var(--surface0);
 }
 
 th,
