@@ -2,18 +2,15 @@
 {{ $image := $image.Resize "x720 webp" }}
 
 <div class="figure">
-<a id="{{ path.BaseName $image }}" href="{{ $image.RelPermalink }}" target="_blank">
-  <img loading="lazy" 
-  src="{{ $image.RelPermalink }}" 
-  alt="{{ .Text }}" 
-  width={{ $image.Width }} 
-  height="{{ $image.Height }}"/>
-</a>
+  <a id="{{ path.BaseName $image }}" href="{{ $image.RelPermalink }}" target="_blank">
+    <img loading="lazy" src="{{ $image.RelPermalink }}" alt="{{ .Text }}" width={{ $image.Width }}
+      height="{{ $image.Height }}" />
+  </a>
 
-{{ if .PlainText }}
+  {{ if .PlainText }}
   <div class="caption">
-  <span>{{ $image.Title }}</span>
-  {{ .PlainText }}
+    <span>Figure {{ add .Ordinal 1 }}</span>
+    {{ .PlainText }}
   </div>
-{{ end }}
+  {{ end }}
 </div>
