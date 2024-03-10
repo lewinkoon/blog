@@ -12,25 +12,24 @@
     overflow-x: auto;
 
     code {
-      // padding: 40px 10px 10px;
       font-family: "mono";
       font-size: 1rem;
 
-      &[data-lang]::before {
-        display: block;
-        content: attr(data-lang);
-        margin-bottom: 1rem;
-        color: var(--blue);
-        text-transform: uppercase;
-        font-weight: bold;
-      }
+      // &[data-lang]::before {
+      //   display: block;
+      //   content: attr(data-lang);
+      //   margin-bottom: 1rem;
+      //   color: var(--blue);
+      //   text-transform: uppercase;
+      //   font-weight: bold;
+      // }
     }
   }
 
   button {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 12px;
+    right: 12px;
     background: var(--surface0);
     border: none;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2), 0px 2px 6px rgba(0, 0, 0, 0.2), 0px 0px 1px rgba(0, 0, 0, 0.2);

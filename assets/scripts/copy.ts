@@ -1,6 +1,6 @@
 let renderCopyButton = function() {
   const highlights = document.querySelectorAll('.article-post div.highlight');
-  const copyText = `Copiar`, copiedText = `Copiado`;
+  const copyText = ` 📋Copy`, copiedText = ` ✅ Copied`;
 
   highlights.forEach(highlight => {
     const copyButton = document.createElement('button')
