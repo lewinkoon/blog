@@ -27,6 +27,11 @@
     {{ $copy := resources.Get "scripts/copy.ts" | js.Build (dict "minify" false ) | fingerprint }}
     <script src="{{ $copy.RelPermalink }}"></script>
 
+    <!-- UMAMI ANALYTICS -->
+    {{ if .Params.analytics }}
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="31c91140-9704-461b-be2c-06b1cc32c5e1"></script>
+    {{ end }}
+
     <!-- LEAFLET MAP -->
     {{ if .Params.map }}
     {{ $map := resources.Get "js/map.js" | js.Build (dict "minify" true ) | fingerprint }}
