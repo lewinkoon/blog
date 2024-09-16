@@ -1,7 +1,11 @@
 baseURL = 'https://lewin.town/'
 title = 'lewin.town'
-paginate = 10
 enableRobotsTXT = true
+
+[pagination]
+disableAliases = false
+pagerSize = 10
+path = 'page'
 
 ### CUSTOM OPTIONS ###
 [params]
