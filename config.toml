@@ -1,5 +1,5 @@
-baseURL = 'https://lewin.town/'
-title = 'lewin.town'
+baseURL = 'https://lewinkoon.github.io/'
+title = 'lewinkoon'
 enableRobotsTXT = true
 
 [pagination]
@@ -38,8 +38,8 @@ url = "https://github.com/lewinkoon"
 pre = "svg/github.svg"
 weight = 10
 [[menu.social]]
-name = "Twitter"
-url = "https://twitter.com/lewinkoon"
+name = "X"
+url = "https://x.com/lewinkoon"
 pre = "svg/twitter.svg"
 weight = 20
 [[menu.social]]
