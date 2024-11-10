@@ -1,15 +1,8 @@
-{{ define "main" }}
-
-{{ $pages := .Pages }}
+{{ define "main" }} {{ $pages := .Pages }}
 
 <section class="title">
-    <h1>
-        {{ partial "svg/clipboard.svg" . }}
-        {{ .Title | humanize }}
-    </h1>
-    <p>
-        Found <span>{{ len .Pages }}</span> articles
-    </p>
+    <h1>{{ partial "svg/clipboard.svg" . }} {{ .Title | humanize }}</h1>
+    <p>Found <span>{{ len .Pages }}</span> articles</p>
 </section>
 
 <section class="list">

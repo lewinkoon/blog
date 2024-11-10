@@ -38,7 +38,7 @@ url = "https://github.com/lewinkoon"
 pre = "svg/github.svg"
 weight = 10
 [[menu.social]]
-name = "X"
+name = "Twitter"
 url = "https://x.com/lewinkoon"
 pre = "svg/twitter.svg"
 weight = 20

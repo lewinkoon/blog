@@ -8,7 +8,7 @@ During the design process I tried to keep it all simple and bloat-free, as this 
 
 Some **features** on my blog are:
 
- - 🌙 Dark mode
- - 📋 Copy button on code blocks
- - 🔍 Search tool made with [Fuse.js](https://github.com/krisk/Fuse)
- - 🏷️ Filter by tags
+- 🌙 Dark mode
+- 📋 Copy button on code blocks
+- 🔍 Search tool made with [Fuse.js](https://github.com/krisk/Fuse)
+- 🏷️ Filter by tags

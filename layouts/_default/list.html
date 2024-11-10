@@ -1,11 +1,7 @@
-{{ define "main" }}
-{{ $pages := where .Site.RegularPages "Section" "writing" }}
+{{ define "main" }} {{ $pages := where .Site.RegularPages "Section" "writing" }}
 
 <section class="title">
-    <h1>
-        {{ partial "svg/bookmark.svg" . }}
-        Writing
-    </h1>
+    <h1>{{ partial "svg/bookmark.svg" . }} Writing</h1>
     <p>I write about <strong>things</strong> from time to time.</p>
 
     <!-- <div class="tag-list">
@@ -17,7 +13,11 @@
         {{ end }}
     </div> -->
 
-    <input class="search-query" id="search-query" placeholder="Search anything...">
+    <input
+        class="search-query"
+        id="search-query"
+        placeholder="Search anything..."
+    />
 </section>
 
 <section class="search-results" id="search-results">
@@ -27,7 +27,6 @@
     </div>
     <div class="list"></div>
 </section>
-
 
 <section class="list" id="section-list">
     {{ range $pages.GroupByDate "2006" }}
@@ -52,8 +51,8 @@
     {{ end }}
 </section>
 
-
-{{ $search := resources.Get "scripts/search.ts" | js.Build (dict "minify" true ) | fingerprint }}
+{{ $search := resources.Get "scripts/search.ts" | js.Build (dict "minify" true )
+| fingerprint }}
 <script async src="{{ $search.RelPermalink }}"></script>
 
 {{ end }}

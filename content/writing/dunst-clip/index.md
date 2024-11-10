@@ -2,17 +2,17 @@
 author: "Lewin"
 date: 2022-02-12
 tags:
-- technology
+  - technology
 title: "View your clipboard with desktop notifications"
 resources:
-- name: capture
-  title: Figura 1
-  src: capture.png
+  - name: capture
+    title: Figura 1
+    src: capture.png
 ---
 
 ![Desktop Notification with Dunst](capture)
 
-[Dunst](https://github.com/dunst-project/dunst) is a simple and lightweight program that provides highly customizable notifications in *Linux* environments. One of the applications I immediately thought of when I found out this program is displaying the contents of the clipboard. The process is straightforward: it involves sending the output of `xclip` to both the system clipboard and the primary clipboard as a desktop notification using `notify-send`.
+[Dunst](https://github.com/dunst-project/dunst) is a simple and lightweight program that provides highly customizable notifications in _Linux_ environments. One of the applications I immediately thought of when I found out this program is displaying the contents of the clipboard. The process is straightforward: it involves sending the output of `xclip` to both the system clipboard and the primary clipboard as a desktop notification using `notify-send`.
 
 Before proceeding, make sure to install the following dependencies:
 

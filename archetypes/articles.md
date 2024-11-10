@@ -1,8 +1,7 @@
 ---
 author: "Lewin"
 title: "New post"
-date: {{ .Date }}
+date: { { .Date } }
 tags:
 resources:
 ---
-

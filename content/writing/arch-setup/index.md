@@ -11,7 +11,7 @@ First, download the [ISO](https://archlinux.org/download/) file from the Archlin
 
 ![Archlinux welcome screen from live ISO](arch-live.png)
 
-Set the console keyboard layout. 
+Set the console keyboard layout.
 
 ```bash
 loadkeys es
@@ -147,7 +147,7 @@ Set password for unprivileged user
 passwd me
 ```
 
-Allow members of group *wheel* `sudo` access
+Allow members of group _wheel_ `sudo` access
 
 ```bash
 EDITOR=nvim visudo
@@ -174,7 +174,7 @@ efibootmgr \
 Delete previous entries
 
 ```bash
-efibootmgr -v 
+efibootmgr -v
 efibootmgr -b 000X -B
 ```
 

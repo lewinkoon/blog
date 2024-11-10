@@ -2,10 +2,9 @@
 title: About me
 layout: about
 resources:
-- name: intro
-  title: Figura 1
-  src: intro.jpg
-
+  - name: intro
+    title: Figura 1
+    src: intro.jpg
 ---
 
 Hello, I'm Lewin, a passionate and driven mechanical engineer with a relentless curiosity for all things related to machines and technology. My journey began with a deep-seated fascination for **how things work**. Over the years, I've honed my skills, from concept to completion, in areas such as mechanical design, electronics and software development.
@@ -18,9 +17,9 @@ This portfolio showcases some of the projects I've had the privilege to work on.
 
 # Random facts
 
-- I love watching *Transformers* movies 🤖
+- I love watching _Transformers_ movies 🤖
 - I've been writing for this blog since 2021 ✨
-- My favorite meal is pork shoulder with roasted red peppers 😋 
+- My favorite meal is pork shoulder with roasted red peppers 😋
 
 # Hardware
 

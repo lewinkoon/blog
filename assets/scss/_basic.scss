@@ -35,7 +35,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-
 }
 
 main {
@@ -121,7 +120,7 @@ table {
     }
 }
 
-:not(pre)>code {
+:not(pre) > code {
     font-size: 0.9rem;
     font-family: "mono";
     padding: 3px 5px;
@@ -130,9 +129,7 @@ table {
 }
 
 .figure {
-
     a {
-
         scroll-margin-top: 12rem;
 
         img {
@@ -160,7 +157,6 @@ table {
             color: var(--blue);
         }
     }
-
 }
 
 hr {
@@ -181,7 +177,6 @@ hr {
         max-height: 200px;
         padding: 2rem 2rem 1rem 1.5rem;
     }
-
 }
 
 #cusdis_thread {
@@ -218,7 +213,6 @@ hr {
     background: var(--overlay0);
     border-radius: 8px;
 
-
     &:hover {
         background: var(--overlay1);
     }
@@ -230,7 +224,6 @@ hr {
     }
 
     a {
-
         div.post-title {
             white-space: nowrap;
             overflow: hidden;
@@ -240,7 +233,6 @@ hr {
 }
 
 @media (max-width: 480px) {
-
     html {
         font-size: 9pt;
     }
@@ -252,7 +244,6 @@ hr {
     section.projects .items {
         grid-template-columns: 1fr;
     }
-
 }
 
 @media (max-width: 300px) {
